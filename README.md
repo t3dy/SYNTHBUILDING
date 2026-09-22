@@ -91,13 +91,18 @@ distinct here): [`CHIPPEDONBACH.md`](CHIPPEDONBACH.md).
 
 ### 4. Weird / experimental music
 
-An honest finding, not a shipped catalog: a full sweep of Ted's 1.45M-prompt
-personal LLM archive found **no generative/algorithmic "weird AI music"**
-experiments anywhere — that thread doesn't exist yet as something to resume.
-What does exist:
+**[ANTIGRAVFUGIENS](https://t3dy.github.io/SYNTHBUILDING/project/antigravfugiens.html)**
+(above, confirmed directly by Ted) is what "weird experimental Claude music"
+actually refers to: ten alchemically-named studio effects plus six
+interactive audio toys on the Atalanta fugues — real, built, just
+unintegrated. It never showed up in a prompt-archive search because it's a
+built agentic-coding artifact, not something planned across chat turns.
 
-- **ANTIGRAVFUGIENS** (above) — the closest real built artifact to "weird."
-- **A Golden Dawn Rose Cross Lamen synth/looper concept** — the single most
+Separately, the archive does hold real adjacent material:
+- **A "Procedural Music Composer" idea modeled on John Cage's chance
+  operations** (2024-09-23) and a real-time astrological-transit-to-music
+  generator in the same thread — thin (one paragraph, never coded) but real.
+- **A Golden Dawn Rose Cross Lamen synth/looper concept** — the most
   fully-formed *unbuilt* idea in the prompt archive (Feb 2026): a clickable
   Tree-of-Life/Rose-Cross controller gating synth and loop parameters.
 - **A much larger adjacent research cluster**, found by a second pass over
@@ -106,8 +111,18 @@ What does exist:
   music" idea Ted has proposed or half-built — including **BRICKSHITSTORM**
   (a shipped game where the falling-brick cascade *is* the music) and an
   early rhythm-Tetris prototype (`TetrisCodex/prototypes/p9-rhythm.html`).
+- **[`ALGORITHMICMUSICTOOLS/`](ALGORITHMICMUSICTOOLS/CLAUDE.md)** — a
+  distinct idea Ted separately asked about: software that teaches music
+  theory by algorithmically composing and transforming examples. Traced to
+  a real, fully-spec'd, never-built 2026-03-10 conversation and now scoped
+  as its own subproject.
+- **[`SYNTHTOY/`](SYNTHTOY/CLAUDE.md)** — occult diagrams (Tree of Life,
+  Rose Cross, magic squares) as a 13-family Web Audio prototype lab teaching
+  synthesis through play. In active development.
 
-Full account: [`WEIRDMUSIC.md`](WEIRDMUSIC.md).
+Full account: [`WEIRDMUSIC.md`](WEIRDMUSIC.md) ·
+deeper archive sweep: [`RESEARCHER/MEGABASEMUSICCATALOG.md`](RESEARCHER/MEGABASEMUSICCATALOG.md),
+[`research/DEEPCUTS.md`](research/DEEPCUTS.md).
 
 ### 5. The music-technology library (`E:\pdf`)
 
@@ -138,13 +153,34 @@ diagrams (Tree of Life, Rose Cross Lamen, magic squares/sigils, the LBRP,
 the hexagram) into playable interfaces that teach real synthesis and music
 theory through play — a synthesis-education tool using correspondence
 systems as a memory palace, not a game about magic with sound effects
-bolted on. Thirteen prototype families span traversal-as-sequencing,
-radial-correspondence-as-timbre, grid-tracing-as-rhythm, and a direct
-NES/APU-style low-level sound-engine prototype. Distinct in scope from
-SYNTHBUILDER proper (browser/Web Audio, not REAPER/JSFX) but sharing this
-parent folder and its synthesis-concepts groundwork. See
-[`SYNTHTOY/CLAUDE.md`](SYNTHTOY/CLAUDE.md) and
+bolted on. Also worth reading together with
+[`ALGORITHMICMUSICTOOLS/`](ALGORITHMICMUSICTOOLS/CLAUDE.md) — a related CYOA
+teaching idea. Thirteen prototype
+families span traversal-as-sequencing, radial-correspondence-as-timbre,
+grid-tracing-as-rhythm, and a direct NES/APU-style low-level sound-engine
+prototype. Distinct in scope from SYNTHBUILDER proper (browser/Web Audio,
+not REAPER/JSFX) but sharing this parent folder and its synthesis-concepts
+groundwork. See [`SYNTHTOY/CLAUDE.md`](SYNTHTOY/CLAUDE.md) and
 [`SYNTHTOY/DESIGN.md`](SYNTHTOY/DESIGN.md).
+
+### 7. How this portal presents itself — narrative design
+
+[`NARRATIVEDESIGNER/`](NARRATIVEDESIGNER/CLAUDE.md) reads Ted's narrative-
+design craft library (`E:\pdf\narrative design` — Paulsen, Heussner et al.,
+Austin, Berger, Breault, Hokanson/Clinton/Kaminski, Fox — all 7 read for
+substantive content) and applies it to how each project above is actually
+presented: a narrative-structure read of the project's real story (not an
+invented one — NSFRIPPER's story really is "built a working engine, stalled
+on one unmade decision," and that's already a three-act shape worth naming),
+a concrete suggestion for the card/page copy, and one gamification idea per
+project, honestly labeled as either a cheap copy-only flourish or a real
+scoped side-build. Proposal-only, nothing applied to the live catalog yet:
+[`NARRATIVEDESIGNER/TOOLKIT.md`](NARRATIVEDESIGNER/TOOLKIT.md) (~20 named
+frameworks, each cited to book + chapter) and
+[`NARRATIVEDESIGNER/PROJECT_NARRATIVE_SUGGESTIONS.md`](NARRATIVEDESIGNER/PROJECT_NARRATIVE_SUGGESTIONS.md)
+(all 15 projects). Favorite ideas so far: an actual "cast your vote: A, B,
+or C" audio-picker for NSFRIPPER's three unrendered delivery variants, and a
+flip-card "Blunder Bestiary" built from ReapNES-Studio's 14 documented bugs.
 
 ---
 

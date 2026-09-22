@@ -21,6 +21,26 @@ to append `[CLARIFIED: ...]` notes.
 
 > make sure that all my desires from the conversation and my prompts have been saved as a running log of PROMPTS.md and your distillation of my DESIRES.md
 
+## 5. Deploy + README + knowledge-portal feel
+
+> deploy and make sure we have detailed documentation of all our major project families in the github readme with a link to the website build whatever we need to have the website be like a knowledge portal like I do in c:\dev\wiki
+
+## 6. Clarifying "weird music" + surfacing a second idea
+
+> Antigravfugiens is what I meant by the "weird music" claude experiments. I also have some claude or chatgpt conversations which might be found in dev or in megabase asking for algorithmic composition tools like having the software give the user ability to play around with automatically composing examples to learn music theory by playing with all the structures described by music theory in a music sequence creating software
+
+## 7. New subfolder: algorithmic music tools
+
+> I want a whole sub project ALGORITHMICMUSICTOOLS subfolder
+
+## 8. Deep cuts from the archive
+
+> I want you to do a full read of any of the LLM conversations we havent covered and produce a DEEPCUTS.md with some of the more remote ideas
+
+## 9. New subfolder: narrative designer
+
+> create a NARRATIVEDESIGNER subfolder and build a narrative designer with the storytelling values found in the pdfs of E:\pdf\narrative design and have the narrative designer think about how we present each of our projects on the website and think of suggestions from the narrative design toolkit for how to gamify the presentation of each project in a description or side game idea
+
 ---
 
 *(Next entries append below as the session continues.)*

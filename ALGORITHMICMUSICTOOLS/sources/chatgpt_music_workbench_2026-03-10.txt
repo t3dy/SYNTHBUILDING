@@ -1,0 +1,1554 @@
+=== user 2026-03-10T08:48:00 ===
+tell me about karpathys new auto research and how it might apply to my projects
+
+=== assistant 2026-03-10T08:48:00 ===
+Karpathy’s **“AutoResearch”** idea is essentially a prototype of **AI running the scientific method automatically**. Instead of humans manually writing code, running experiments, analyzing results, and iterating, an AI agent performs the entire loop continuously. The concept sits at the intersection of **agentic engineering**, AutoML, and LLM-driven coding systems. citeturn0search4turn0news9  
+
+Below is a practical explanation and then how it maps directly onto the types of projects you are building.
+
+---
+
+## 1. What Karpathy’s “AutoResearch” actually is
+
+At its core, the system is a **closed experimental loop**:
+
+1. AI proposes a change to code.
+2. The code runs an experiment.
+3. Results are evaluated by a metric.
+4. The AI analyzes results and proposes the next change.
+
+This loop repeats indefinitely. citeturn0search4  
+
+A typical implementation has three components:
+
+**1. Frozen environment**
+- dataset
+- evaluation metric
+- infrastructure
+
+This guarantees experiments are comparable.
+
+**2. Mutable target file**
+- usually a training script like `train.py`
+- the AI edits this to try new architectures or parameters.
+
+**3. Meta-agent**
+- the AI system that reads results and proposes new experiments. citeturn0academia13  
+
+Each iteration might be time-boxed (e.g., 5-minute training runs) so hundreds of experiments can run overnight. The system gradually improves performance without human intervention. citeturn0search2  
+
+Conceptually:
+
+```
+AI Agent
+   │
+   ▼
+Modify experiment code
+   │
+   ▼
+Run experiment
+   │
+   ▼
+Evaluate metric
+   │
+   ▼
+Store results
+   │
+   ▼
+Propose next experiment
+```
+
+This is why Karpathy frames the broader shift as **“agentic engineering”**—AI systems performing the engineering workflow themselves rather than just generating code snippets. citeturn0news9  
+
+---
+
+# 2. Why this matters conceptually
+
+Traditional research loop:
+
+```
+Human → Hypothesis → Experiment → Analysis → New hypothesis
+```
+
+AutoResearch loop:
+
+```
+Agent → Hypothesis → Experiment → Metric → Agent
+```
+
+The key insight:  
+**The only human responsibility becomes defining the objective function and the sandbox.**
+
+Everything else is automated exploration.
+
+---
+
+# 3. Where this overlaps with what you’re already doing
+
+You’re already close to this paradigm in several projects. The missing piece is **formalizing your experimentation loops so an agent can run them automatically**.
+
+Here are the strongest fits.
+
+---
+
+# 4. AutoResearch for your Esoteric Studies / Alchemy DB
+
+Your ingestion pipeline already involves repeated trial-and-error tasks:
+
+- OCR tuning
+- segmentation
+- entity extraction
+- metadata generation
+- embedding strategies
+- clustering methods
+
+Instead of manually tuning these pipelines, you could let an agent optimize them.
+
+Example:
+
+Objective metric:
+
+```
+entity_extraction_accuracy
++ cross-text linking accuracy
++ embedding similarity score
+```
+
+AutoResearch loop:
+
+```
+Agent edits extraction prompts / models
+↓
+Run pipeline on corpus
+↓
+Evaluate entity recall / precision
+↓
+Agent modifies prompts again
+```
+
+This would produce **automatically improving extraction pipelines** for:
+
+- alchemical images
+- sigil segmentation
+- emblem extraction
+- scholar entity detection
+
+Essentially:
+
+**AI becomes your digital humanities research assistant.**
+
+---
+
+# 5. AutoResearch for your MTG data tools
+
+Your Magic projects are actually a perfect experimental environment.
+
+Possible experiments:
+
+- deck prediction models
+- draft pick recommendation
+- archetype clustering
+- winrate prediction
+
+Agent loop:
+
+```
+Modify feature engineering
+Modify model architecture
+Run evaluation on 17Lands dataset
+Optimize win prediction
+```
+
+You could run hundreds of experiments overnight.
+
+Instead of asking:
+
+“Which draft signals matter most?”
+
+You define the metric:
+
+```
+prediction_accuracy
+```
+
+and let the agent search.
+
+---
+
+# 6. AutoResearch for your game design
+
+This is the most interesting application.
+
+Agent-driven design loop:
+
+```
+Agent modifies game parameters
+↓
+Simulate thousands of runs
+↓
+Evaluate fun metrics
+↓
+Iterate
+```
+
+For example:
+
+Snake autobattler:
+
+Metrics:
+
+- match length
+- build diversity
+- strategy entropy
+- win rate balance
+
+Agent explores:
+
+- upgrade costs
+- spawn rates
+- ability stats
+- enemy AI behavior
+
+The system becomes a **balance engine**.
+
+Game studios already do primitive versions of this.
+
+---
+
+# 7. AutoResearch for your personal AI workflow
+
+You are experimenting with:
+
+- prompts
+- Claude skills
+- pipelines
+- ingestion scripts
+- workflows
+
+Instead of manually tuning them, you could build an **AutoResearch framework for prompts and agents**.
+
+Example loop:
+
+```
+Agent edits prompt template
+↓
+Run benchmark tasks
+↓
+Score outputs
+↓
+Improve prompt
+```
+
+You end up with **automatically improving prompt libraries**.
+
+---
+
+# 8. A concrete version you could build quickly
+
+Given your Python + SQLite + Claude environment, the simplest architecture would look like this:
+
+```
+auto_research/
+│
+├─ experiments/
+│  ├─ experiment.py
+│  ├─ metrics.py
+│
+├─ agent/
+│  ├─ propose_change.py
+│  ├─ analyze_results.py
+│
+├─ results/
+│  ├─ experiment_log.sqlite
+│
+└─ runner.py
+```
+
+Runner loop:
+
+```
+while True:
+    change = agent.propose()
+    apply(change)
+    score = run_experiment()
+    log(score)
+    agent.learn(score)
+```
+
+Run it overnight.
+
+Wake up to improved systems.
+
+---
+
+# 9. The deeper implication
+
+Your workflow philosophy already aligns with what Karpathy is pushing.
+
+You’re doing:
+
+- vibe coding
+- LLM-assisted design
+- iterative experimentation
+- pipeline automation
+
+AutoResearch is simply the next step:
+
+**the AI starts running the iteration itself.**
+
+Human role becomes:
+
+- defining problems
+- designing metrics
+- supervising outcomes
+
+---
+
+# 10. The most powerful application for you
+
+If I had to pick one project where this would be transformative:
+
+**automated research over your 1,700-PDF esoteric corpus.**
+
+Imagine an agent that repeatedly tries:
+
+- new entity extraction prompts
+- new embeddings
+- new clustering algorithms
+- new cross-text linking rules
+
+and automatically improves the **knowledge graph** over time.
+
+That would turn your Alchemy DB into something closer to an **AI-driven research laboratory**, not just a database.
+
+---
+
+If you want, I can also show you something useful:
+
+**a small “AutoResearch starter architecture” tailored specifically for your digital humanities + game + MTG tool ecosystem.**
+
+It would be about **150 lines of Python** and would plug into Claude or local models.
+
+=== user 2026-03-10T08:48:00 ===
+go
+
+=== assistant 2026-03-10T08:48:00 ===
+Karpathy’s new `autoresearch` repo is a **minimal autonomous experiment loop for ML research**. The setup is deliberately narrow: an AI coding agent edits only `train.py`, runs a fixed 5-minute training job, checks whether validation bits-per-byte (`val_bpb`) improved, keeps or discards the change, and repeats. The repo is built around a simplified single-GPU `nanochat` training stack, with `prepare.py` kept fixed, `train.py` mutable, and `program.md` serving as the human-written research brief for the agent. He describes the broader direction as moving toward massively collaborative asynchronous agents, “SETI@home style.” citeturn1view0turn0search0
+
+The important idea is not “AI does science in general.” It is much narrower and more useful: **you freeze the environment, expose one editable surface, define one score, and let the agent grind the loop**. In Karpathy’s repo, the frozen parts are the data pipeline and constants; the editable surface is `train.py`; the score is `val_bpb`; and the fixed 5-minute wall-clock budget makes experiments comparable on one machine. The repo says this yields about 12 experiments per hour and roughly 100 overnight. citeturn1view0
+
+There is also now a separate March 2026 arXiv preprint, `AutoResearch-RL`, that formalizes this pattern as an RL problem: state = current code plus experiment history, action = a structured code diff, reward = validation performance. That paper is not Karpathy’s repo itself; it is an academic extension inspired by his prototype. citeturn1view1
+
+For your projects, the key transfer is this: **AutoResearch is best whenever you already have a repeatable pipeline and can define a scalar metric**. That makes it a very strong fit for your workbench-style projects and a weak fit for open-ended creative ideation. citeturn1view0turn1view1
+
+For your **Esoteric Studies / AlchemyDB** pipeline, the strongest application is not “let the agent redesign the whole system.” It is to isolate one narrow research surface at a time. Examples: prompt templates for entity extraction, segmentation thresholds for emblem/image splitting, embedding model choice, chunking strategy, linker heuristics for matching persons/texts/images, or OCR cleanup rules. The frozen environment would be a benchmark corpus of hand-checked pages or records; the mutable surface would be one config or one script; the score could be F1 for entity extraction, precision@k for retrieval, clustering purity, or link accuracy against your gold set. In your case, that would convert a lot of your current “vibe-tuned pipeline iteration” into an overnight search process. That is very much in the spirit of Karpathy’s design. citeturn1view0turn1view1
+
+For your **MTG / 17Lands / overlay** work, this could be even cleaner technically, because the metrics are easier to formalize. You could let an agent modify a single feature-engineering file or model config and score it on pick prediction accuracy, deck winrate prediction, archetype classification, or calibration error. That is the classic AutoResearch shape: one editable file, one benchmark split, one metric. Compared with your digital-humanities stack, this is lower-friction and would likely give you faster proof of concept. citeturn1view0turn1view1
+
+For your **games**, AutoResearch is useful only for the parts that can be simulated. It can tune economy values, encounter rates, drop tables, AI weights, upgrade costs, board generation parameters, or balance curves. It is much less useful for “is this aesthetically compelling?” unless you build proxies such as run diversity, average decision density, strategy spread, retention in playtests, or completion rates in scripted simulations. For your autobattler / roguelike / alchemy-lab designs, this means balance tuning is a plausible target; narrative and visual invention are not. citeturn1view1turn1view0
+
+For your **agentic workflow / Claude skills / ingestion org**, the most direct application is meta-optimization of prompts and instructions. Karpathy’s repo explicitly centers `program.md` as the human-authored “skill” that frames the agent’s work. In your ecosystem, that suggests a controlled benchmark where agents try revisions to a prompt or workflow policy and are scored on success rate, structure compliance, runtime, error rate, or downstream quality. That maps very cleanly onto the way you already think about “skills,” “plan gates,” and deterministic versus LLM-assisted stages. citeturn1view0
+
+The biggest constraint is that **AutoResearch only works as well as the metric**. If the score is shallow, the system will optimize the wrong thing quickly and efficiently. For your corpus work, that means you should not start with a vague target like “better metadata.” You should start with something auditably measurable: “correctly identify the author field on 300 labeled title pages,” “retrieve the right emblem commentary in top 5,” “link this alchemist to the correct century and region,” and so on. Karpathy’s whole setup depends on a narrow evaluation signal; without that, the agent is just wandering. citeturn1view0turn1view1
+
+The most practical path for you is a **small internal clone of the pattern**, not trying to run Karpathy’s exact repo on day one. His implementation assumes a single NVIDIA GPU, Python 3.10+, `uv`, and a training setup centered on `nanochat`; it is explicitly framed around ML-training experiments. Your version should swap in your own benchmark harness and leave the loop structure intact. citeturn1view0
+
+A good first build for you would be this:
+
+`benchmark/`
+- frozen test set
+- gold labels
+- scoring script
+
+`candidate/`
+- one editable file: `extract.py` or `ranker.py` or `config.yaml`
+
+`program.md`
+- explicit research brief
+- constraints
+- allowed edits
+
+`runner.py`
+- apply diff
+- run benchmark
+- log score
+- keep/revert
+
+`results.sqlite`
+- diff
+- score
+- notes
+- timestamp
+
+That is the Karpathy pattern translated into your world: fixed environment, one mutable target, one score, repeated automatically. citeturn1view0turn1view1
+
+For your stack, I would rank the best pilot projects in this order:  
+1. MTG predictive modeling benchmark  
+2. Entity extraction / linker benchmark for AlchemyDB  
+3. Retrieval ranking benchmark for your PDF corpus  
+4. Game-balance simulation harness  
+5. Prompt/workflow benchmark for your agent skills
+
+That ranking is mainly about how easy it is to define clean objective functions. The MTG and extraction cases are the least ambiguous. The game and prompt cases are viable, but only after you define good proxy metrics. This is the main lesson to take from Karpathy’s repo: the trick is not autonomous editing by itself; it is **autonomous editing inside a narrow, measurable loop**. citeturn1view0turn1view1
+
+If you want this pushed one step further, I can give you a concrete starter spec for an **AutoResearch harness for your AlchemyDB ingestion pipeline** with folder tree, benchmark schema, and the exact `program.md` format.
+
+=== user 2026-03-10T08:48:00 ===
+give me a prompt for claude code
+
+=== assistant 2026-03-10T08:48:00 ===
+Use this as a high-agency Claude Code prompt:
+
+```text
+You are my senior AI research engineer and agent-systems architect.
+
+Your task is to scaffold a local prototype of an “AutoResearch” system inspired by Karpathy’s repo pattern, but adapted to my project ecosystem. Do not give me a vague discussion. Produce concrete files, code, docs, and an implementation plan.
+
+Context:
+I build research/creative software projects including:
+- a digital humanities / esoteric studies ingestion and knowledge system
+- MTG / 17Lands style analytics tools
+- game simulation and balance prototypes
+- agentic workflows for prompt / pipeline optimization
+
+I want a reusable AutoResearch harness that follows this core pattern:
+- frozen benchmark environment
+- one narrow mutable surface
+- one scalar evaluation metric
+- repeatable experiment loop
+- experiment logging
+- keep/revert behavior based on score
+- human-authored research brief that constrains the agent
+
+The goal is not “general AGI researcher.”
+The goal is a disciplined, local, auditable experiment runner.
+
+Build me Version 1 as a Python project that can run locally on Windows first, but should be reasonably portable.
+
+Primary deliverable:
+Create a repository scaffold for a generic AutoResearch harness with:
+1. benchmark/
+2. candidate/
+3. logs/
+4. results/
+5. docs/
+6. program.md
+7. runner.py
+8. scorer.py
+9. mutation interface
+10. experiment history store
+
+Core behavior:
+- Load a benchmark task
+- Read a constrained program.md research brief
+- Select exactly one editable target file in candidate/
+- Propose a change to that file
+- Run the benchmark
+- Score the result
+- Log score, timestamp, diff, and summary
+- Revert if worse, keep if better
+- Repeat for N iterations
+- Support dry-run mode and manual approval mode
+
+Architectural requirements:
+- Python 3.11+
+- clean modular design
+- type hints
+- docstrings
+- structured logging
+- JSONL or SQLite experiment history
+- config-driven task definitions
+- support for pluggable mutation backends:
+  - stub backend
+  - LLM backend placeholder
+- deterministic benchmark execution where possible
+- safe file handling and rollback
+- clear separation between:
+  - benchmark environment
+  - mutable candidate surface
+  - evaluation logic
+  - orchestration logic
+
+I do NOT want fake integrations. If an LLM call is not fully implemented, create a clean interface and mock/stub implementation.
+
+What to produce:
+1. A proposed folder tree
+2. All initial source files
+3. README.md
+4. docs/IMPLEMENTATION_PLAN.md
+5. docs/ARCHITECTURE.md
+6. docs/TASK_FORMAT.md
+7. docs/NEXT_STEPS.md
+8. A sample benchmark task
+9. A sample candidate file the agent is allowed to mutate
+10. A sample program.md showing how the human constrains the research direction
+
+Design principles:
+- narrow editable surface
+- auditability over magic
+- simple before clever
+- local-first
+- benchmark-first
+- every experiment should be reproducible
+- no hidden state
+- easy to swap in project-specific benchmarks later
+
+Important:
+I want this scaffold to be adaptable later to at least these three use cases:
+1. entity extraction / retrieval tuning for a document corpus
+2. MTG prediction / ranking experiments
+3. game balance simulation parameter tuning
+
+So design the abstractions accordingly.
+
+Implementation details:
+- create a TaskConfig schema
+- create an ExperimentResult schema
+- create a MutationProposal schema
+- create a benchmark runner interface
+- create a mutation backend interface
+- create a rollback manager
+- create an experiment logger
+- create a simple command-line entrypoint
+- include an example config for a toy benchmark that mutates a simple scoring function
+
+CLI requirements:
+- `python runner.py --task tasks/toy_task.yaml --iterations 10`
+- `python runner.py --task tasks/toy_task.yaml --dry-run`
+- `python runner.py --task tasks/toy_task.yaml --manual-review`
+
+Behavioral requirements:
+- print concise progress to terminal
+- save full artifacts to disk
+- if a candidate edit breaks execution, catch the error, log failure, revert, continue
+- preserve previous best state
+
+Output requirements:
+First give me:
+A. the folder tree
+B. the architecture explanation
+C. the implementation plan
+Then create the actual files.
+
+Do not stop at high-level advice. Generate the full scaffold.
+
+Code quality bar:
+Assume I may actually run this code. Avoid placeholders that make the repo unusable. Prefer minimal working implementations.
+
+When making decisions, optimize for:
+1. clarity
+2. debuggability
+3. extensibility
+4. reliability
+
+After scaffolding the repo, also give me:
+- exact setup instructions for Windows
+- exact commands to run the toy benchmark
+- a short explanation of how I would adapt it into my AlchemyDB ingestion pipeline
+```
+
+Here is a second version tailored more specifically to your digital-humanities workbench:
+
+```text
+You are my senior Python architect for digital humanities tooling.
+
+Build a local “AutoResearch” prototype for my Esoteric Studies / AlchemyDB workflow.
+
+Goal:
+Create a benchmark-driven agent loop that can automatically test small improvements to one narrow pipeline component at a time.
+
+The first target use case is:
+entity extraction and record-linking improvement over a small gold-labeled benchmark set.
+
+I want a repository scaffold that supports this pattern:
+- frozen benchmark dataset
+- one editable candidate module
+- score against gold labels
+- log every experiment
+- keep/revert candidate changes based on performance
+
+Version 1 should not depend on a real LLM API.
+Instead:
+- design the mutation backend interface cleanly
+- include a stub mutation backend
+- optionally include a mock “heuristic mutator”
+- make it easy to plug in Claude/OpenAI/local models later
+
+Build:
+1. folder tree
+2. Python modules
+3. docs
+4. sample benchmark data
+5. sample gold labels
+6. sample entity extractor candidate file
+7. runner that executes iterative experiments
+8. scorer that computes precision/recall/F1 and a single scalar optimization score
+9. rollback system
+10. experiment log in SQLite or JSONL
+
+The benchmark should simulate this workflow:
+- input: small text snippets from esoteric/alchemical documents
+- expected output: extracted entities such as Person, Text, Concept, Place
+- candidate module contains extraction rules/heuristics
+- scorer compares predicted vs gold entities
+- loop attempts controlled changes to the candidate module
+
+Constraints:
+- mutate only one file
+- preserve best version
+- revert on regression or runtime failure
+- support dry-run and manual review
+- deterministic evaluation
+- modular architecture for future retrieval/linking experiments
+
+Need these docs:
+- README.md
+- IMPLEMENTATION_PLAN.md
+- ARCHITECTURE.md
+- BENCHMARK_SPEC.md
+- HOW_TO_EXTEND.md
+
+Need these abstractions:
+- TaskConfig
+- MutationProposal
+- ExperimentResult
+- BenchmarkRunner
+- MutationBackend
+- CandidateManager
+- ResultLogger
+
+Need a CLI like:
+`python runner.py --task tasks/entity_extraction_toy.yaml --iterations 20`
+
+After generating the scaffold, explain:
+- how to run it on Windows
+- how to replace the toy benchmark with my own benchmark corpus
+- how to adapt the same framework later for retrieval ranking or image segmentation experiments
+
+Do not give me only pseudo-code. Generate actual runnable starter code.
+```
+
+Best practice: paste one of those prompts into Claude Code, then immediately follow with this second message so it behaves less like a chatterbox and more like a repo builder:
+
+```text
+Execution rules:
+- Create files directly.
+- Prefer minimal working code over ambitious abstractions.
+- Do not ask me clarifying questions unless absolutely blocked.
+- If something cannot be fully implemented, stub it cleanly and document it.
+- Keep all decisions explicit in docs.
+- Use a small, consistent codebase.
+- Make the toy example actually runnable.
+- At the end, give me:
+  1. folder tree
+  2. created files list
+  3. run commands
+  4. top 5 next improvements
+```
+
+If you want the strongest version for your current priorities, use the second prompt first. It maps more directly onto your AlchemyDB-style pipeline.
+
+=== user 2026-03-10T08:48:00 ===
+what about for researching and building this project? AI-assisted music engineering workbench; hybrid DAW controller + analysis engine + reverse-engineering toolkit + transcription system; designed for musicians, programmers, musicologists; goal: turn audio, scores, ROM music, MIDI, and natural language instructions into playable arrangements, guitar tabs, chiptune tracks, DAW sessions, theory explanations.
+ 
+Core idea: LLM not composing music directly but orchestrating deterministic music engines, analysis libraries, and synthesis pipelines; natural language → structured commands → algorithmic modules → inspectable musical output.
+ 
+Primary capabilities include audio ingestion, automatic music transcription, symbolic music processing, guitar tablature generation, NES/retro synthesis extraction, algorithmic composition, DAW automation, and theory visualization.
+ 
+Audio import system accepts recordings, stems, YouTube links, ROM soundtracks, MIDI, MusicXML; audio analysis pipeline using MIR tools for onset detection, pitch estimation, chord recognition, tempo detection, structure segmentation; waveform + spectrogram inspection interface; interactive transcription correction.
+ 
+Automatic transcription layer converts audio to symbolic representation; polyphonic pitch detection; rhythm quantization; chord detection; melodic line extraction; structure detection for verse/chorus/bridge; lyric alignment if available.
+ 
+Symbolic representation layer stores notes as MIDI / MusicXML / internal sequence graph; tracks phrases, motifs, harmony labels, tempo map, articulation, dynamics; transformations recorded in operation history; branching composition graph.
+ 
+Guitar mapping engine converts symbolic music into guitar tablature; algorithm searches playable fingerings; considers tuning, capo, fretboard geometry, position shifts, ergonomics, chord shapes, difficulty scoring; supports alternate tunings, multiple guitar arrangements, simplification modes.
+ 
+Tab interface supports layout control: fit verse/chorus structures on screen, bar wrapping rules, chord symbol display, lyric toggle, annotation layers, practice overlays, technique markings like bends, slides, hammer-ons.
+ 
+Interactive fretboard visualization shows mapping between pitch and fingerings; users inspect alternate positions, hand movement graphs, difficulty heatmap.
+ 
+Practice tools include looping sections, tempo scaling, visual finger guides, chord flashcards, phrase drills.
+ 
+Chiptune subsystem reverse-engineers synthesizer sounds from NES / ROM music; emulator hooks capture APU register writes; reconstruct pulse wave duty cycles, triangle channels, noise generators, DPCM samples; instrument patch extraction; stage-specific sound palettes.
+ 
+ROM analysis interface shows memory maps, waveform extraction, envelope curves, pitch macros, arpeggio patterns; allows tagging instruments by stage, boss theme, motif.
+ 
+Patch library stores extracted chip instruments; waveform editors, envelope editors, macro modulation, vibrato curves; export to VST presets, internal synth engines, tracker formats.
+ 
+Algorithmic composition engine manipulates symbolic sequences; operations include motif inversion, retrograde, sequencing, reharmonization, cadence insertion, phrase expansion, variation generation; deterministic rules combined with probabilistic models.
+ 
+Natural language composer interface allows prompts such as “map this Mozart excerpt to NES stage palette” or “simplify guitar tab for beginner”; LLM parses intent, outputs structured parameter sets controlling composition modules.
+ 
+LLM layer functions as orchestration brain: translates human requests into explicit operations on sequence engine, synthesis engine, DAW controller; also produces explanations of theory, transformations, style features.
+ 
+Theory analysis subsystem computes harmonic function, roman numeral analysis, tonal tension graphs, motif recurrence networks, phrase boundaries, style similarity metrics; visual overlays on score and sequence views.
+ 
+Sequence workbench main editing interface combining piano roll, tracker grid, and notation view; tracks mapped to NES chip channels or DAW instruments; motif libraries; arrangement blocks.
+ 
+Transformation lab visualizes before/after sequence transformations; preview multiple variations; adjust randomness vs determinism; inspect transformation stack.
+ 
+Classical score interpreter converts orchestral MIDI into chip music arrangements; voice reduction algorithms map polyphonic parts to limited chip channels; convert sustained notes to arpeggios; instrument mapping engine.
+ 
+DAW integration module automatically builds REAPER sessions; creates tracks, loads plugins, assigns patches, imports MIDI clips, writes automation curves extracted from chip registers.
+ 
+Rendering subsystem exports audio, MIDI, MusicXML, tracker formats, guitar tab formats, patch packs, REAPER project files.
+ 
+Project dashboard manages ROM library, MIDI library, patch collections, stage palettes, composition history.
+ 
+System architecture built around shared project state: score state, sound state, DAW session state, analysis metadata, command history.
+ 
+Designed both as composition tool and educational environment; user sees relationships between sound design, musical structure, instrument constraints, performance ergonomics.
+ 
+Target users include composers exploring retro hardware, guitarists needing playable arrangements, programmers studying algorithmic music, and learners wanting theory explanations embedded in music workflows.
+ 
+Overall tool acts as unified environment where audio analysis, symbolic composition, synthesis reverse engineering, guitar pedagogy, and AI-assisted orchestration coexist in one interactive system.
+
+=== assistant 2026-03-10T08:48:00 ===
+Use this as the main Claude Code prompt:
+
+```text
+You are my principal software architect, technical researcher, and AI-systems designer.
+
+Your task is to research and scaffold a serious prototype for this project:
+
+AI-assisted Music Engineering Workbench
+A hybrid DAW controller + analysis engine + reverse-engineering toolkit + transcription system for musicians, programmers, and musicologists.
+
+Project goal:
+Turn audio, scores, ROM music, MIDI, and natural-language instructions into playable arrangements, guitar tabs, chiptune tracks, DAW sessions, and theory explanations.
+
+Important product philosophy:
+The LLM is NOT primarily composing music directly.
+The LLM acts as an orchestration and interpretation layer over deterministic music-analysis engines, symbolic music-processing pipelines, synthesis modules, tablature solvers, ROM-analysis tools, and DAW automation systems.
+
+Core interaction model:
+natural language → structured commands → deterministic modules → inspectable musical output
+
+I want you to help me RESEARCH and BUILD this project in a disciplined way.
+
+You must do four things:
+1. analyze the product concept and break it into subsystems
+2. research the likely technical architecture and implementation strategy
+3. scaffold a practical local-first starter repository
+4. produce a concrete phased build plan with priorities, risks, and next steps
+
+Here is the project concept in detail:
+
+[PASTE MY FULL PROJECT DESCRIPTION HERE]
+
+What I need from you:
+Do not give me generic brainstorming.
+Do not flatten this into “just build a music app.”
+Treat this as a serious multi-engine workbench with explicit subsystem boundaries.
+
+I want your output to cover these major domains:
+
+A. Product decomposition
+Break the system into major modules such as:
+- ingestion and import layer
+- MIR / audio analysis pipeline
+- transcription engine
+- symbolic music representation layer
+- guitar tablature engine
+- fretboard / ergonomics visualization
+- chiptune / ROM reverse-engineering subsystem
+- patch and synthesis library
+- algorithmic composition / transformation engine
+- theory analysis subsystem
+- DAW integration layer
+- rendering/export layer
+- project state and persistence layer
+- natural language orchestration layer
+- UI workbench layer
+
+For each module, specify:
+- responsibilities
+- inputs
+- outputs
+- internal data structures
+- dependencies
+- likely libraries / tools
+- implementation difficulty
+- MVP vs later-phase scope
+
+B. Technical research plan
+I want a practical engineering research brief for how to investigate:
+- audio transcription approaches
+- MIR libraries and DSP tooling
+- symbolic music representations
+- guitar fingering / tablature search algorithms
+- ROM / emulator-assisted APU extraction for NES music
+- DAW control and REAPER project generation
+- score / notation rendering
+- theory analysis libraries
+- tracker / chipmusic export options
+- project-state architecture for a multi-view music workbench
+- local-first LLM orchestration patterns
+
+For each research area:
+- explain what questions need answering
+- identify implementation risks
+- identify what should be prototyped first
+- distinguish deterministic engines from LLM-assisted layers
+- recommend what should be mocked initially
+
+C. Repository scaffold
+Create a starter codebase that is actually useful for early development.
+I want:
+- a proposed folder tree
+- initial Python backend scaffold
+- docs
+- schemas
+- interfaces
+- placeholder modules
+- sample configs
+- a command system for natural-language-to-structured operations
+- a shared project-state model
+- a simple toy demo pipeline
+
+The repository should be designed so I can later plug in:
+- audio analysis modules
+- transcription models
+- guitar mapping solvers
+- NES patch extraction tools
+- REAPER export
+- symbolic transformation engines
+
+D. Build plan
+Create a phased implementation plan:
+- Phase 0: research / architecture / benchmark decisions
+- Phase 1: narrow vertical slice
+- Phase 2: transcription + symbolic editing
+- Phase 3: guitar + tab workflow
+- Phase 4: chiptune / ROM workflow
+- Phase 5: DAW automation
+- Phase 6: integrated multi-view workbench
+
+For each phase:
+- goals
+- demoable milestone
+- technical prerequisites
+- risks
+- what not to build yet
+- test/evaluation strategy
+
+Architecture requirements:
+- local-first
+- modular
+- auditability over magic
+- deterministic where possible
+- explicit command schemas
+- inspectable intermediate representations
+- operation history / transform stack
+- branchable project state
+- suitable for later UI integration
+- suitable for plugin-like subsystems
+
+Preferred stack direction:
+- Python for backend orchestration, DSP integration, analysis pipelines, batch tooling
+- possible future Electron / Tauri / web frontend
+- JSON/YAML config where useful
+- SQLite or similar for project metadata
+- clear interfaces for future model integration
+
+I want you to define shared core data models for:
+- Project
+- SourceAsset
+- AudioAnalysisResult
+- SymbolicScore
+- NoteEvent
+- Phrase
+- HarmonyLabel
+- TempoMap
+- GuitarArrangement
+- FingeringOption
+- PatchDefinition
+- ChipChannelEvent
+- TheoryAnalysis
+- TransformationOperation
+- CommandRequest
+- CommandPlan
+- RenderArtifact
+- DAWSessionSpec
+
+Important:
+The system should preserve inspectable state transitions.
+Every operation should ideally create a history entry.
+I want a branchable composition / transformation graph, not just destructive edits.
+
+Natural-language layer requirements:
+Design a command orchestration system where the LLM:
+- parses user requests
+- maps them to explicit structured commands
+- asks deterministic engines to execute them
+- returns explanations and previews
+Do not make the LLM the source of truth for musical state.
+The source of truth should be structured project data.
+
+I also want you to think about:
+- how to expose “before / after” transformations
+- how to evaluate transcription quality
+- how to measure guitar-playability quality
+- how to represent chip-instrument constraints
+- how to keep symbolic music editable after each transformation
+- how to make the system educational and explorable
+
+Deliverables I want from you:
+1. project decomposition
+2. architecture overview
+3. phased build plan
+4. folder tree
+5. initial code scaffold
+6. docs/README files
+7. interfaces and schemas
+8. a toy command pipeline demo
+9. a risk register
+10. a “best first vertical slice” recommendation
+
+Repository contents should include at minimum:
+- README.md
+- docs/ARCHITECTURE.md
+- docs/IMPLEMENTATION_PLAN.md
+- docs/SUBSYSTEMS.md
+- docs/RESEARCH_QUESTIONS.md
+- docs/VERTICAL_SLICE.md
+- docs/DATA_MODELS.md
+- docs/RISKS.md
+- src/...
+- configs/...
+- examples/...
+- tests/...
+
+The starter code should include:
+- a project state model
+- a command schema
+- a command parser interface
+- a deterministic command executor interface
+- a transform history mechanism
+- a simple symbolic sequence representation
+- a toy transformation example such as:
+  “simplify this melody for beginner guitar”
+  or
+  “map this phrase to a three-channel chip texture”
+- an example CLI entrypoint
+
+Output format:
+First provide:
+A. executive architecture summary
+B. subsystem breakdown
+C. recommended first vertical slice
+D. implementation phases
+Then generate the actual repository scaffold.
+
+Code quality requirements:
+- Python 3.11+
+- type hints
+- docstrings
+- modular
+- actually runnable starter code
+- minimal but real implementations
+- no fake claims of completed external integrations
+- if something is not implemented, stub it cleanly and document it
+
+Decision priorities:
+1. clarity
+2. inspectability
+3. modularity
+4. future extensibility
+5. local usability
+
+Assume I may really build this.
+Do not stop at advice.
+Produce the scaffold.
+```
+
+Then send this immediately after it:
+
+```text
+Execution rules:
+- Create files directly.
+- Prefer a narrow but coherent starter system over an overbuilt abstraction maze.
+- Do not ask clarifying questions unless absolutely blocked.
+- If an external integration is uncertain, define the interface and mock it cleanly.
+- Keep deterministic engines separate from LLM orchestration logic.
+- Make intermediate representations explicit and readable.
+- Make the toy demo actually runnable.
+- At the end, give me:
+  1. folder tree
+  2. created files list
+  3. exact run commands
+  4. top 10 next improvements
+```
+
+If you want a version that is even better for the research phase, use this one first instead of the repo-builder prompt:
+
+```text
+You are my senior technical research lead for an AI-assisted music engineering workbench.
+
+I need a deep implementation-oriented research brief for this project:
+
+[PASTE MY FULL PROJECT DESCRIPTION HERE]
+
+Your job is to turn this concept into an actionable engineering research program.
+
+I do NOT want generic product ideation.
+I want a serious technical planning document that helps me decide what to build first, what to defer, and what technical bets are realistic.
+
+Produce:
+
+1. System decomposition
+Break the workbench into explicit technical subsystems.
+For each subsystem give:
+- purpose
+- boundary
+- inputs / outputs
+- candidate libraries, frameworks, protocols, or tooling
+- likely technical bottlenecks
+- deterministic core vs LLM-assisted layer
+- MVP scope
+- future scope
+
+2. Core representation strategy
+Recommend the internal representation strategy for:
+- audio-derived analysis results
+- symbolic note/event data
+- phrase and section structures
+- guitar arrangements and fingering candidates
+- chip synthesis patches and channel events
+- DAW session specs
+- command requests and execution plans
+- operation history / branching project graph
+
+Explain tradeoffs.
+Favor inspectable and transformable structures.
+
+3. Research questions by domain
+Create a structured research agenda for:
+- music transcription
+- MIR / DSP
+- score alignment
+- rhythm quantization
+- chord analysis
+- guitar tablature optimization
+- fretboard ergonomics modeling
+- NES / ROM audio reverse engineering
+- chip patch reconstruction
+- algorithmic transformation systems
+- theory-analysis overlays
+- DAW session generation
+- notation and tab rendering
+- UI architecture for multi-view editing
+- evaluation methodology
+
+For each question, identify:
+- what must be learned
+- what can be assumed
+- prototype needed
+- risk level
+- recommended order
+
+4. Vertical slice recommendation
+Recommend the single best first vertical slice that proves the whole product philosophy.
+This vertical slice should involve:
+- natural language command
+- structured command plan
+- deterministic execution
+- inspectable symbolic output
+- one educational explanation layer
+
+Be very concrete about why this is the best first slice.
+
+5. Benchmark and evaluation plan
+Define ways to evaluate:
+- transcription quality
+- arrangement quality
+- guitar playability
+- chip arrangement plausibility
+- theory explanation usefulness
+- command parser reliability
+
+6. Build roadmap
+Create phases with:
+- milestone
+- concrete deliverable
+- success criteria
+- dependencies
+- likely failure modes
+- fallback option
+
+7. Repo scaffold recommendation
+Recommend an initial repository layout and module boundaries for a local-first prototype in Python.
+
+8. Risk register
+List the major technical, UX, and scope risks.
+Flag especially where I may be underestimating difficulty.
+
+Important constraints:
+- The LLM is an orchestrator and explainer, not the authoritative composer.
+- Deterministic modules should do as much real work as possible.
+- Intermediate state must be inspectable.
+- The system must remain educational, not just generative.
+- The architecture should support later integration with DAWs, ROM tools, and visual interfaces.
+
+Output style:
+Write like a principal engineer preparing a design/research memo for a serious solo builder project.
+Be concrete, structured, and implementation-oriented.
+```
+
+And if you want the strongest prompt for your actual taste, I would combine them like this:
+
+1. Run the research-brief prompt first.
+2. Then say:
+
+```text
+Now convert that research memo into a concrete local-first repository scaffold with code, docs, schemas, CLI entrypoint, and a narrow runnable vertical slice.
+```
+
+Best first vertical slice for this project, in my view:
+
+Natural language command → symbolic melody import → beginner guitar tab simplification → fretboard candidate scoring → tab/text/JSON export + theory explanation.
+
+Why this slice is strong:
+- no DAW integration required yet
+- no high-risk polyphonic transcription dependency
+- no ROM reverse engineering dependency
+- proves the orchestration model
+- gives you inspectable structured data
+- gives you an educational UI story
+- later extends cleanly into chip arrangement and REAPER export
+
+If you want, I can also write the Phase 1 Claude Code prompt specifically for that vertical slice.
+
+=== assistant 2026-03-10T08:48:00 ===
+```text
+You are my senior software architect, research engineer, and technical product strategist.
+
+Your task is to help me research, scope, and begin building a project called:
+
+AI-Assisted Music Engineering Workbench
+
+This is a hybrid DAW controller + analysis engine + reverse-engineering toolkit + transcription system for musicians, programmers, and musicologists.
+
+The core philosophy is:
+LLMs do not compose music directly as a black box.
+Instead, the LLM orchestrates deterministic music engines, analysis libraries, symbolic music transformations, synthesis pipelines, and DAW automation.
+Natural language should map to structured commands, which control explicit algorithmic modules, producing inspectable musical output.
+
+The end goal is a unified environment that can turn:
+- audio
+- scores
+- ROM music
+- MIDI
+- MusicXML
+- natural language instructions
+
+into:
+- playable arrangements
+- guitar tabs
+- chiptune tracks
+- DAW sessions
+- theory explanations
+- inspectable transformations
+
+I do NOT want vague brainstorming. I want concrete research, architecture, repository planning, module design, implementation sequencing, and technical scaffolding.
+
+Project concept and capabilities:
+
+1. INPUT MODALITIES
+The system should eventually accept:
+- audio recordings
+- stems
+- YouTube links
+- ROM soundtracks
+- MIDI
+- MusicXML
+- possibly lyrics / text annotations
+
+2. AUDIO ANALYSIS / MIR PIPELINE
+The system should support:
+- onset detection
+- pitch estimation
+- polyphonic transcription
+- chord recognition
+- tempo detection
+- beat tracking
+- structure segmentation
+- lyric alignment when available
+- waveform and spectrogram inspection
+- interactive correction workflows
+
+3. SYMBOLIC REPRESENTATION LAYER
+The system should represent music as:
+- MIDI
+- MusicXML
+- internal sequence graph / event graph
+- phrases
+- motifs
+- harmony labels
+- tempo map
+- articulation
+- dynamics
+- operation history
+- branching composition graph
+
+4. GUITAR MAPPING / TAB GENERATION
+The system should support:
+- mapping symbolic notes to guitar tablature
+- multiple fingering solutions
+- tuning / capo / fretboard geometry
+- position shifts
+- ergonomics
+- chord shapes
+- difficulty scoring
+- alternate tunings
+- simplification modes
+- layout control for verse / chorus / sections
+- chord symbol display
+- lyric toggle
+- technique markings
+- practice overlays
+- interactive fretboard visualization
+
+5. CHIPTUNE / ROM / NES SUBSYSTEM
+The system should support:
+- ROM music analysis
+- emulator hooks or logs for APU register writes
+- reverse-engineering pulse / triangle / noise / DPCM behavior
+- extracting instrument patches
+- pitch macros
+- arpeggio patterns
+- envelope reconstruction
+- stage-specific sound palettes
+- waveform / macro / envelope editors
+- export to tracker formats, internal synths, DAW plugins, preset packs
+
+6. ALGORITHMIC COMPOSITION / TRANSFORMATION ENGINE
+Operations may include:
+- motif inversion
+- retrograde
+- sequencing
+- reharmonization
+- cadence insertion
+- phrase expansion
+- variation generation
+- orchestral reduction to chip channels
+- sustained-note-to-arpeggio conversion
+- rule-based and probabilistic transforms
+
+7. NATURAL LANGUAGE ORCHESTRATION LAYER
+The LLM should:
+- parse requests like “map this Mozart excerpt to an NES stage palette”
+- convert the request into structured commands / parameter objects
+- call deterministic modules
+- explain the resulting theory and transformations
+- keep full command history
+- never hide what operations occurred
+
+8. THEORY / PEDAGOGY LAYER
+The system should compute and display:
+- roman numeral analysis
+- harmonic function
+- tonal tension graphs
+- motif recurrence networks
+- phrase boundaries
+- style similarity metrics
+- transformation explanations
+- educational overlays in score / piano-roll / tracker / fretboard views
+
+9. DAW INTEGRATION
+The system should eventually:
+- build REAPER sessions automatically
+- create tracks
+- load plugins
+- assign patches
+- import MIDI clips
+- write automation curves
+- map chip parameters to synth controls
+
+10. OUTPUTS
+The system should export:
+- audio
+- MIDI
+- MusicXML
+- tracker formats
+- guitar tab formats
+- patch packs
+- REAPER project files
+- analysis reports
+
+11. PRODUCT POSITIONING
+This tool is both:
+- a composition / arrangement environment
+- an educational environment
+
+Users should be able to inspect relationships between:
+- sound design
+- musical structure
+- hardware constraints
+- performance ergonomics
+- algorithmic transformations
+
+Target users include:
+- composers exploring retro hardware aesthetics
+- guitarists needing playable arrangements
+- programmers studying algorithmic music systems
+- learners wanting theory explanations embedded in workflows
+- musicologists exploring symbolic and sonic structure
+
+What I want from you:
+
+PHASE 1 — RESEARCH AND SCOPING
+First, research and synthesize the technical landscape for building this tool.
+I want a practical engineering research brief, not marketing copy.
+
+Produce:
+1. A decomposition of the project into major subsystems
+2. For each subsystem:
+   - goals
+   - inputs / outputs
+   - dependencies
+   - likely algorithms
+   - candidate libraries / frameworks
+   - engineering risks
+   - near-term MVP scope
+3. A comparison of architecture strategies:
+   - desktop app
+   - local web app
+   - hybrid Electron/Tauri style app
+   - plugin-oriented architecture
+4. A recommendation for an MVP implementation stack
+5. A dependency map showing how the subsystems relate
+6. A list of the hardest research problems
+7. A list of deterministic modules vs LLM-appropriate tasks
+8. A recommended build order
+
+When researching libraries and tools, prioritize:
+- Python for analysis pipelines
+- TypeScript / React for UI where appropriate
+- REAPER integration possibilities
+- music21 / pretty_midi / librosa / essentia / madmom / basic_pitch / Sonic Visualiser ecosystem / music transcription tools / guitar-fingering libraries if relevant
+- emulator / ROM analysis approaches for NES or retro systems
+- symbolic music processing libraries
+- tracker / chiptune ecosystem tooling
+
+Do not invent tool capabilities. Distinguish clearly between:
+- mature tools
+- promising tools
+- speculative or custom-work-required components
+
+PHASE 2 — SYSTEM ARCHITECTURE
+After the research brief, design a modular architecture for this project.
+
+Produce:
+1. A top-level architecture diagram in text form
+2. Module boundaries
+3. Shared data model / project state model
+4. Event / command system design
+5. Internal file formats and persistence strategy
+6. How analysis metadata, symbolic state, patch data, and DAW session data should interrelate
+7. A plugin / adapter architecture for:
+   - transcription engines
+   - synthesis engines
+   - DAW backends
+   - tab generation backends
+   - analysis engines
+8. A clean natural-language-to-command pipeline:
+   - intent parsing
+   - command schema
+   - validation
+   - execution
+   - result inspection
+   - rollback / history
+
+I want strong emphasis on:
+- inspectability
+- deterministic execution
+- reproducibility
+- local-first workflows
+- modularity
+- future extensibility
+
+PHASE 3 — REPOSITORY SCAFFOLD AND BUILD PLAN
+Then turn the architecture into a concrete repo plan.
+
+Produce:
+1. Proposed monorepo or multi-repo strategy
+2. Folder tree
+3. Initial package / app breakdown
+4. Core interfaces and schemas
+5. MVP milestone plan
+6. Vertical slices I could build early
+7. What should be mocked / stubbed first
+8. Which modules deserve real implementation first
+9. Testing strategy
+10. Benchmark / evaluation plan for:
+   - transcription quality
+   - tab playability
+   - chip arrangement quality
+   - theory analysis accuracy
+   - command parsing reliability
+
+I want explicit documents planned, such as:
+- README.md
+- docs/ARCHITECTURE.md
+- docs/MVP_PLAN.md
+- docs/COMMAND_SCHEMA.md
+- docs/DATA_MODEL.md
+- docs/RESEARCH_NOTES.md
+- docs/PLUGIN_SYSTEM.md
+- docs/TESTING_STRATEGY.md
+
+PHASE 4 — INITIAL CODE SCAFFOLD
+After the planning documents, scaffold the initial codebase.
+
+Build a starter repo with:
+- a Python backend package for analysis / symbolic processing
+- a command schema layer
+- a toy natural language command interpreter stub
+- a shared project-state model
+- an operation-history model
+- one sample deterministic transformation
+- one sample analysis module
+- one sample export pathway
+- a minimal UI scaffold or CLI entry point
+- tests for the core models and command execution flow
+
+The scaffold does not need to fully implement all features.
+But it must be real, coherent, and runnable.
+
+Core architectural principle:
+Natural language should compile into explicit commands like:
+- import_audio
+- transcribe_audio
+- detect_chords
+- segment_structure
+- map_to_guitar_tab
+- reduce_to_chip_channels
+- apply_style_palette
+- generate_reaper_session
+- export_musicxml
+- explain_harmony
+
+The command system should:
+- use structured schemas
+- validate arguments
+- record full operation history
+- support preview / dry run
+- support reversible transforms where possible
+- produce inspectable outputs
+
+Important design constraints:
+- local-first
+- modular
+- transparent
+- reproducible
+- deterministic where possible
+- avoid magic black boxes
+- prefer explicit transformation pipelines
+- every transformation should leave an audit trail
+
+Deliverables format:
+First give me:
+A. subsystem research brief
+B. recommended MVP scope
+C. architecture proposal
+D. repo / folder tree
+E. milestone roadmap
+
+Then generate actual files.
+
+Execution rules:
+- Do not stop at high-level advice
+- Create concrete artifacts
+- Make reasonable engineering decisions without asking me constant clarifying questions
+- If a component is too speculative, mark it clearly and stub it
+- Prefer minimal working implementations over fake completeness
+- Document assumptions explicitly
+
+Optimization priorities:
+1. clarity
+2. debuggability
+3. modularity
+4. inspectability
+5. future extensibility
+
+At the end, also provide:
+- exact setup instructions
+- exact run commands
+- a list of top 10 next implementation tasks
+- a list of major open research questions
+```
+
+Then send this as the second message right after it:
+
+```text
+Execution mode:
+Act like a repo-building technical lead, not a brainstorming partner.
+
+Rules:
+- Create files directly
+- Prefer a small coherent MVP over an overbuilt fantasy architecture
+- Use real interfaces, real schemas, real docs
+- Stub speculative integrations cleanly
+- Mark mature vs experimental components explicitly
+- Do not ask follow-up questions unless blocked by a hard dependency
+- Keep the code runnable
+- Keep the docs decision-oriented
+- Use type hints and tests
+- Include a toy command pipeline that demonstrates:
+  natural language -> structured command -> deterministic transformation -> logged result
+
+At the end of your work, give me:
+1. folder tree
+2. created files list
+3. run commands
+4. what is real vs stubbed
+5. top 10 next improvements
+```
+
+If you want a more aggressive version focused on the research pass first, use this variant instead:
+
+```text
+I do NOT want you to start by coding.
+
+Start with a serious technical reconnaissance pass for the AI-Assisted Music Engineering Workbench.
+
+Your job is to produce a build-oriented research dossier that answers:
+- what is feasible now with existing libraries
+- what requires custom engineering
+- what is likely to be brittle
+- what should be deferred from MVP
+
+Organize the dossier by subsystem:
+- audio ingestion
+- MIR / transcription
+- symbolic music model
+- guitar tablature / fingering
+- NES / ROM / chiptune reverse engineering
+- algorithmic composition
+- theory analysis
+- DAW integration
+- NL orchestration
+- UI / visualization
+- export formats
+
+For each subsystem provide:
+- mature tools and libraries
+- recommended stack
+- alternatives
+- custom work likely required
+- risks
+- MVP recommendation
+
+Then produce:
+- an architecture recommendation
+- a monorepo plan
+- a staged build roadmap
+- 3 possible vertical slices
+- a final recommendation for the first slice to implement
+
+Only after that should you scaffold code.
+```
+
+For your specific workflow, I would use the big prompt first, then the execution-mode follow-up. It matches how you already think: research dossier, architecture, vertical slices, then a scaffold with inspectable command pipelines rather than a fake all-at-once build.
+

@@ -101,12 +101,32 @@ A new project, `C:\Dev\SYNTHBUILDER\`, that is both:
       (index, project pages, library pages all checked)
 - [x] `DECISIONS.md`
 
+## Done, second wave (2026-09-22)
+
+- [x] Deployed — live at https://t3dy.github.io/SYNTHBUILDING/, repo at
+      github.com/t3dy/SYNTHBUILDING, comprehensive README documenting every
+      project family, confirmed with explicit go-ahead.
+- [x] "Weird music" clarified directly by Ted: it's ANTIGRAVFUGIENS, not a
+      megabase-archaeology find. `WEIRDMUSIC.md` corrected accordingly.
+- [x] `ALGORITHMICMUSICTOOLS/` — new subproject, scoped from a real
+      previously-unbuilt idea found in megabase (the 2026-03-10 "AI-assisted
+      Music Engineering Workbench" conversation).
+- [x] `NARRATIVEDESIGNER/` — new subproject/role, reading `E:\pdf\narrative
+      design`'s 7 books to produce a toolkit + per-project presentation and
+      gamification suggestions for the site (research agent running).
+
 ## Not yet done
 
-- [ ] `DEPLOY_STATE.md` says "not live yet" — actual push to
-      `github.com/t3dy/SYNTHBUILDING` needs Ted's explicit go-ahead at the
-      time, not assumed from the original request naming the target.
+- [ ] `DEEPCUTS.md` — full(er) sweep of uncovered LLM conversations for
+      remote/obscure music ideas (research agent running).
+- [ ] NARRATIVEDESIGNER's suggestions are proposals only — applying any of
+      them to `db/seed_projects.json` and rebuilding/redeploying the site is
+      a separate, deliberate step not yet taken.
 - [ ] The first actual JSFX practice file (`jsfx/`) — nothing built yet on
-      the "get one audible note" front; all work so far has been research,
-      documentation, and the catalog site, which is honest and worth saying
-      plainly rather than implying practice has started.
+      SYNTHBUILDER-proper's "get one audible note" front; all work so far
+      has been research, documentation, and the catalog site/subprojects,
+      which is honest and worth saying plainly rather than implying practice
+      has started. (Separately, `SYNTHTOY` — a concurrent session's project —
+      has its own build underway; not the same thing.)
+- [ ] `REAPERBEYONDNES` / `nes-music-lab` git-history loss risk — still
+      unaddressed, Ted hasn't said whether he wants it fixed.

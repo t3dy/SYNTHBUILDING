@@ -1,34 +1,64 @@
 # WEIRDMUSIC.md — experimental / generative music made with Claude
 
-## Honest headline finding
+## Honest headline finding — corrected 2026-09-22
 
-A full read-only sweep of `C:\Dev\megabase` (1.45M prompts, 5,271 conversations,
-11 sources — see `research/megabase_music_history.md` for the query method)
-found **no generative, algorithmic, or "weird" AI-music experiments anywhere
-in Ted's prompt history.** Targeted searches for SuperCollider, Csound,
-Max/MSP, Pure Data, bytebeat, circuit-bending, modular/Eurorack, drone/noise
-composition, and Markov/cellular-automata music all came back empty — every
-apparent hit was a false positive (a speedrun-glitch thread, a physics
-article, an unrelated snake-game doc). Per this workspace's own "honesty
-before completion" principle: **this is not a rediscovered thread. If
-SYNTHBUILDER builds something here, it's new territory, not a resumed
-project.** Worth flagging directly to Ted rather than papering over — the
-original ask assumed a "when I experimented with using claude to create weird
-experimental music" project exists; the archaeology says it doesn't, at least
-not under any of these search terms.
+A first-pass, keyword-LIKE-only sweep of `C:\Dev\megabase` (see
+`research/megabase_music_history.md`) found **no generative, algorithmic, or
+"weird" AI-music experiments anywhere in Ted's prompt history**, and this
+file originally repeated that as a flat headline claim. A second, deeper pass
+(`RESEARCHER/MEGABASEMUSICCATALOG.md`, which read 71 full conversation
+transcripts rather than opening-prompt snippets) found that claim **was not
+quite right**: a 2024-09-23 conversation ("Occult Systems and Art") contains
+a real, if never-coded, **"Procedural Music Composer" idea explicitly modeled
+on John Cage's chance-operation compositions** (*Williams Mix*, *HPSCHD*) —
+an app generating music from chance operations/I-Ching-driven decision logic,
+plus a separate real-time astrological-transit-to-music-generation idea in
+the same thread. It's thin (one paragraph, spec-level, never revisited,
+never coded) and the earlier pass missed it because it's filed under
+"occult app ideas," not a music-specific search term — but it is a real hit,
+not a false positive. **Corrected finding: generative/algorithmic music
+isn't wholly absent from Ted's prompt history, but it is genuinely thin —
+one unelaborated idea, not a thread with any real development behind it.**
+If SYNTHBUILDER builds something here, it's still close to new territory,
+just not quite the clean absence originally reported. Targeted searches for
+SuperCollider, Csound, Max/MSP, Pure Data, bytebeat, circuit-bending,
+modular/Eurorack, and drone/noise composition still came back empty in both
+passes — the Cage-inspired idea above is the one exception, not evidence of
+a broader unexplored vein.
 
-## What's actually closest to "weird" in the real project corpus
+**Lesson for this file and anything like it going forward:** a keyword-LIKE
+pass that only reads a conversation's opening messages will miss ideas filed
+under an unrelated title or reached by mid-thread topic drift — see
+`MEGABASEMUSICCATALOG.md`'s own methodology section for how much noise
+(3,451 → 71 real conversations) that gap produces in both directions (false
+positives from generic English words, and false negatives from real content
+under an unrelated title).
+
+## What "weird experimental Claude music" actually refers to (confirmed by Ted, 2026-09-22)
 
 **ANTIGRAVFUGIENS** (`C:\Dev\EMBLEMSIN3D\ANTIGRAVFUGIENS`, see `ATALANTA.md`)
-is the closest real artifact to what "weird experimental music" would look
-like: ten alchemically-named studio effects (mercury vibrato, gated
-black-fire envelopes, rubedo phasing, ouroboric feedback, projection glitch)
-layered onto the Atalanta Fugiens chiptune fugues, plus six genuinely odd
+**is** the project Ted meant — confirmed directly, not inferred. Ten
+alchemically-named studio effects (mercury vibrato, gated black-fire
+envelopes, rubedo phasing, ouroboric feedback, projection glitch) layered
+onto the Atalanta Fugiens chiptune fugues, plus six genuinely odd
 interactive audio toys — the Levitating Athanor, Ouroboric Dub, Dewpoint
 Runner, Sword/Egg Breakbeat, Rose-Garden Lockstep, and Sublimation Pinball.
-It's real, it's built, it's just unintegrated and undeployed. If the goal is
-"showcase the weird stuff," this is the strongest existing candidate — not a
-new build.
+It's real and built; it's just unintegrated (not linked from the main
+EMBLEMSIN3D nav) and undeployed. That means the megabase-sweep null result
+above was correctly scoped — this was never going to show up in a *prompt
+archive* search, because it's an artifact built directly in an agentic
+coding session, not something discussed and planned across chat turns first.
+
+## ALGORITHMICMUSICTOOLS — a second, distinct idea Ted also asked about
+
+Separately, Ted described wanting "software [to] give the user ability to
+play around with automatically composing examples to learn music theory by
+playing with all the structures described by music theory" — this is a
+different idea from ANTIGRAVFUGIENS, and it **did** turn up in the megabase
+sweep: a single, fully-spec'd 2026-03-10 ChatGPT conversation ("Karpathy
+AutoResearch Overview") for an "AI-assisted Music Engineering Workbench,"
+never built. Now scoped as its own project:
+[`../ALGORITHMICMUSICTOOLS/`](../ALGORITHMICMUSICTOOLS/CLAUDE.md).
 
 ## The one genuinely novel unbuilt idea worth surfacing
 

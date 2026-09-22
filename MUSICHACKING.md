@@ -119,3 +119,16 @@ Every project catalog table above is now current as of this session's full
 survey (megabase + PDF library + direct file reads across 4 parallel research
 passes). Re-run a pass over this file if a future session surfaces a project
 not listed here.
+
+## New subprojects under SYNTHBUILDER itself (2026-09-22)
+
+Not yet in the site catalog (`db/seed_projects.json`) — these are
+SYNTHBUILDER-internal subprojects, not entries in the deployed music-hacking
+portal. Listed here so the orchestrator map stays complete.
+
+| Subproject | Path | Status | What it is |
+|---|---|---|---|
+| SYNTHTOY | `SYNTHTOY/` | ACTIVE, in progress (a concurrent session's build) | 13-family Web Audio prototype lab teaching synthesis via occult-diagram puzzle interfaces. See `SYNTHTOY/CLAUDE.md`. |
+| ALGORITHMICMUSICTOOLS | `ALGORITHMICMUSICTOOLS/` | Scoped, not yet built | Theory-education algorithmic-composition tool, from a real unbuilt 2026-03-10 idea. See `ALGORITHMICMUSICTOOLS/CLAUDE.md`. |
+| NARRATIVEDESIGNER | `NARRATIVEDESIGNER/` | Proposals delivered, not yet applied | Narrative-design toolkit (~20 frameworks) + per-project site-presentation/gamification suggestions for all 15 projects, proposal-only. See `NARRATIVEDESIGNER/TOOLKIT.md` and `PROJECT_NARRATIVE_SUGGESTIONS.md`. |
+| RESEARCHER (Scarlatti Jones) | `RESEARCHER/` | Active, ongoing | General music/game-design idea-archaeology role; `MUSIC_GAME_IDEA_MAP.md` maps ~230 project folders' worth of related thinking. |
