@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bach Studies (scholarship, not music) — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>Bach Studies (scholarship, not music)</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#c25e5e">STUB</span>
+    &nbsp;<code>C:\Dev\BachStudies</code>&nbsp;&middot;&nbsp;SQLite, Python (PyMuPDF), vanilla static HTML, GitHub Actions (unused)
+  </div>
+  
+</div>
+<div class="page-body"><p>BachStudies follows the same DH-framework pattern as several of Ted&#x27;s scholarly portals: a corpus/ of 13 Bach-scholarship books (Wolff, Stauffer, Leaver, Demeyere&#x27;s Art of Fugue, Rathey, Forkel, and others) converted from PDF to Markdown, feeding a SQLite database and a static-HTML build. Its CLAUDE.md states clean system invariants (data flows one direction, source to DB to HTML; the DB is the only source of truth) and its own roadmap marks several phases &#x27;READY,&#x27; but on inspection those phases ran only shallowly.</p><p>The database currently holds 12 primary entities, 12 scholars, 12 bibliography entries, 12 dictionary terms (Fugue, Cantata, Chorale, Counterpoint, Basso continuo, Passion, Thomaskirche, Leipzig, Cothen, Weimar, Bach Revival, Baroque -- all genuinely reviewed and high-confidence), and zero essays. But the committed site/dictionary/ folder contains 13,815 HTML pages, of which all but those 12 are essentially empty stubs left over from an indiscriminate corpus-extraction pass whose output no longer matches the reseeded 12-row database -- a stale, unpruned build sitting in git.</p><p>BACHPEDAGOGY.md proposes an ambitious four-tier music-theory curriculum with short public-domain-MIDI audio snippets as illustrative clips -- the only place audio is mentioned anywhere in this project -- but it is entirely unbuilt: no theory_lessons table, no MIDI rendering code, nothing beyond the planning document. The repo has no git remote configured at all, so its GitHub Actions Pages-deploy workflow, though well-formed, has never actually run.</p><p>This is a text and research project with no music-composition or audio-production component. It should not be filed alongside the actual music-hacking projects in this catalog, despite sharing Bach&#x27;s name with Chipped On Bach.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>Prune the ~13,793 junk dictionary stub pages before the site is presentable; the underlying scholarship (12 solid entries) is fine as far as it goes but the roadmap&#x27;s Phase 3 (AI enrichment) and Phase 7 (human review) were never started.</div>
+</body></html>

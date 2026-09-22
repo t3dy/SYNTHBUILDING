@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FUGUEJUKEBOX — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>FUGUEJUKEBOX</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    &nbsp;<code>C:\Dev\FUGUEJUKEBOX</code>&nbsp;&middot;&nbsp;Python (scipy synthesis/effects, ffmpeg encoding); Next.js 14 / React 18 / TypeScript (browsing site, broken)
+  </div>
+  
+</div>
+<div class="page-body"><p>FUGUEJUKEBOX transforms the 50 emblem fugues of Maier&#x27;s Atalanta Fugiens into 500 chiptune MP3s: 50 emblems times 10 variations (3 harmonic elaborations, 3 scale-run/improvisation variants, 4 digital-effect treatments -- reverb, vibrato, echo, chorus), synthesized as square waves via a Python/scipy pipeline. Verified directly on disk: exactly 500 MP3s and 500 companion WAVs exist, matching the project&#x27;s own completion reports -- this half of the project is genuinely done.</p><p>The website half is where it stalls. Two divergent folders exist: FUGUEJUKEBOX-website (the original working Next.js copy, linked to a Vercel project but never under its own git control) and FugueJukebox-repo (a separate git-tracked copy pushed to github.com/t3dy/FugueJukebox, whose own DEPLOYMENT.md explicitly excludes all 500 MP3s from the push due to GitHub file-size limits). The audio path baked into the React component is a filesystem-relative path that never resolves under real HTTP serving. The claimed live URL, https://fuguejukebox.vercel.app, was checked directly and returns HTTP 404 -- the site is dead, contrary to the README&#x27;s &#x27;LIVE ON THE WEB!&#x27; claim. A duplicate ~140MB copy of all 500 MP3s also sits in FUGUEJUKEBOX/music/emblems/, serving no purpose.</p><p>Per workspace hosting policy this project has no business on Vercel at all -- it&#x27;s fully static.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>Three-step fix: decide the canonical MP3 copy (delete the duplicate), get audio into a servable path (public/ folder or Git LFS), redeploy static to GitHub Pages instead of Vercel.</div>
+</body></html>

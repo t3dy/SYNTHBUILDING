@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chipped On Bach — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>Chipped On Bach</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    &nbsp;<code>C:\Dev\NSFRIPPER\scripts\bach_nes_mashup.py</code>&nbsp;&middot;&nbsp;Python (numpy, mido), REAPER JSFX (ReapNES synth family), ffmpeg
+  </div>
+  
+</div>
+<div class="page-body"><p>Chipped On Bach is not a separate synthesis engine -- it&#x27;s NSFRIPPER&#x27;s own extraction/synth pipeline pointed at classical MIDI instead of extracted game MIDI. bach_nes_mashup.py, bach_render_mashup.py, and build_bach_preview.py pair Bach MIDI files with NES instrument presets mined from real game soundtracks, each stage contributing a distinct pulse-duty-cycle character, and render the combination through the same ReapNES JSFX synth family used everywhere else in the project.</p><p>Two finished video artifacts sit at the C:\Dev root: Chipped_On_Bach_Preview.mp4 (70.6MB, 39 tracks, 1:12:36 total) and Chipped_on_Bach_Preview_less_glitchy.mp4 (39MB, a curated 4-track, 7:28 re-cut). Both carry .txt sidecars drafted as YouTube descriptions, confirming synthesis runs through the real NES Audio Processing Unit emulation via ReapNES JSFX, not a mockup. A BACH_MAP dictionary in the preview builder expands short filenames to full catalog titles with BWV numbers, ready to reuse if these are ever actually published.</p><p>NSFRIPPER&#x27;s own wishlist (state/wishes.json, item WISH16) flags that roughly 117 Bach-fugue by game-palette REAPER projects were generated but most were never rendered to WAV, likely interrupted by a crash -- still open, marked low priority. This is genuinely low-effort follow-on work: the expensive generation step already ran; only the render pass is incomplete.</p><p>A path worth checking before reusing these scripts: build_bach_preview.py reads source WAVs from C:\Dev\NESMusicStudio\output\bach_mashups, the pre-rename project path -- and NESMusicStudio now also exists as a separate, currently active folder, so this hardcoded path should be re-verified rather than trusted blindly.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>Re-run the render pass on the ~117 generated-but-unrendered Bach x game-palette projects. Verify the NESMusicStudio path is still correct before doing so.</div>
+</body></html>

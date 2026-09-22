@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emblems in 3D -- 8-bit Fugue Engine — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>Emblems in 3D -- 8-bit Fugue Engine</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    &nbsp;<code>C:\Dev\EMBLEMSIN3D</code>&nbsp;&middot;&nbsp;Vanilla JS + Web Audio API, three.js 0.160
+  </div>
+  <p><a href="https://t3dy.github.io/emblems-in-3d/" target="_blank" rel="noopener">&#9654; live site</a></p>
+</div>
+<div class="page-body"><p>EMBLEMSIN3D is a large three.js project turning Michael Maier&#x27;s Atalanta Fugiens (1617, 51 emblems) into a walkable 3D world rendered in the book&#x27;s own woodcut style. Its music slice, chiptune.js, is a small Web Audio engine loading pre-transcribed note data per emblem (from EmblemRoguelike&#x27;s fugues.json: bpm, beats, and per-voice note arrays) and rendering it through an NES-APU emulation -- two pulse-wave channels via PeriodicWave at 50%/25% duty plus a triangle bass, each with per-note ADSR. This is transcribed playback in synthesized 8-bit voices, not generative composition -- the notes are Maier and Merian&#x27;s actual counterpoint. gamesynths.js supplies ten &#x27;game palettes&#x27; mined from &#x27;nsfripper&#x27;s CODEXSYNTH bench&#x27; (Mario, Zelda, Metroid, Castlevania, Contra, Final Fantasy, Kirby, Bubble Bobble, Bionic Commando, Wizards &amp; Warriors), retuning duty cycle, ADSR, vibrato, and gain to evoke each game&#x27;s voice; every fugue page cycles through all ten as it loops.</p><p>Three surfaces use this engine: the Fugue Jukebox (grid of 50 fugues), per-emblem fugue pages (10 cycling versions plus a scholarship accordion pulling Claudiens-DB commentary), and the Great Work cinematic tour (plays each emblem&#x27;s actual fugue as the camera arrives). As of a later phase the same engine was vendored directly into the walkable world, so standing at a station plays that emblem&#x27;s canon, off by default behind a mute toggle -- this part is confirmed live.</p><p>The standalone jukebox/fugue-page experience never got ported to the GitHub Pages build; it depends on absolute C:\Dev-rooted paths to sibling-project image assets that only resolve on a local dev server, and the project&#x27;s own deploy-state notes flag this as intentional, not an oversight.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>Local-only status for the standalone jukebox is by design (absolute-path dependency), not a bug to fix casually -- vendoring those assets for Pages would be real work. Folding ANTIGRAVFUGIENS&#x27;s studio-effect variants into the main jukebox is the more natural next step and hasn&#x27;t been started.</div>
+</body></html>

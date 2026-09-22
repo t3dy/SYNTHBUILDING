@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlitchMario — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>GlitchMario</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    &nbsp;<code>C:\Dev\GlitchMario</code>&nbsp;&middot;&nbsp;Vanilla HTML/CSS/JS (site); Mesen 2, Python (mido, py65), REAPER + JSFX (pipeline it documents)
+  </div>
+  <p><a href="https://t3dy.github.io/GlitchMario/" target="_blank" rel="noopener">&#9654; live site</a></p>
+</div>
+<div class="page-body"><p>GlitchMario documents an NES-audio reverse-engineering effort as a narrative artifact rather than shipping a tool. The pipeline it describes: NES hardware APU -&gt; Mesen 2 emulator trace capture (30,362 register changes across 21 parameters, 9,496 frames) -&gt; mesen_to_midi.py (period-change detection, CC11/CC12 automation, producing 796 notes and 7,064 CC events) -&gt; generate_project.py (a REAPER project with inline MIDI, 4 tracks) -&gt; ReapNES_Console.jsfx (NES APU emulation inside REAPER: pulse, triangle, noise/LFSR, drum table) -&gt; ear-verification, reaching &#x27;80% fidelity and climbing&#x27; by day five.</p><p>The site itself is a vanilla-JS single-page app: a 67.5KB data.json holds a project header plus an events array of 100 timeline entries (day/phase/title/summary/category/docs/terms), rendered by app.js into filterable timeline cards by category and by day, alongside a hardcoded 30-entry NES-history dataset (Famicom 1983 through GlitchMario 2026) and a 70+ term technical glossary.</p><p>Its greatest-hits blunder table is worth reading on its own: JSFX&#x27;s &#x27;^&#x27; meaning exponentiation not XOR made the noise channel produce alien transmissions; a DC-offset formula that only worked at volume 15 caused drums to phase-invert mid-decay; a naive track-to-channel mapping turned Vampire Killer into a wall of sound; drums with no envelope sounded like popcorn; a synth ignoring CC11/CC12 silently replaced ground-truth envelopes with generic ADSR; a mixer formula error made pulse amplitude 15x too quiet while drums literally subtracted from the mix.</p><p>Git history: two commits, both dated 2026-04-01, remote at github.com/t3dy/GlitchMario. The live Pages URL was fetched directly and returns the expected page content -- a real, working, deployed artifact, not just a claim. The README is candid about scope: it documents research and failure, not a finished instrument. There is no ongoing &#x27;next phase&#x27; implied anywhere in the file structure.</p></div>
+
+</body></html>
