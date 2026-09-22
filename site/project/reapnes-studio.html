@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReapNES Studio (ReapNESClod) — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>ReapNES Studio (ReapNESClod)</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#8a8a8a">ARCHIVED</span>
+    &nbsp;<code>C:\Dev\ReapNES-Studio</code>&nbsp;&middot;&nbsp;REAPER JSFX, C++/JUCE + CMake (VST3, Windows/MSVC), Python tooling, NES-MDB preset corpus
+  </div>
+  
+</div>
+<div class="page-body"><p>ReapNES Studio set out to be a REAPER-based NES music production environment: pick a game&#x27;s instrument palette, generate a ready-to-open REAPER project, play it live off a MIDI keyboard or import MIDI onto NES-timbre instruments. It shipped two parallel synth implementations -- a JSFX plugin and a JUCE-based VST3 (CMake, generated MSVC solution files, never fully wired up) -- plus a Python project generator and a 54,000+ instrument preset corpus extracted from the NES Music Database (reference/training data, not original work).</p><p>Its docs/BLOOPERS.md (14 documented blunders) and docs/SUCCESSANDFAIL.md chronicle a difficult early arc: JSFX plugins silently rejected as instruments over a missing in_pin:none declaration and a stray &#x27;//tags:&#x27; comment prefix; a Unicode character causing a silent compile failure; REAPER caching a broken compile until the file was renamed; &#x27;^&#x27; meaning POWER not XOR, breaking the LFSR noise feedback bit; and, most seriously, generated .rpp projects that could not get MIDI keyboard input routed to the JSFX instrument at all, because JSFX lacks the VST &#x27;instrument&#x27; flag REAPER checks for live routing. A hand-built VST3-based project worked for keyboard input but couldn&#x27;t be generated programmatically, because REAPER&#x27;s RPP format for VST3 requires an opaque base64 plugin-state blob only REAPER itself can produce.</p><p>HANDOVER_KEYBOARD_AND_SYNTH.md documents the eventual fix strategy for the JSFX keyboard problem (diff a REAPER-saved working .rpp against a generated broken one; add a &#x27;Keyboard Mode&#x27; toggle so the plugin ignores the MIDI channel filter for live input) plus explicit anti-patterns to avoid repeating. The final commit&#x27;s message -- &#x27;fix MIDI keyboard routing&#x27; -- indicates this was resolved before folding into NSFRIPPER, whose ReapNES_Console.jsfx inherits the working design.</p><p>NEXTPHASES.md describes an intended follow-on (Phase A: expose every NES timbre parameter as labeled knobs; Phase B: comparative timbre study; Phase C: educational website; Phase D: animated-knob YouTube pipeline; Phase E: drum tracker) with no commits recorded here -- any continuation happened inside NSFRIPPER instead, where the Bach-mashup and console synth work now live.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>The VST3/JUCE path (working keyboard input, un-scriptable RPP generation) was never resolved. SYNTHPROBLEM.md&#x27;s recommended fix -- save one project manually with the VST3 loaded, extract that block as a template -- was never executed. This is the best-scoped open technical problem in the whole family.</div>
+</body></html>

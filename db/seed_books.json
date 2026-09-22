@@ -1,0 +1,581 @@
+[
+  {
+    "slug": "how-to-make-a-noise-simon-cann",
+    "title": "How To Make A Noise: A Comprehensive Guide to Synthesizer Programming",
+    "author": "Simon Cann",
+    "path": "E:\\pdf\\music\\Cann Simon How to make a noise _ a comprehensive guide to synthesizer programming Coombe Hill.pdf",
+    "card_summary": "Simon Cann's hands-on synth-programming manual teaches subtractive, FM, wave-sequencing, and additive synthesis by building real patches (bass, pads, leads, drums) on six software synths, walking through oscillators, envelopes, filters, modulation, and FX one concept at a time.",
+    "page_summary": "How To Make A Noise is a practitioner's synthesis primer built entirely around making usable sounds rather than abstract signal theory. Cann (a working sound designer) structures the book as a sequence of twelve chapters plus four 'refill' supplements: Getting Started, Envelopes, Filters, Sound Sources, Modulation (concept, then in-practice), Frequency Modulation Synthesis (with a Surge-specific supplement), Wave-Sequencing, Additive Synthesis, FX, Putting It All Together, and Building Patches, followed by refills on arpeggiators/step sequencers, 'pushing the sonic envelope,' and synthetic drum/percussion design. Each concept — ADSR vs. DAHDSR vs. DASSDSR envelope shapes, low-pass/high-pass/band-pass/notch/formant/comb filter types, basic wave shapes (sine, sawtooth, square/pulse, triangle, noise) and their combination via doubling, layering, and hard sync — is explained and then immediately demonstrated as an audible patch on one of six late-2000s/2010s software synths: Camel Audio Cameleon 5000, Big Tick Rhino, Vember Audio Surge, reFX Vanguard, Wusik Wusikstation, and Cakewalk Z3TA+. The FM chapter is unusually thorough for a 'basics' book: it covers operator/carrier-modulator relationships, 1:1 vs. varying ratios, parallel vs. cascading operators, and building a first FM patch from scratch, essentially teaching the same conceptual territory as Yamaha DX7-style synthesis without requiring DX7 hardware. The additive chapter honestly flags 'Warning!! Mathematics Ahead' before walking through building square, sawtooth, and triangle waves from summed sine partials — a direct, worked illustration of Fourier synthesis. The book is written for musicians and producers who own a software synth and want to move past factory presets to sound design they understand, not for DSP engineers; there is no code, no math beyond arithmetic ratios, and no discussion of how any of this is implemented in a signal-processing sense. It is squarely a 'what knob does what, and why does it sound like that' book, organized so a reader can skip to the synthesis method they need (subtractive vs. FM vs. additive vs. wave-sequencing) independently. For SYNTHBUILDER, this is high-value conceptual scaffolding rather than implementation help: it will not show how to write a JSFX oscillator or filter, but it gives a working vocabulary and mental model — what an ADSR stage should sound like, what a resonant low-pass sweep should sound like, how FM operator ratios generate inharmonic vs. harmonic spectra — that is exactly what's needed to know whether a hand-written JSFX synth 'sounds right' before worrying about whether it is DSP-correct. It is a good source of target patches (basses, leads, pads, plucks, synthetic kick/snare/hats) to try to reproduce once a JSFX synth has its first audible note, per the project's own 'one audible note before building anything else' rule.",
+    "relevance_to_synthbuilder": "High — the clearest general synthesis-concepts primer in the library (oscillators/envelopes/filters/FM/additive/modulation), though it teaches ears-and-patches, not DSP code or JSFX specifics.",
+    "tags": [
+      "synthesis",
+      "sound-design",
+      "fm-synthesis",
+      "additive-synthesis",
+      "filters",
+      "envelopes",
+      "modulation",
+      "practical"
+    ]
+  },
+  {
+    "slug": "art-of-fugue-ewald-demeyere",
+    "title": "Johann Sebastian Bach's Art of Fugue: Performance Practice Based on German Eighteenth-Century Theory",
+    "author": "Ewald Demeyere",
+    "path": "E:\\pdf\\music\\Bach\\Ewald Demeyere - Johann Sebastian Bach’s Art of Fugue _ Performance Practice Based on German Eighteenth-Century Theory (2017, Leuven University Press) - libgen.li.pdf",
+    "card_summary": "Demeyere reconstructs how Bach's late, abstract keyboard-independent counterpoint cycle Die Kunst der Fuge should actually sound, grounding tempo, articulation, ornamentation and instrumentation choices in period German theoretical treatises rather than modern performance convention.",
+    "page_summary": "This is a musicological monograph (Leuven University Press, 2017) arguing that the performance of Bach's Art of Fugue (BWV 1080) — a set of fourteen fugues and four canons on a single subject, left without specified instrumentation and unfinished at Bach's death — has been distorted by two centuries of Romantic and modernist assumptions about what 'abstract' or 'purely intellectual' contrapuntal music should sound like. Demeyere's method is to reconstruct period German performance practice from eighteenth-century treatises (Quantz, C.P.E. Bach, Türk, Kirnberger, and others in Bach's own circle) and apply those norms — tempo relationships between movements, articulation of subject entries, appropriate ornamentation, notes inégales-adjacent rhythmic inflection, and the vexed question of whether the work was conceived for a single keyboard, two keyboards, or an unspecified consort — directly to the Art of Fugue's individual movements. Chapters proceed roughly through the theoretical framework (rhetoric, affect, and fugal theory in the German tradition) and then through practice-oriented analysis of specific contrapuncti, including the famously unfinished final quadruple fugue (Contrapunctus XIV) and the disputed status of the 'mirror fugues.' The book is written for advanced keyboardists, harpsichordists/organists, conductors, and musicologists already fluent in species counterpoint and historical performance practice (HIP) debates — it assumes score-reading fluency and familiarity with fugal terminology (subject, answer, countersubject, stretto, augmentation, inversion) throughout, and is not an introduction to Bach or to fugue as a form. For SYNTHBUILDER specifically, this book is essentially irrelevant to synthesis, DSP, or plugin building — it is a historical-performance-practice study of a specific keyboard repertoire, not music theory in the compositional-craft sense and not remotely about sound technology. Its value to Ted's broader practice is as deep Bach/counterpoint background (useful if a future SYNTHBUILDER or FUGUEJUKEBOX-style project wants to generate or arrange fugal material with historically informed phrasing) rather than as a synthesis or chiptune-programming resource. It belongs on the showcase page as music-history/Bach-scholarship depth, not as a technical manual.",
+    "relevance_to_synthbuilder": "Low — a historical-performance-practice study of Bach's counterpoint, not synthesis or DSP; useful only as deep Bach/fugue background for future composition-generation work.",
+    "tags": [
+      "bach",
+      "counterpoint",
+      "fugue",
+      "performance-practice",
+      "music-theory",
+      "musicology"
+    ]
+  },
+  {
+    "slug": "js-bach-in-tablature-jake-pincus",
+    "title": "J. S. Bach in Tablature, Volume 1: Beginning to Intermediate Pieces in Standard Tab and Notation for Guitar",
+    "author": "Johann Sebastian Bach / arr. Jake Pincus",
+    "path": "E:\\pdf\\music\\Bach\\Johann Sebastian Bach, Jake Pincus - J. S. Bach in Tablature_ Volume 1_ Beginning to Intermediate Pieces in Standard Tab and Notation for Guitar (1997, Mel Bay Publications) - libgen.li.pdf",
+    "card_summary": "A Mel Bay 'Editiones Classicae' guitar-tablature songbook: beginning-to-intermediate Bach pieces arranged for classical guitar in both standard notation and tab, arranged/edited by Jake Pincus.",
+    "page_summary": "This is a scanned, image-only sheet-music collection rather than an expository text: 42 pages of classical-guitar arrangements of J.S. Bach pieces, presented in parallel standard notation and guitar tablature, published by Mel Bay under its 'Editiones Classicae' classical-guitar imprint in 1992/1997. The cover identifies it as Volume 1: Beginning to Intermediate Pieces, aimed at guitarists who read tab more comfortably than staff notation and want to work through Bach's keyboard/lute-adjacent repertoire (preludes, dances, and short pieces typical of these Mel Bay Bach-for-guitar volumes) at an approachable technical level. There is no prose introduction, theoretical apparatus, or historical commentary beyond the copyright page — it is purely a performance edition: pieces, fingerings, and tab staves. As such it functions as a practical instrument-method book rather than a book 'about' music in the analytical sense; its entire content is the notated/tabbed pieces themselves, meant to be played rather than read. For SYNTHBUILDER, this has essentially no direct use — it teaches guitar fingering and standard notation/tab literacy, not synthesis, DSP, or sound design. Its only tangential connection to the project is that Bach's contrapuntal keyboard lines are a common source of MIDI test material for synth/chiptune projects (clean, well-known melodic and harmonic lines useful for testing envelope and filter behavior across a range), so this could supply simple public-domain-adjacent melodic material to feed into a JSFX synth for ear-testing, but that is a stretch use rather than the book's purpose. It belongs on the music-library showcase page as evidence of Ted's Bach interest and guitar-arrangement holdings, not as a technical resource.",
+    "relevance_to_synthbuilder": "Low — a guitar performance edition (tab + notation) with no theoretical or technical content; only tangential value as a source of simple Bach melodic lines for test material.",
+    "tags": [
+      "bach",
+      "guitar",
+      "tablature",
+      "sheet-music"
+    ]
+  },
+  {
+    "slug": "bachs-st-john-passion-andreas-loewe",
+    "title": "Johann Sebastian Bach's St John Passion (BWV 245): A Theological Commentary",
+    "author": "Andreas Loewe",
+    "path": "E:\\pdf\\music\\Bach\\Johann Sebastian Bach’s St John Passion (BWV 245)_ A Theological Commentary __ {Loewe, Andreas}(2014 April 03, BRILL)[10.1163_9789004272361]{55664691} libgen.li.pdf",
+    "card_summary": "Andreas Loewe's Brill monograph reads Bach's St John Passion movement by movement as Lutheran theology set to music, tracing how the libretto's chorales, arias and turba choruses embody eighteenth-century Leipzig devotional and doctrinal concerns.",
+    "page_summary": "This is a scholarly theological-musicological commentary on one of Bach's two surviving Passion settings, the St John Passion (BWV 245, first performed Good Friday 1724 in Leipzig). Loewe's central argument is that the Passion cannot be fully understood as 'just' a musical masterpiece: its text (assembled from the Gospel of John, chorale verses, and newly written poetic meditations, likely with Bach's own theological input) is a carefully constructed piece of Lutheran devotional theology, and the music's rhetorical and affective choices — where a chorale interrupts the narrative, how the turba (crowd) choruses are harmonized, which arias comment on which narrative moments — are themselves theological arguments. The book proceeds through the work's structure, contextualizing Bach's Leipzig cantorate, the liturgical role of the Good Friday Vespers service the Passion was written for, the textual sources and revisions Bach made across several performing versions, and then close readings of individual movements that connect musical gesture (key choice, instrumentation, motivic word-painting) to specific points of Lutheran Christology and soteriology. It is written for musicologists, theologians, and advanced choral conductors/performers who already know the piece and want its doctrinal substructure explained, not as a general-audience introduction to the Passion or to Bach. For SYNTHBUILDER this book has no direct technical relevance — it is theology and text-music analysis, not synthesis, DSP, or sound design, and its subject (a large-scale choral/orchestral sacred work) is about as far from NES-chip-accurate chiptune programming as the library gets. Its place on the showcase page is purely as evidence of the depth of Ted's Bach collection alongside the more practically synth-relevant titles, useful background if a future project ever wanted to arrange or chiptune-ify Bach vocal material with attention to its original structure and meaning.",
+    "relevance_to_synthbuilder": "Low — theological/textual analysis of a choral-orchestral sacred work; no synthesis or DSP content, general Bach-scholarship background only.",
+    "tags": [
+      "bach",
+      "theology",
+      "choral",
+      "music-history",
+      "musicology"
+    ]
+  },
+  {
+    "slug": "routledge-research-companion-bach-robin-leaver",
+    "title": "The Routledge Research Companion to Johann Sebastian Bach",
+    "author": "Robin A. Leaver (ed.)",
+    "path": "E:\\pdf\\music\\Bach\\Robin A. Leaver (ed.) - The Routledge research companion to Johann Sebastian Bach (2013, Ashgate) - libgen.li.pdf",
+    "card_summary": "An edited scholarly survey aimed at graduate-level Bach researchers, with specialist essays assessing the past 30-50 years of Bach research (chronology, sources, performance practice, authorship debates) and flagging open questions for future study.",
+    "page_summary": "Edited by Robin A. Leaver, this Routledge/Ashgate volume (2013) is explicitly pitched at 'the next level' of Bach research — masters and doctoral students and established scholars — rather than as a general reference or introductory companion (the front matter distinguishes it directly from lexicon-style works like the Oxford Composer Companion: J.S. Bach). Each contributor is assigned three tasks within a specific subject area: (1) summarize the significant and controversial research of the past thirty to fifty years — examples cited include the debate over Friedrich Smend's Neue Bach-Ausgabe edition of the B minor Mass, Friedrich Blume's conclusions about Bach's religious commitment following the 'new chronology' of the cantatas (established via paper and handwriting studies), Joshua Rifkin's controversial one-voice-per-part reconstruction of Bach's vocal forces, and the rediscovery of the Berlin Sing-Akademie manuscript collection in Kiev after the Cold War; (2) critically analyze current research opening new methodological ground, such as Martin Jarvis's contested forensic-handwriting claim that Anna Magdalena Bach composed the cello suites, and ongoing work tracing Bach's use of the Lutheran chorale tradition; and (3) identify areas still needing investigation. The result is a state-of-the-field survey organized by topic (chronology and sources, theology and text, instrumental and vocal genres, reception and performance practice) rather than a biography or a listener's guide, deliberately written to orient a researcher entering Bach studies toward the live scholarly controversies rather than settled facts. For SYNTHBUILDER this is not a technical resource at all — no synthesis, DSP, or sound-programming content — but as general music-scholarship background it is the single best-organized map in the library of what current Bach research actually argues about (chronology, authorship, performance practice), which is useful context if Ted's other Bach-adjacent projects (e.g. CHIPPEDONBACH, referenced in SYNTHBUILDER's own docs) ever need to justify a source-critical choice about which version of a Bach piece to arrange or chiptune.",
+    "relevance_to_synthbuilder": "Low — a graduate-level state-of-the-field survey of Bach musicology and source criticism, with no synthesis/DSP content; background only for any Bach-arrangement work.",
+    "tags": [
+      "bach",
+      "musicology",
+      "research-companion",
+      "academic",
+      "source-criticism"
+    ]
+  },
+  {
+    "slug": "tools-of-the-trade-daw-usage-darko-etinger",
+    "title": "Tools of the Trade: Digital Audio Workstation Usage Antecedents",
+    "author": "Darko Etinger",
+    "path": "E:\\pdf\\music\\Bach\\[Informatologia 2016-jul 1 vol. 49 iss. 1-2] Tools of the trade_ Digital audio workstation usage antecedents{Etinger, Darko (author)}(2016, Croatian Communicologysts Association){109650636} libgen.li.pdf",
+    "card_summary": "A 13-page academic journal article (Informatologia, 2016), not a book: Etinger surveys 838 heavy metal/hard rock artists using Technology Acceptance and Task-Technology Fit models to identify what drives DAW adoption in composition, recording, mixing and mastering.",
+    "page_summary": "This item is a peer-reviewed journal article rather than a monograph, included in Ted's library because it was filed alongside the Bach materials (likely a keyword/DAW-related mis-sort). Darko Etinger, of Juraj Dobrila University of Pula, Croatia, investigates why individual musicians adopt digital audio workstations for composing, pre-production, recording, mixing, and mastering. The study's theoretical scaffolding combines the Task-Technology Fit (TTF) model with the Technology Acceptance Model (TAM), which together model the causal chain from perceived usefulness and perceived ease of use through to actual usage behavior — a standard information-systems research framework, applied here to music production tools rather than business software. The empirical base is a survey of 838 completed responses from heavy metal and hard rock artists specifically (chosen, per the abstract, because that genre community has been an early and heavy adopter of home-studio DAW workflows as an alternative to commercial studios), analyzed with partial least squares structural equation modeling (PLS-SEM). The article's framing draws on prior work (cited: Persson) arguing that affordable DAWs and home recording equipment created real competition for commercial studios and forced a re-evaluation of what gets recorded at home versus in a professional facility, and by whom. The piece is written for an audience of information-systems and media-technology researchers, not musicians or producers — it does not teach DAW use, mixing, or recording technique, and contains no discussion of specific DAW software features. For SYNTHBUILDER this article is essentially irrelevant: it is organizational/adoption-behavior research about why musicians choose DAWs, not a technical, DSP, or plugin-development resource, and it says nothing about REAPER, JSFX, VST3, or synthesis. It should be flagged on the showcase page, if included at all, as a minor curiosity in Ted's library rather than a substantive title — it may be worth omitting from a public-facing books shelf entirely, since it reads as filler rather than a book people would recognize.",
+    "relevance_to_synthbuilder": "Low — a short academic survey-methodology article on DAW adoption psychology among metal/rock artists; no technical or DSP content whatsoever.",
+    "tags": [
+      "daw",
+      "production",
+      "survey-research",
+      "article",
+      "technology-adoption"
+    ]
+  },
+  {
+    "slug": "world-music-the-basics-richard-nidel",
+    "title": "World Music: The Basics",
+    "author": "Richard O. Nidel",
+    "path": "E:\\pdf\\music\\Bach\\[Routledge Student Reference. The Basics] Richard O. Nidel - World Music (2010, Routledge) - libgen.li.pdf",
+    "card_summary": "A Routledge 'Basics' student reference surveying global popular and traditional musics region by region — Africa, the Caribbean, Latin America, Europe, Asia and the Middle East — as an introductory map of styles, instruments and key artists rather than a technical or theory text.",
+    "page_summary": "World Music: The Basics belongs to Routledge's 'The Basics' student-reference series, and is structured accordingly: a broad, accessible survey rather than a specialist monograph. At 880 extracted pages of text (a large, dense reference), Nidel organizes the book geographically, moving through major world-music traditions and their popular-music offshoots — the front matter and structure follow the standard 'world music' curriculum used in introductory ethnomusicology and popular-music-studies courses: African popular musics (highlife, Afrobeat, soukous and related genres), Caribbean and Latin American traditions (reggae, salsa, samba, and their diasporic developments), music of the Middle East and North Africa, South and East Asian traditions, and European folk and roots musics, generally covering instrumentation, historical development, key figures, and the traditions' relationship to Western popular music and the recording industry. As a 'Basics' title it is written for undergraduates and general readers encountering these traditions for the first time — it assumes no prior musicological training, favors accessible prose and representative artist/recording references over deep theoretical or ethnomusicological analysis, and is explicitly a survey/overview text rather than an argument-driven scholarly monograph. For SYNTHBUILDER this book offers essentially nothing technical — no synthesis, DSP, DAW, or chiptune content — and its relevance to REAPER/JSFX plugin building is nil. Its value to Ted is as general musical-breadth background: exposure to scales, rhythmic structures, and instrument timbres outside the Western equal-tempered, four-square-time-signature tradition that dominates most synthesis literature, which could inform more adventurous chiptune composition (non-Western modes or rhythms rendered in 8-bit voices) but is not itself a how-to resource for building synths or plugins. On the showcase page it belongs in a 'music history and breadth' category rather than the technical/production shelf.",
+    "relevance_to_synthbuilder": "Low — a broad introductory survey of world popular/traditional musics with no technical content; general musical-breadth background only.",
+    "tags": [
+      "world-music",
+      "ethnomusicology",
+      "survey",
+      "reference",
+      "music-history"
+    ]
+  },
+  {
+    "slug": "organ-preludes-of-js-bach-george-stauffer",
+    "title": "The Organ Preludes of Johann Sebastian Bach",
+    "author": "George B. Stauffer",
+    "path": "E:\\pdf\\music\\Bach\\[Studies in Musicology, 27] George B. Stauffer - The Organ Preludes of Johann Sebastian Bach (1980, UMI Research Press) - libgen.li.pdf",
+    "card_summary": "Stauffer's 1980 musicological monograph (Studies in Musicology series, UMI Research Press) traces the stylistic development, sources, and compositional structure of Bach's free organ preludes across his career, from early North German influence to the mature Leipzig works.",
+    "page_summary": "Part of the 'Studies in Musicology' monograph series edited by George Buelow at Indiana University (the extracted front matter lists neighboring volumes on topics like Beethoven's sketches, the Baroque guitar, and Marschner's stage works, situating this squarely as specialist academic musicology rather than a general-audience book), Stauffer's study focuses specifically on Bach's 'free' organ preludes — the toccatas, preludes, and fantasias not paired with a fugue in the familiar prelude-and-fugue format, or considered as a genre in their own right. The book traces the genre's stylistic evolution across Bach's career: his early exposure to North German organist-composers (the Buxtehude/Reincken/Böhm tradition of virtuosic, sectional, improvisatory-style organ writing centered on Lübeck and Hamburg), through his Weimar and Köthen years, to the more contrapuntally integrated and formally consolidated preludes of his Leipzig maturity. Typical of this era's source-critical musicology, the book works closely with manuscript and early-print evidence to establish chronology and authenticity, and offers formal/harmonic analysis of individual preludes to support its stylistic argument. It is written for organists, keyboard musicologists, and graduate students in historical musicology — it assumes score-reading fluency, familiarity with Baroque formal conventions, and interest in source chronology, not a general music-history readership. For SYNTHBUILDER this has no direct technical value — no synthesis, DSP, or sound-technology content of any kind, and its subject (solo pipe-organ repertoire) is stylistically about as far as possible from NES chiptune voices. Its relevance to Ted's broader practice is purely as deep Bach/keyboard-repertoire background, potentially useful if a future arrangement project wanted to adapt Bach's free-prelude keyboard textures (the toccata-like figuration, pedal-point sections, and sectional contrasts) into a chiptune or synth idiom, but that would be an indirect, creative leap rather than anything the book itself addresses.",
+    "relevance_to_synthbuilder": "Low — a source-critical musicological study of Bach's organ preludes; no technical content, only distant creative-arrangement background.",
+    "tags": [
+      "bach",
+      "organ",
+      "music-theory",
+      "musicology",
+      "music-history"
+    ]
+  },
+  {
+    "slug": "recording-engineers-handbook-bobby-owsinski",
+    "title": "The Recording Engineer's Handbook, Second Edition",
+    "author": "Bobby Owsinski",
+    "path": "E:\\pdf\\music\\Bobby Owsinski The Recording Engineer s Handbook Course Technology Cengage Learning.pdf",
+    "card_summary": "Owsinski's widely used practical reference covers microphones, preamps, stereo and multichannel miking technique, DAW recording fundamentals (ADCs/DACs, latency, headroom), drum-kit and instrument miking, and mixing — the standard textbook for recording-engineering craft.",
+    "page_summary": "The Recording Engineer's Handbook (2nd edition, Course Technology/Cengage, 2009) is a comprehensively practical, chapter-by-chapter reference for the craft of audio recording, organized to mirror an actual session workflow. Chapter 1, 'How Microphones Work,' covers dynamic, ribbon, and condenser microphone designs, condenser myths and operational hints, phantom power, and the full vocabulary of mic specifications (sensitivity, overload characteristics, frequency response, self-noise, polar patterns, proximity effect) plus specialty mics (shotgun, lavalier, PZM, wireless, stereo, parabolic) and accessories (pop filters, windscreens, shock mounts). Chapter 2 surveys named classic and modern microphone models (Neumann U47/U67/M49/KM84/U87, AKG C12/C451/414, Shure SM57, Sennheiser MD421/441, Electro-Voice RE20, and current affordable equivalents) with interview material from mic designer David Bock. Chapter 3 covers basic recording equipment — mic preamps (vintage vs. modern, setup, direct injection) and compressor/limiters. Chapter 4, 'DAW Recording,' is the book's most directly relevant chapter to SYNTHBUILDER's domain: getting sound into a computer, how ADCs and DACs work, latency, FireWire-vs-USB tradeoffs, and headroom/gain-staging, including an interview with a Digidesign product manager. Later chapters cover stereo miking techniques (coincident, spaced, Decca Tree, near-coincident, baffled-omni pairs), multichannel tracking and phase-checking (by ear, oscilloscope plug-in, or phase meter), drum-kit preparation and miking (with an interview with 'Drum Doctor' Ross Garfield), and individual-instrument miking technique across a wide instrument list. The book is written for working and aspiring recording/mix engineers — assumes no DSP or programming background, is entirely equipment- and technique-focused rather than theoretical, and teaches craft judgment (mic choice, placement, gain staging) rather than synthesis or plugin construction. For SYNTHBUILDER, this is moderately useful adjacent knowledge: the DAW-recording chapter's coverage of latency, ADC/DAC behavior, and headroom/gain-staging is directly relevant to getting clean signal in and out of REAPER when testing a JSFX synth, and the general audio-engineering vocabulary (signal chain, gain staging, monitoring) is useful context — but the book does not address synthesis, DSP coding, or plugin formats (JSFX/VST3) at all, so its use is as supporting audio-engineering literacy rather than a synth-building resource.",
+    "relevance_to_synthbuilder": "Medium — the DAW-recording chapter (ADC/DAC, latency, headroom/gain-staging) is directly useful REAPER-signal-chain knowledge, but the book is about recording/miking craft, not synthesis or DSP.",
+    "tags": [
+      "recording",
+      "mixing",
+      "engineering",
+      "microphones",
+      "daw",
+      "production"
+    ]
+  },
+  {
+    "slug": "synthesizer-basics-dean-friedman",
+    "title": "Synthesizer Basics",
+    "author": "Dean Friedman",
+    "path": "E:\\pdf\\music\\Dean Friedman Synthesizer Basics Amsco Music.pdf",
+    "card_summary": "A classic 1980s Amsco beginner's guide (by singer-songwriter Dean Friedman) to understanding, programming and using a synthesizer, with dedicated sections on the Yamaha DX7, sampling devices, and MIDI.",
+    "page_summary": "Synthesizer Basics is an image-scanned, entry-level instructional book billed on its cover as 'the definitive beginner's guide' — 'Tells you everything you need to know to really understand, program and start using your synthesizer. Also contains special sections on the Yamaha DX7, Sampling Devices and MIDI.' Written by Dean Friedman (better known as a singer-songwriter, e.g. 'Ariel' and 'Lucky Stars,' who also had a serious technical interest in synthesis and music technology journalism), the book dates to the mid-1980s heyday of both analog/hybrid subtractive synthesis and the newly dominant FM synthesis of Yamaha's DX7 — the cover's collage of keyboard and panel-slider photography is drawn entirely from period hardware (DX7-era sliders, membrane panels, and LCD displays are visible), situating the book precisely at the transition moment between knob-per-function analog synths and menu-diving digital FM synths. Its explicit coverage of three distinct areas — general synthesizer fundamentals (oscillators, envelopes, filters, modulation, in the analog/subtractive vocabulary standard to the era), the DX7 specifically (FM operator-based synthesis, at the time a genuinely new and confusing paradigm for most musicians), sampling devices (early hardware samplers), and the then-brand-new MIDI protocol — makes it a useful time-capsule of exactly what a working musician needed to learn in 1985-86 to use the generation of gear that dominated pop, film, and video-game (including early NES-adjacent) music production. It is written for musicians and hobbyists with no electronics or programming background, in the plain, non-technical 'basics' tradition typical of Amsco's instructional series. For SYNTHBUILDER, this book's chief value is historical/conceptual: it explains FM synthesis and MIDI from the exact era and mindset that also produced the NES's own sound hardware and the early-digital-synth sound SYNTHBUILDER is chasing, and its DX7/FM section is a good plain-language companion to the more code-focused FM material in Simon Cann's book. It teaches no DSP math or programming, but as an accessible period-accurate primer on 'what FM synthesis actually is and why MIDI exists,' it is a reasonable on-ramp before tackling JSFX implementation.",
+    "relevance_to_synthbuilder": "Medium — a plain-language, period-accurate primer on FM synthesis, sampling and MIDI fundamentals (no code/DSP), useful conceptual on-ramp before JSFX implementation.",
+    "tags": [
+      "synthesis",
+      "fm-synthesis",
+      "dx7",
+      "sampling",
+      "midi",
+      "beginner"
+    ]
+  },
+  {
+    "slug": "bjorks-homogenic-emily-mackay",
+    "title": "Björk's Homogenic (33 1/3 series)",
+    "author": "Emily Mackay",
+    "path": "E:\\pdf\\music\\Emily Mackay Björk s Homogenic Bloomsbury Academic.pdf",
+    "card_summary": "A 33 1/3 series entry: Emily Mackay's critical/biographical study of Björk's 1997 album Homogenic, examining its blend of Icelandic strings, glitch-inflected beats and volcanic-landscape imagery as a landmark in electronic-organic pop production.",
+    "page_summary": "Like the other 33 1/3 titles in Ted's library, this is a short (roughly 130-page) single-album critical monograph from Bloomsbury Academic's long-running series, in which one writer is given a canonical or cult album to interrogate in depth — part music criticism, part cultural history, part personal essay, with no fixed template across the series beyond that scope. Emily Mackay's entry covers Björk's third solo studio album, Homogenic (1997), widely regarded as a pivotal record in blending orchestral (string arrangements by Eumir Deodato and others) and 'organic' instrumentation with aggressive, distorted electronic beats programmed with collaborators including Mark Bell of LFO — an early and influential model of electronic/orchestral hybrid production that prefigured much of the following decade's 'organic electronica.' The book situates the album within Björk's biography (her move to Spain, the aftermath of a stalker incident, her relationship with Iceland's landscape as explicit conceptual material) and within the technological/production choices that made the record's sound distinctive, likely including discussion of the specific samplers, beat-programming approach, and string-arrangement decisions (consistent with the series' general practice of blending biography, cultural context, and close listening/production analysis). It is written for informed music fans and critics rather than technical producers — the 33 1/3 format is prose criticism, not a production tutorial. For SYNTHBUILDER this is essentially inspirational/contextual rather than technical: Homogenic is a genuinely important reference point for anyone thinking about how to combine synthetic/electronic sound sources with more 'natural' timbres in a coherent aesthetic (relevant if SYNTHBUILDER's chiptune voices are ever blended with other instrumentation), but the book itself will not teach synthesis, DSP, or plugin construction — its use is as critical/aesthetic reference reading, not a how-to.",
+    "relevance_to_synthbuilder": "Low — album criticism/biography, not a technical text; useful only as aesthetic reference for blending electronic and organic sound.",
+    "tags": [
+      "album-criticism",
+      "electronic",
+      "production",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "rock-synthesizer-manual-geary-yelton",
+    "title": "The Rock Synthesizer Manual: A Revised Guide for the Electronic Musician",
+    "author": "Geary Yelton",
+    "path": "E:\\pdf\\music\\Geary Yelton The Rock Synthesizer Manual_ A Revised Guide for the Electronic Musician Rock Technology Pubns.pdf",
+    "card_summary": "A 1984 hardware-era synthesizer manual walking rock/pop musicians through electronic sound fundamentals — voltage control, VCAs, envelope generation, filtering, modulation, keyboard controllers, sequencers, sample-and-hold, and patch-memory programming.",
+    "page_summary": "Published by Rock Tech Publications in 1984, The Rock Synthesizer Manual is a period document of early-1980s analog/voltage-controlled synthesizer practice, written specifically for rock and pop musicians (rather than academic electronic-music composers) who needed to understand the generation of standalone hardware synths — Moog, ARP, Oberheim, Roland, Sequential Circuits-era instruments — that had become central to the era's music. Its table of contents runs through 'Electronic Sound' fundamentals in a logical build-up: basics of sound (waveform, frequency, amplitude), electronic sound sources (oscillators), voltage control (the defining paradigm of the era's analog synths, where every parameter is controlled by a variable voltage rather than digital data), voltage-controlled amplifiers (VCAs), envelope generation, filtering, modulation, keyboard controllers, sequencers, sample-and-hold circuits (a classic source of the era's 'random arpeggio' textures), footpedal controllers and footswitches, and programmable patch memory (a genuinely new feature at the time, replacing patch cables/knob-recall with digitally stored parameter presets). The book teaches the voltage-control paradigm directly rather than through any particular manufacturer's synth, in the tradition of period primers aimed at giving working musicians (not engineers) a functional map of what each module does and how to combine them into usable sounds. It predates MIDI's full dominance and is squarely a hardware-modular/voltage-control-era text rather than a software or DAW-plugin one. For SYNTHBUILDER, this book is directly useful as core subtractive-synthesis conceptual grounding — VCO/VCF/VCA/envelope/LFO signal flow is exactly the architecture a JSFX subtractive synth needs to implement, and the book explains each stage's musical function clearly and concisely without assuming DSP programming knowledge. It won't show code, but as a plain-language explanation of what a filter cutoff or an envelope's decay stage is supposed to do to a sound, it pairs well with Cann's more patch-oriented book and Pirkle's DSP-implementation book, filling the conceptual middle ground between the two.",
+    "relevance_to_synthbuilder": "Medium-High — a clear, non-technical explanation of the VCO/VCF/VCA/envelope/LFO subtractive-synthesis signal chain that any JSFX subtractive synth needs to implement, though it teaches concepts, not code.",
+    "tags": [
+      "synthesis",
+      "voltage-control",
+      "filters",
+      "envelopes",
+      "modulation",
+      "vintage-synths",
+      "subtractive-synthesis"
+    ]
+  },
+  {
+    "slug": "jawbreakers-24-hour-revenge-therapy-ronen-givony",
+    "title": "Jawbreaker's 24 Hour Revenge Therapy (33 1/3 series)",
+    "author": "Ronen Givony",
+    "path": "E:\\pdf\\music\\Givony Ronen Jawbreaker s 24 hour revenge therapy_ Bloomsbury Academic.pdf",
+    "card_summary": "A 33 1/3 series entry on Jawbreaker's 1994 emo/punk landmark 24 Hour Revenge Therapy, examining the album's role in the punk-to-emo transition and the band's fraught major-label-adjacent position within the 1990s independent scene.",
+    "page_summary": "Another entry in Bloomsbury's 33 1/3 series, this volume by Ronen Givony covers Jawbreaker's third album, 24 Hour Revenge Therapy (1994), widely regarded as one of the foundational records of what became known as emo, released at the tail end of the band's independent-label period just before their controversial major-label signing (which effectively ended the band amid intense scene backlash). As with the series' other entries, the book combines close listening/track-by-track discussion with cultural and scene history — situating the record within the early-1990s American punk/hardcore underground (Gilman Street, Lookout! Records-adjacent networks), discussing frontman Blake Schwarzenbach's confessional, literate lyric-writing as a genre-shifting influence, and likely engaging with the album's recording approach and raw-but-melodic production aesthetic. The 33 1/3 format keeps this to a compact single-album study rather than a full band biography, written for readers already invested in punk/emo history and looking for a deeper critical engagement with one specific, influential record. It assumes no music-theory or production background and offers no technical/how-to content — it is criticism and cultural history, in the tradition of long-form music journalism. For SYNTHBUILDER this book has no technical relevance at all — no synthesis, DSP, recording technique, or plugin content. Its place in Ted's library and on a music-showcase page is purely as music-criticism/scene-history reading reflecting personal taste (the same holds for the other 33 1/3 entries in this collection: Hole, Devo, Beastie Boys, Tori Amos, Kate Bush, They Might Be Giants, Babes in Toyland), not as a resource feeding into the REAPER/chiptune practice project.",
+    "relevance_to_synthbuilder": "None — pure album criticism/scene history with no technical content relevant to synthesis or plugin building.",
+    "tags": [
+      "album-criticism",
+      "punk",
+      "emo",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "game-sound-karen-collins",
+    "title": "Game Sound: An Introduction to the History, Theory, and Practice of Video Game Music and Sound Design",
+    "author": "Karen Collins",
+    "path": "E:\\pdf\\music\\Karen Collins Game sound_ an introduction to the history theory and practice of video game music and sound design The MIT Press.pdf",
+    "card_summary": "Karen Collins's MIT Press textbook is the foundational academic survey of video game audio, tracing the technical history from early arcade/console sound chips (including the NES) through MIDI-era and modern interactive scoring, alongside theoretical frameworks for game-sound analysis.",
+    "page_summary": "Game Sound (MIT Press, 2008) is widely regarded as the founding academic textbook of the field now called ludomusicology — the scholarly study of video game music and sound. Karen Collins structures the book to serve simultaneously as a history, a theory primer, and a practical introduction: it opens with the technical history of game audio from its earliest electromechanical and arcade origins through the 8-bit and 16-bit console era (where the specific sound-chip architectures — square/pulse/triangle/noise channels of systems like the NES's 2A03 APU, FM synthesis chips in arcade and Sega hardware, and the constraints they imposed on composers — are central subject matter directly relevant to chiptune practice), through the CD-audio/MIDI transition and into contemporary adaptive and interactive scoring techniques (horizontal re-sequencing, vertical layering, dynamic mixing responding to game state). Alongside this technical/historical track, the book develops theoretical vocabulary for analyzing how game sound functions — diegetic vs. non-diegetic sound, the relationship between sound design and player agency/interactivity (a concern absent from film-sound theory, which the book explicitly positions itself against/alongside), and sound's role in gameplay feedback, immersion, and genre signaling. It closes with practice-oriented material on the actual process of composing and implementing game audio, including collaboration between composers and programmers/sound designers. The book is written for an academic audience (game studies, musicology, media studies students and scholars) but is broadly accessible to informed general readers and industry practitioners; it assumes no advanced music theory but does assume seriousness about game audio as a subject worthy of sustained analysis. For SYNTHBUILDER, this is one of the most directly relevant non-technical books in the library: its historical treatment of 8-bit sound-chip architecture and the compositional constraints composers worked under is exactly the domain knowledge needed to make NES-tone-accurate chiptune choices meaningfully (not just imitate the timbre but understand why NES composers wrote the way they did given 2A03 channel limitations), and its interactive/adaptive-audio theory is useful if SYNTHBUILDER's REAPER work ever extends toward game-responsive audio rather than static tracks.",
+    "relevance_to_synthbuilder": "High — the standard academic history of game/chiptune sound-chip architecture (including NES APU constraints) plus theory of interactive audio; essential context, though not a code/DSP manual.",
+    "tags": [
+      "video-game-music",
+      "sound-design",
+      "chiptune",
+      "history",
+      "theory",
+      "academic",
+      "nes"
+    ]
+  },
+  {
+    "slug": "companion-medieval-renaissance-music-knighton-fallows",
+    "title": "Companion to Medieval and Renaissance Music",
+    "author": "Tess Knighton and David Fallows (eds.)",
+    "path": "E:\\pdf\\music\\Knighton Fallows Companion to medieval and renaissance music libgen li.pdf",
+    "card_summary": "A 1992 Schirmer Books essay collection surveying medieval and Renaissance music (c. 500-1600), opening with essays interrogating modern value judgments about early music before moving through genre-, region-, and composer-focused specialist chapters.",
+    "page_summary": "Edited by Tess Knighton and David Fallows and first published in Britain by Orion, this Schirmer Books companion (1992) is a multi-author reference collecting short specialist essays on medieval and Renaissance music (roughly 500-1400 and the fifteenth-sixteenth centuries respectively, per the Library of Congress subject headings on its copyright page). Structurally the book opens with a section titled 'The music of the past and the modern ear,' beginning with Daniel Leech-Wilkinson's essay 'The good, the bad and the boring' and James Haar's 'Value judgments in music of the Renaissance' — a self-aware framing choice that interrogates how modern listeners and scholars impose anachronistic aesthetic judgments on early repertoire before getting into the historical content itself. From there the book proceeds through essays by leading early-music scholars covering genres (plainchant, polyphony, the mass and motet, secular song traditions), regional traditions, notational practice, instruments, and major figures across the period, in the reference-companion format of short (2,000-5,000 word) contributions by different specialists rather than a single-author narrative history. It includes illustrations, music examples set by a professional music engraver, and a substantial bibliographic apparatus, aimed at undergraduate and graduate music students, performers of early music, and generally curious readers with some existing music-history background — it assumes familiarity with basic music-historical periodization and some notational literacy but explains specialist terms as needed. For SYNTHBUILDER this has no direct technical relevance — no synthesis, sound technology, or DSP content, and its subject matter (vocal polyphony, plainchant, Renaissance instrumental consort music) is stylistically and technologically about as distant from chiptune synthesis as the library gets. Its value to Ted is general music-historical breadth and possibly compositional inspiration (early music's modal harmony and non-functional voice-leading could be an interesting source of melodic/harmonic material to render in chiptune voices), but it is not a resource this project would consult for building synths or plugins.",
+    "relevance_to_synthbuilder": "Low — a specialist musicology reference on medieval/Renaissance repertoire with no technical content; general music-history breadth only.",
+    "tags": [
+      "music-history",
+      "medieval",
+      "renaissance",
+      "musicology",
+      "reference"
+    ]
+  },
+  {
+    "slug": "kate-bushs-hounds-of-love-leah-kardos",
+    "title": "Kate Bush's Hounds of Love (33 1/3 series)",
+    "author": "Leah Kardos",
+    "path": "E:\\pdf\\music\\Leah Kardos Kate Bush s Hounds of Love Bloomsbury USA.pdf",
+    "card_summary": "A 33 1/3 series study of Kate Bush's 1985 landmark Hounds of Love, examining its Fairlight-CMI-driven production, concept-album structure (the 'Ninth Wave' suite), and status as a high-water mark of art-pop studio craft.",
+    "page_summary": "Leah Kardos's entry in the 33 1/3 series covers Kate Bush's fifth studio album, Hounds of Love (1985), consistently ranked among the most acclaimed art-pop/experimental-pop records of its decade. Kardos, a composer and musicologist herself (with academic work on Bush's music beyond this trade volume), is well positioned to engage with the album's production substance rather than only its biography and reception: Hounds of Love was recorded largely in Bush's own home studio using a Fairlight CMI digital sampling workstation — one of the first commercially available digital sampler/synthesizer systems — alongside more conventional band instrumentation, and its two-sided structure (radio-friendly singles on side one, the continuous conceptual song cycle 'The Ninth Wave' — about a woman lost at sea drifting between consciousness and dream — on side two) is a landmark of concept-album and studio-as-instrument thinking in 1980s pop. The book likely covers both the album's compositional/conceptual ambitions and its studio-technology choices (the Fairlight's role in Bush's sound, orchestral and folk-instrument layering, the period's emerging digital-recording capabilities), in keeping with the 33 1/3 format's blend of criticism, biography, and production history. Written for informed music fans and critics, not technical producers, it assumes interest in art-pop history rather than DSP or synthesis background. For SYNTHBUILDER, this is context/inspiration rather than a technical resource: the Fairlight CMI was historically significant as an early digital sampling synthesizer directly contemporaneous with early-to-mid-1980s console sound-chip design (including the NES, which launched in Japan in 1983), so a book engaging seriously with how a landmark artist used early digital sound technology creatively is useful adjacent reading — but it will not teach JSFX programming, DSP, or REAPER workflow, and its relevance is aesthetic/historical rather than technical.",
+    "relevance_to_synthbuilder": "Low-Medium — engages seriously with an early digital sampling synth (Fairlight CMI) as a production tool, useful historical/aesthetic context, but not technical or DSP instruction.",
+    "tags": [
+      "album-criticism",
+      "production",
+      "synth-pop",
+      "music-history",
+      "fairlight",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "four-ways-of-hearing-video-game-music-michiel-kamp",
+    "title": "Four Ways of Hearing Video Game Music",
+    "author": "Michiel Kamp",
+    "path": "E:\\pdf\\music\\Michiel Kamp Four Ways of Hearing Video Game Music Oxford University Press.pdf",
+    "card_summary": "An Oxford University Press ludomusicology monograph proposing four distinct listening modes for engaging with video game music, building theoretical frameworks for how players actually perceive and process game scores during interactive play.",
+    "page_summary": "Michiel Kamp's Four Ways of Hearing Video Game Music is an academic monograph within the ludomusicology field established by scholars like Karen Collins (also in this library) and the Ludomusicology research network Kamp co-edits (see the companion volume Ludomusicology, also in Ted's collection). The book's central project, as its title indicates, is to propose and defend a typology of four distinct modes or perspectives from which video game music can be meaningfully 'heard' — likely spanning something like structural/formal listening (the score as composed music), functional/gameplay listening (music as feedback and signal within play), immersive/diegetic listening (music as part of the game world), and reflective/critical listening (music as an object of aesthetic judgment or cultural commentary), building on and extending frameworks from film-music theory (which has long distinguished diegetic from non-diegetic and background from foreground listening) while addressing what makes game music's listening situation distinctively interactive rather than fixed. The book engages closely with specific games and their scores as case studies to substantiate each listening mode, situating itself within broader film-music and sound-studies theory as much as within game studies specifically. It is written for an academic audience in musicology, media studies, and game studies — it assumes familiarity with core music-theoretical and film-sound-theory vocabulary and is a work of theory-building, not a history or a how-to-compose guide. For SYNTHBUILDER, this book is more conceptually than technically useful: it offers no synthesis, DSP, or programming content, but its close attention to how listeners actually process game audio during interactive play is relevant if SYNTHBUILDER's chiptune work ever moves beyond static tracks toward interactive or game-responsive audio, giving vocabulary for thinking about what a chiptune voice needs to communicate functionally (not just faithfully reproduce NES timbre) within a play context.",
+    "relevance_to_synthbuilder": "Low-Medium — theoretical framework for how players perceive game music during play; useful conceptual grounding for interactive audio design, no technical/DSP content.",
+    "tags": [
+      "video-game-music",
+      "ludomusicology",
+      "theory",
+      "academic"
+    ]
+  },
+  {
+    "slug": "ludomusicology-kamp-summers-sweeney-fritsch",
+    "title": "Ludomusicology: Approaches to Video Game Music",
+    "author": "Michiel Kamp, Tim Summers, Mark Sweeney, and Melanie Fritsch (eds.)",
+    "path": "E:\\pdf\\music\\Michiel Kamp_ Tim Summers_ Mark Sweeney_ Melanie Fritsch Ludomusicology_ Approaches to Video Game Music Equinox Publishing.pdf",
+    "card_summary": "An Equinox Publishing edited collection that helped establish 'ludomusicology' as a named academic field, gathering essays applying diverse musicological, game-studies, and sound-design frameworks to video game music and audio.",
+    "page_summary": "Ludomusicology: Approaches to Video Game Music (Equinox, 2016) is a foundational edited volume in the field it names, co-edited by four scholars — Michiel Kamp, Tim Summers, Mark Sweeney, and Melanie Fritsch — each of whom has other individually authored work in ludomusicology (Kamp's Four Ways of Hearing Video Game Music and Summers's Understanding Video Game Music are both elsewhere in Ted's library, giving this volume useful cross-reference). As a multi-author essay collection rather than a single-argument monograph, the book's contribution is breadth of method: individual chapters, written by different scholars, apply varied analytical toolkits — from traditional musical analysis of game scores, to game-studies concepts of player agency and procedurality, to sound-design and audio-engineering perspectives, to media-industry and reception-history approaches — to specific games, franchises, or game-audio phenomena. This mirrors the standard structure of field-founding essay collections in an emerging academic area: rather than settling on one theory of game music, it demonstrates the plurality of viable approaches and stakes out the field's disciplinary territory at the boundary of musicology, game studies, and sound studies. It is written for an academic audience already engaged with or entering ludomusicology, game studies, or musicology, and functions as much as a field survey/state-of-the-discipline snapshot as a set of individual arguments. For SYNTHBUILDER, this collection's value mirrors Collins's and Kamp's other books: it is deep, well-grounded context on how video game audio (including chiptune-era work) has been studied and understood, useful for informing musically and historically literate chiptune composition, but it contains no synthesis theory, DSP, or plugin-programming content and will not help with the REAPER/JSFX implementation side of the project directly.",
+    "relevance_to_synthbuilder": "Low-Medium — a field-founding academic essay collection on game-music scholarship; good historical/critical context for chiptune composition, no technical content.",
+    "tags": [
+      "video-game-music",
+      "ludomusicology",
+      "academic",
+      "essays"
+    ]
+  },
+  {
+    "slug": "dark-waves-neil-oconnor",
+    "title": "Dark Waves: The Synthesizer and the Dystopian Sound of Britain (1977-80)",
+    "author": "Neil O'Connor",
+    "path": "E:\\pdf\\music\\Neil O Connor Dark Waves_ The Synthesizer and the Dystopian Sound of Britain Rowman Littlefield Publishers.pdf",
+    "card_summary": "A Rowman & Littlefield cultural-history monograph (part of the 'Popular Musics Matter' series) tracing how British synth-pop and post-punk acts of 1977-80 used the synthesizer's alien, 'inhuman' sonic character to voice Cold War and post-industrial dystopian anxiety.",
+    "page_summary": "Dark Waves is a scholarly cultural-history monograph in Rowman & Littlefield's 'Popular Musics Matter: Social, Political and Cultural Interventions' series (which also includes books on Joy Division, punk/post-punk deindustrialization in Manchester/Düsseldorf/Torino/Tampere, and Bob Marley's media representation, per the volume's own series list — situating this firmly as socio-politically engaged popular-music scholarship rather than a technical synthesis guide). Neil O'Connor's argument is that the synthesizer, as it entered British popular music in the late 1970s (via post-punk, early synth-pop, and industrial-adjacent acts), was heard and deployed specifically as a signifier of dystopia, alienation, and technological anxiety — its 'inhuman,' non-organic timbre mapped culturally onto a Britain undergoing deindustrialization, Cold War tension, and the social dislocations of the Thatcher-era transition (the book's 1977-80 window captures the moment just before Thatcher's 1979 election and its immediate aftermath). The book is structured with a section explicitly titled 'Background Noise' establishing this social and technological context, before presumably moving into closer case studies of specific artists, records, and synthesizer technologies (Korg, Roland, ARP, and similar instruments becoming newly affordable to working musicians in this period) that exemplify the 'dark wave' sound. It is written for readers interested in popular-music studies, cultural history, and post-punk/synth-pop scholarship — assumes interest in critical/cultural-studies framing of music rather than technical synthesis knowledge, and offers sustained argument rather than reference-style coverage. For SYNTHBUILDER, this book is aesthetic/historical rather than technical: it will not teach synthesis or DSP, but its close attention to what specific synthesizer timbres culturally signify (alienation, dystopia, technological unease) is a genuinely useful frame for thinking about the expressive and connotative possibilities of chiptune and synth voices beyond pure NES-accuracy — useful if SYNTHBUILDER's later, more expressive phase (post 'first audible note') wants to reason about what a given synth patch should mean, not just how it should measure.",
+    "relevance_to_synthbuilder": "Low — cultural/aesthetic history of synth timbre and meaning, not technical; useful only as expressive/connotative context for later, more creative synth-patch design.",
+    "tags": [
+      "synthesizer",
+      "post-punk",
+      "synth-pop",
+      "music-history",
+      "britain",
+      "cultural-studies"
+    ]
+  },
+  {
+    "slug": "designing-software-synthesizer-plugins-in-c-will-pirkle",
+    "title": "Designing Software Synthesizer Plug-Ins in C++: For RackAFX, VST3, and Audio Units",
+    "author": "Will Pirkle",
+    "path": "E:\\pdf\\music\\Pirkle W Designing Software Synthesizer Plug Ins in C _ For RackAFX VST3 and Audio Units.pdf",
+    "card_summary": "Will Pirkle's standard textbook (Focal Press/Routledge) for building real synthesizer plugins in C++, covering oscillators, envelope generators, filters (including a full Moog ladder-filter implementation), LFOs, and complete synth-voice architecture across RackAFX, VST3 and Audio Units.",
+    "page_summary": "Designing Software Synthesizer Plug-Ins in C++ is a 912-page, deeply technical, code-driven textbook by Will Pirkle — author of several widely used Focal Press/Routledge audio-DSP programming books and creator of the free RackAFX plugin-prototyping framework used as this book's primary teaching environment, alongside full coverage of exporting the same DSP code to VST3 and Audio Units plugin formats. The book's approach is to build a complete, working polyphonic software synthesizer incrementally in C++, teaching digital synthesis theory and object-oriented plugin architecture simultaneously: rather than treating synthesis theory and software engineering as separate concerns, each chapter pairs a DSP concept with its concrete C++ class implementation. Visible in the extracted cover and page images are direct code excerpts — delay-line difference equations (dLeftDelayIn/dRightDelayIn feedback calculations), and, strikingly, a full C++ class declaration for CMoogLadderFilter : public CFilter, implementing the specific nonlinear four-pole Moog transistor-ladder filter topology by name — indicating the book teaches not generic textbook filters but specific, musically important circuit models translated into code. Based on its scope and Pirkle's other books, chapters cover: audio plugin architecture and the host/plugin API models (RackAFX, VST3, AU); oscillator design (including bandlimited waveform generation to avoid aliasing); envelope generators (ADSR and variants); LFOs and modulation routing; filter design (multiple topologies including the Moog ladder, state-variable, and biquad filters); voice architecture and polyphony/voice-stealing; and effects processing. It is written for programmers with working C++ knowledge who want to build real, shippable synth plugins — it assumes programming competence (classes, inheritance, real-time constraints) that most other books in this library do not, and is unambiguously a professional/serious-hobbyist DSP engineering text rather than a musician's conceptual guide. For SYNTHBUILDER, this is the single most directly relevant technical resource in the entire library: it is a from-scratch, code-level guide to building exactly the kind of synthesizer plugin SYNTHBUILDER's VST3/JUCE phase aims at (per SYNTHBUILDER's own CLAUDE.md, JSFX now, 'eventually VST3/JUCE'), including working, named implementations of core DSP building blocks (oscillators, envelopes, filters including the Moog ladder) that could be ported to JSFX's simpler scripting language or directly adapted for a future VST3/JUCE build.",
+    "relevance_to_synthbuilder": "Very high — the only book in the library that teaches synthesizer DSP and plugin architecture in working C++ (oscillators, envelopes, filters including a Moog ladder-filter implementation, VST3/AU export); directly portable to SYNTHBUILDER's JSFX/VST3-JUCE roadmap.",
+    "tags": [
+      "dsp",
+      "synthesis",
+      "plugin-development",
+      "c++",
+      "vst3",
+      "audio-units",
+      "filters",
+      "oscillators"
+    ]
+  },
+  {
+    "slug": "they-might-be-giants-flood-sandifer-reed",
+    "title": "They Might Be Giants' Flood (33 1/3 series)",
+    "author": "Philip Sandifer and S. Alexander Reed",
+    "path": "E:\\pdf\\music\\Sandifer Philip_ Reed S Alexander They Might Be Giants Flood Bloomsbury Academic.pdf",
+    "card_summary": "A 33 1/3 series study of They Might Be Giants' 1990 breakthrough Flood, co-written by Philip Sandifer and S. Alexander Reed, examining the album's genre-hopping songwriting, drum-machine-and-accordion aesthetic, and place in alternative-pop history.",
+    "page_summary": "This 33 1/3 entry covers They Might Be Giants' third studio album, Flood (1990), the record that brought the Brooklyn duo (John Flansburgh and John Linnell) to mainstream alternative-rock attention via singles like 'Birdhouse in Your Soul' and 'Istanbul (Not Constantinople).' Co-authored by Philip Sandifer and S. Alexander Reed — Reed in particular has other academic writing on electronic and industrial music, giving this entry likely more attention to the album's actual production and instrumentation choices than a purely journalistic account might offer. Flood is notable for its dense, genre-promiscuous songwriting (drawing on 1950s pop, polka, children's music, and new-wave synth-pop within a single record) and its production, which blended live band instrumentation with era-typical drum machines, sequencers, and accordion as a lead melodic voice — an unusual combination that became central to the band's identity. As with other 33 1/3 volumes, expect track-by-track or thematic critical analysis combined with the album's recording history and cultural reception, written for informed fans and critics, assuming no formal music-theory or production background from the reader, and offering criticism/history rather than technical instruction. For SYNTHBUILDER this book offers no direct technical content — no synthesis, DSP, or plugin material — but its subject (a record built on hybrid drum-machine/sequencer-plus-acoustic-instrument arrangements, made by two songwriters with a strong interest in odd, playful sound-and-genre juxtaposition) is a reasonable aesthetic touchstone for anyone thinking about how to make chiptune or synthetic voices feel purposeful and musically integrated rather than merely technically accurate, but that connection is inspirational rather than instructional.",
+    "relevance_to_synthbuilder": "Low — album criticism/history; only loosely relevant as an aesthetic touchstone for playful hybrid electronic/acoustic arrangement, no technical content.",
+    "tags": [
+      "album-criticism",
+      "alt-rock",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "babes-in-toylands-fontanelle-selena-chambers",
+    "title": "Babes in Toyland's Fontanelle (33 1/3 series)",
+    "author": "Selena Chambers",
+    "path": "E:\\pdf\\music\\Selena Chambers Babes in Toyland s Fontanelle Bloomsbury Academic.pdf",
+    "card_summary": "A 33 1/3 series study of Babes in Toyland's 1992 major-label breakthrough Fontanelle, examining the Minneapolis trio's abrasive riot-grrrl-adjacent sound, gender politics, and place in early-1990s alternative/grunge history.",
+    "page_summary": "Selena Chambers's entry in the 33 1/3 series covers Fontanelle (1992), the second full-length album by the Minneapolis all-female punk/noise-rock trio Babes in Toyland, released on Reprise after the band's earlier Twin/Tone and Sub Pop-adjacent work, and produced with input from Lee Ranaldo of Sonic Youth. Consistent with the 33 1/3 format, expect a blend of album-specific criticism (close attention to specific songs, the band's guitar/bass/drums sound and Kat Bjelland's distinctive vocal delivery), band and scene history (the Minneapolis alternative/punk scene, the band's relationship to the contemporaneous riot grrrl movement despite some ambivalence about being categorized within it), and the gender politics surrounding an aggressively loud all-women rock band navigating a male-dominated grunge-era major-label landscape. The book is written for readers invested in 1990s alternative/punk history and feminist music criticism, assuming no technical music background and offering no production or synthesis instruction — it is squarely cultural/music criticism. For SYNTHBUILDER this has no technical relevance whatsoever — no synthesis, DSP, or production content — and its subject matter (raw guitar-bass-drums noise rock) is stylistically unrelated to chiptune or synthesizer work. Its place in Ted's library and on a music showcase page is purely as evidence of broad, personally significant listening and critical interest, alongside the other 33 1/3 titles, not as a resource this project would draw on.",
+    "relevance_to_synthbuilder": "None — pure album/scene criticism with no technical content.",
+    "tags": [
+      "album-criticism",
+      "grunge",
+      "riot-grrrl",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "the-jesus-lizard-book",
+    "title": "The Jesus Lizard Book",
+    "author": "Various (band members, Corey Rusk, and contributors)",
+    "path": "E:\\pdf\\music\\the jesus lizard book_the jesus lizard.pdf",
+    "card_summary": "An oral-history/coffee-table retrospective of noise-rock band the Jesus Lizard, told through the band members' and Touch and Go Records founder Corey Rusk's own words, moving album by album from Pure (1989) through Blue (1997).",
+    "page_summary": "The Jesus Lizard Book is a band-authorized retrospective (not written by an outside critic but assembled from the band's own and collaborators' testimony) documenting the Chicago-via-Austin noise-rock band the Jesus Lizard: guitarist Duane Denison, bassist David Wm. Sims, drummer Mac McNeilly, and singer David Yow, with an introduction by Corey Rusk, founder of Touch and Go Records, the label that released the band's classic run. Structurally the book proceeds chronologically through the band's discography — Pure (1989 EP), Head (1990), Goat (1991), Liar (1992), Down (1994), and Shot (1996), with Blue (1997) noted separately — interspersed with a performance chronology and contributor biographies, functioning as an album-by-album oral history of the band's formation (Denison's post-Cargo Cult songwriting in Austin, recruiting Yow and Sims from the recently dissolved Scratch Acid, Sims's stint in Rapeman with Steve Albini before the band's actual formation in Chicago) through their major-label-adjacent late-career work. It documents the band's ferocious, improvisationally loose but musically exacting live reputation and the making of each record, mostly in participants' own words rather than as outside critical analysis — closer to an band-history scrapbook/companion than a music-theory or production text. It is written for fans of the band and of the Touch and Go/noise-rock scene, assuming familiarity with or curiosity about the records already. For SYNTHBUILDER this book has no technical relevance — no synthesis, DSP, recording technique, or sound design content — and the band's raw, loud, guitar-driven aesthetic is about as far from chiptune/synth programming as this library gets. Its place is purely as music-history/fandom reading reflecting Ted's personal taste, alongside the 33 1/3 titles.",
+    "relevance_to_synthbuilder": "None — band oral history with no technical content relevant to synthesis or DSP.",
+    "tags": [
+      "oral-history",
+      "noise-rock",
+      "band-biography",
+      "music-history"
+    ]
+  },
+  {
+    "slug": "understanding-video-game-music-tim-summers",
+    "title": "Understanding Video Game Music",
+    "author": "Tim Summers",
+    "path": "E:\\pdf\\music\\Tim Summers Understanding Video Game Music Cambridge University Press.pdf",
+    "card_summary": "A Cambridge University Press musicology textbook developing analytical methods and concepts for video game scores, using case studies like Final Fantasy VII, Monkey Island 2, SSX Tricky and Silent Hill to build a framework the author summarizes as 'music for playing.'",
+    "page_summary": "Tim Summers's Understanding Video Game Music (Cambridge University Press) is a core textbook in the ludomusicology field, explicitly framed (per its own back-cover description, captured in the extracted text) as developing 'methods and concepts for understanding music in this medium' — moving from 'the practicalities of investigating the video game as a musical source' through 'critical perspectives on game music' via specific case studies: Final Fantasy VII, Monkey Island 2, SSX Tricky, and Silent Hill, a deliberately genre-spanning set (JRPG, point-and-click adventure, extreme-sports arcade racer, survival horror) chosen to demonstrate that game-music analysis needs different tools for different interactive and genre contexts rather than one universal method. The book's stated thesis — quoted directly from its description — is that game music 'is not a redundant echo of other textual levels of the game, but central to the experience of interacting with video games,' summarized memorably as being 'about music for racing a rally car, music for evading zombies, music for dancing, music for solving puzzles, music for saving the Earth from aliens, music for managing a city, music for being a hero; in short... music for playing.' This framing directly addresses the methodological problem also raised in Kamp's Four Ways of Hearing Video Game Music (also in this library) — that film-music analytical tools, built for fixed, linear media, don't transfer cleanly to interactive, variable-duration, player-responsive game audio. The book is written for musicology students and scholars, game studies researchers, and serious game-audio practitioners; it assumes some music-analytical vocabulary but explains game-specific concepts as needed, and is more a methods/analysis textbook than a history (compare Collins's Game Sound, which is more historical/technical) or a pure theory monograph (compare Kamp). For SYNTHBUILDER, this is useful conceptual grounding for thinking rigorously about what makes game music functionally different from other music — directly relevant if the project's chiptune work is ever embedded in an interactive context — but it contains no synthesis, DSP, or plugin-programming content and won't help with the REAPER/JSFX implementation itself.",
+    "relevance_to_synthbuilder": "Low-Medium — a rigorous analytical framework for game music's functional/interactive role; strong conceptual grounding for interactive chiptune work, no technical/DSP content.",
+    "tags": [
+      "video-game-music",
+      "musicology",
+      "theory",
+      "academic",
+      "analysis"
+    ]
+  },
+  {
+    "slug": "piano-opera-final-fantasy-i-ii-iii-uematsu-nobuo",
+    "title": "Piano Opera: Final Fantasy I II III (Sheet Music)",
+    "author": "Nobuo Uematsu (composer); arr. Hiroyuki Nakayama",
+    "path": "E:\\pdf\\music\\Uematsu Nobuo Piano Opera Final Fantasy I II III Sheet Music.pdf",
+    "card_summary": "A Japanese piano-arrangement songbook of Nobuo Uematsu's scores for the original NES-era Final Fantasy I-III (composed for the Famicom's 2A03 sound chip), arranged for solo piano by Hiroyuki Nakayama, with composer/arranger staff profiles.",
+    "page_summary": "This is an image-scanned sheet-music collection (72 pages) rather than an expository or analytical text: a Japanese-language 'Piano Opera' piano-arrangement songbook of themes from the first three Final Fantasy games — all three originally released for the Famicom/NES between 1987 and 1990, meaning the source material was composed by Nobuo Uematsu within the exact 2A03 sound-chip constraints (square/pulse/triangle/noise channels, no true polyphonic sampling) that SYNTHBUILDER's NES-tone-accurate chiptune goal targets directly. The scanned staff-profile page identifies Nobuo Uematsu as composer — credited with, among many other things, the Final Fantasy VIII theme 'Eyes on Me' (Japan Gold Disc Award, 1999) and recognition in Time magazine's 'Time 100: The Next Wave — Music' innovators feature (2001) and Newsweek's list of 'people the world respects' from Japan (2007) — and Hiroyuki Nakayama (a Tokyo University of the Arts composition graduate) as the arranger and performer responsible for adapting Uematsu's original chiptune melodies and harmonic material into idiomatic solo-piano arrangements for this collection, plus his other orchestral/arrangement credits (Blue Dragon, Lost Odyssey, the Final Fantasy III DS remake). The book itself is purely notational content — piano scores with no prose commentary — meant for pianists to perform Uematsu's melodies away from their original chiptune voicing. For SYNTHBUILDER, this has real but indirect value: it is not a synthesis or DSP resource, but it is primary melodic/harmonic material composed specifically for NES sound-chip constraints by one of the most significant composers to work within them, making it a legitimate source of target melodies to re-synthesize accurately once a JSFX chiptune voice is working — testing whether a hand-built 2A03-emulating synth can faithfully reproduce (or interestingly reinterpret) canonical NES-era game music, and a useful cross-check against Uematsu's own harmonic language when deciding how period-accurate an arrangement should sound.",
+    "relevance_to_synthbuilder": "Medium — primary NES-era Uematsu melodic material (arranged for piano) usable as target test material for a chiptune-accurate JSFX synth, though the book itself is sheet music, not a synthesis or DSP resource.",
+    "tags": [
+      "sheet-music",
+      "video-game-music",
+      "chiptune-era",
+      "piano",
+      "composition",
+      "nes",
+      "final-fantasy"
+    ]
+  },
+  {
+    "slug": "ancient-greek-music-ml-west",
+    "title": "Ancient Greek Music",
+    "author": "M. L. West",
+    "path": "E:\\pdf\\Classical Poetry ML West Ovid\\M. L. West - Ancient Greek Music (1994, Oxford University Press) - libgen.li.pdf",
+    "card_summary": "M. L. West's classicist standard reference reconstructs ancient Greek musical theory, notation, instruments and surviving fragments from scattered literary, epigraphic and papyrus evidence — the foundational modern study of the subject.",
+    "page_summary": "Ancient Greek Music (Clarendon Press/Oxford, first published 1992, this a 1994 paperback issue) is the standard modern scholarly reconstruction of what is actually known — and how little directly survives — about ancient Greek music. Written by M. L. West, one of the twentieth century's most eminent classicists (renowned for work on Greek epic, lyric poetry, and Near Eastern influences on Greek literature), the book tackles a genuinely difficult evidentiary problem: almost no continuous notated Greek music survives, so reconstruction depends on piecing together scattered literary references (Plato and Aristotle's philosophical discussions of musical modes and their ethical/psychological effects, technical treatises like those of Aristoxenus), a small number of inscriptions and papyrus fragments preserving actual musical notation, depictions of instruments in vase painting and sculpture, and surviving instrument fragments themselves (auloi, lyres, kitharas). West systematically works through the surviving notational system (a letter-based notation distinct from and much older than modern staff notation), the Greek theoretical understanding of scales, modes (harmoniai), and tuning systems (the tetrachord as the basic building block, various genera — diatonic, chromatic, enharmonic), rhythm and meter's relationship to poetic meter, instruments and their construction/tuning, and the few substantial surviving musical fragments (such as the Delphic Hymns and the Seikilos epitaph), offering his own transcriptions into modern notation where the evidence allows. It is written for classicists, musicologists, and advanced students with some background in Greek (quotations are often given in the original) and music theory; it is not an accessible introduction but a rigorous scholarly reconstruction. For SYNTHBUILDER this book has no direct technical relevance — no synthesis, DSP, or modern sound technology content — but its deep engagement with alternative tuning systems, modal theory, and the tetrachord-based Greek scalar system is a genuinely interesting resource if SYNTHBUILDER or a sibling project ever wanted to implement historically informed microtonal or non-equal-tempered tuning tables in a JSFX synth, a technically feasible and musically distinctive direction the project's docs do not currently pursue.",
+    "relevance_to_synthbuilder": "Low — a classical-philology reconstruction of ancient Greek music theory and notation; no technical content, only a distant potential source for historically informed microtonal tuning experiments.",
+    "tags": [
+      "music-history",
+      "antiquity",
+      "acoustics",
+      "theory",
+      "classics",
+      "tuning"
+    ]
+  },
+  {
+    "slug": "music-and-the-muses-murray-wilson",
+    "title": "Music and the Muses: The Culture of Mousike in the Classical Athenian City",
+    "author": "Penelope Murray and Peter Wilson (eds.)",
+    "path": "E:\\pdf\\Classical Poetry ML West Ovid\\Music and the Muses __ {Murray, Penelope_ Wilson, Peter}(2004 January 15, Oxford University Press)[10.1093_acprof_oso_9780199242399.001.0001]{46445560} libgen.li.pdf",
+    "card_summary": "An Oxford University Press edited volume on mousike — the combined art of music, poetry and dance central to classical Athenian civic and cultural life. NOTE: the local PDF (49 pages) is only the book's bibliography, not the full text.",
+    "page_summary": "Music and the Muses: The Culture of Mousike in the Classical Athenian City (Oxford University Press, 2004), edited by Penelope Murray and Peter Wilson, is a scholarly essay collection on mousike — the ancient Greek concept combining music, poetry, and dance into a single cultural practice, rather than treating 'music' as the separable art form modern usage implies — and its central role in the civic, religious, and educational life of classical Athens. The book's chapters, contributed by specialists in Greek literature, history, and musicology, likely address topics such as choral performance at civic festivals (the City Dionysia, other Athenian festivals), music's role in Athenian education (mousike as one of the two core disciplines alongside gymnastike in the traditional Greek educational scheme), the professionalization of musicians and debates about that professionalization in Greek sources, and the relationship between musical practice and Athenian democratic/civic identity. Importantly, the actual PDF in Ted's library is not the complete book: it is a 49-page excerpt consisting only of the volume's bibliography, downloaded from Oxford Scholarship Online (the header identifies it explicitly as the 'Bibliography' chapter, printed 2015, for a subscriber at Fudan University) — meaning this particular file cannot itself be read for the book's arguments, only for its source apparatus and the confirmation of its scope and publication details from the cover thumbnail embedded in the extract. The book proper is written for classicists and musicologists working on ancient Greek cultural history. For SYNTHBUILDER this book (and especially this partial file) has no technical relevance at all — no synthesis, DSP, or sound-technology content, and the local copy does not even contain the book's substantive text. It belongs on a music-showcase page, if at all, only as a title Ted has partial access to and an interest in (classical antiquity's musical culture), clearly flagged as an incomplete/bibliography-only file rather than the full book.",
+    "relevance_to_synthbuilder": "None — no technical content, and the local file is only the book's bibliography (49 pages), not the full text.",
+    "tags": [
+      "music-history",
+      "antiquity",
+      "classics",
+      "academic",
+      "incomplete-file"
+    ]
+  },
+  {
+    "slug": "the-second-sense-burnett-fend-gouk",
+    "title": "The Second Sense: Studies in Hearing and Musical Judgement from Antiquity to the Seventeenth Century",
+    "author": "Charles Burnett, Michael Fend, and Penelope Gouk (eds.)",
+    "path": "E:\\pdf\\Islamicate Chill Pills\\Burnett\\[Warburg Institute Surveys and Texts 22 - Warburg Institute Surveys and Texts 22] The Second Sense. Studies in Hearing and Musical Judgment from Antiquity to the Seventeenth Century{Charles Burnett, Michael Fend and P.pdf",
+    "card_summary": "A Warburg Institute Surveys and Texts volume (No. XXII) collecting essays on the history of theories of hearing and musical judgment from Aristotle through the seventeenth century, spanning philosophy of perception, music theory, and early acoustic/mechanical science.",
+    "page_summary": "The Second Sense: Studies in Hearing and Musical Judgement from Antiquity to the Seventeenth Century is Warburg Institute Surveys and Texts volume XXII, edited by Charles Burnett, Michael Fend, and Penelope Gouk, published by the Warburg Institute, University of London — a scanned 262-page academic essay collection confirmed by title page and full table of contents. The book is organized in two parts. Part I, 'Sound and Hearing,' moves chronologically and thematically through the philosophy and physiology of auditory perception: Alan Towey on Aristotle and Alexander of Aphrodisias's account of hearing and instantaneous change; Elizabeth Sears on the iconography of auditory perception in early medieval psalm illustration and exegesis; Charles Burnett himself on 'Sound and its Perception in the Middle Ages'; Thomas Frangenberg on Charles de Bovelles's Renaissance comparison of hearing and vision (Auditus visu prestantior — 'hearing more excellent than sight'); Penelope Gouk on English theories of hearing in the seventeenth century before and after Descartes; and Paolo Gozza on a mechanical account of hearing from the 'Galilean school,' focused on Pietro Mengoli's 1670 Speculationi di Musica. Part II, 'Musical Judgement,' covers Andrew Barker on Plato and Aristoxenus on the nature of melos (melody/pitch-motion); John Caldwell on the concept of musical judgment in Late Antiquity; Klaus-Jürgen Sachs on Boethius and 'the judgement of the ears' as a hidden challenge running through medieval and Renaissance music theory; and Michael Fend on the changing functions of senso and ragione (sense and reason) in late-sixteenth-century Italian music theory. A select bibliography and two indices (nominum, rerum) close the volume. This is rigorous history-of-science/history-of-ideas scholarship, written for historians of philosophy, science, and music theory — it assumes graduate-level familiarity with the relevant primary sources (often quoted in Latin/Greek/Italian) and offers no accessible summary for general readers. For SYNTHBUILDER this has no direct technical relevance — it concerns the history of theories about hearing and judgment, not acoustics-as-physics or sound-engineering practice, and contains no synthesis or DSP content. Its interest is as deep intellectual-history background on how 'hearing' itself has been theorized, tangential at best to a practical REAPER/JSFX project.",
+    "relevance_to_synthbuilder": "Low — history-of-ideas scholarship on theories of hearing and musical judgment (philosophy, not acoustics-as-engineering); no technical content.",
+    "tags": [
+      "acoustics",
+      "music-history",
+      "hearing",
+      "music-theory",
+      "academic",
+      "perception"
+    ]
+  },
+  {
+    "slug": "music-and-esotericism-laurence-wuidar",
+    "title": "Music and Esotericism",
+    "author": "Laurence Wuidar (ed.)",
+    "path": "E:\\pdf\\western esotericism religious studies\\Laurence Wuidar Music and Esotericism 2010.pdf",
+    "card_summary": "Volume 9 of Brill's Aries Book Series (Texts and Studies in Western Esotericism), an edited scholarly collection on the historical intersections of music with occultism, magic, and esoteric philosophy, from an editorial board including Wouter Hanegraaff and Antoine Faivre.",
+    "page_summary": "Music and Esotericism, edited by Laurence Wuidar and published by Brill (2010) as Volume 9 of the Aries Book Series: Texts and Studies in Western Esotericism (series editor Marco Pasi, with an editorial board including major figures in esotericism studies such as Wouter J. Hanegraaff, Antoine Faivre, and Nicholas Goodrick-Clarke), is a scholarly essay collection examining historical connections between music and Western esoteric traditions — the Library of Congress subject headings on its copyright page list 'Music and occultism,' 'Music and magic,' and 'Music -- Philosophy and aesthetics.' The book is multilingual (chiefly English, with some articles in French or Italian carrying English summaries), reflecting the international, continental-European-heavy composition typical of esotericism-studies scholarship. Given the series' scope and the subject-heading framing, contributions likely address topics such as Pythagorean and Neoplatonic harmonic cosmology (music of the spheres traditions), Renaissance and early modern theories connecting music to magical or talismanic efficacy (relevant to the same intellectual world as Robert Fludd's music theory and Cornelius Agrippa's writing on music's affective/magical power, both otherwise present in Ted's renaissance-magic collection), and the use of music within occult or esoteric ritual practice across different historical periods. It is written for scholars of Western esotericism, religious studies, and historical musicology — dense academic prose assuming familiarity with the field's core concepts (hermeticism, Neoplatonism, the 'music of the spheres' tradition) rather than an accessible introduction. For SYNTHBUILDER this book has no technical relevance whatsoever — no synthesis, DSP, or sound technology content — but it sits at a genuinely interesting intersection with Ted's much larger esoteric-studies/alchemy corpus (Claudiens, the Rosicrucian and Hermeticism folders, GoetiaRevEng, etc.), and could inform thematic/conceptual work if a future project wanted to connect chiptune or synthesizer sound design to esoteric/magical concepts of harmony and correspondence, in the way ALCHEMYBLOCKSHOOTER connects alchemical symbolism to game mechanics.",
+    "relevance_to_synthbuilder": "None technically — no synthesis/DSP content — but thematically interesting as a bridge between Ted's esotericism corpus and any future symbolically-grounded sound-design work.",
+    "tags": [
+      "esotericism",
+      "music-history",
+      "magic",
+      "academic",
+      "hermeticism"
+    ]
+  },
+  {
+    "slug": "temple-of-music-robert-fludd-peter-hauge",
+    "title": "'The Temple of Music' by Robert Fludd",
+    "author": "Peter Hauge (critical edition and commentary)",
+    "path": "E:\\pdf\\renaissance magic\\Fludd\\[Music Theory in Britain, 1500-1700_ Critical Editions] Peter Hauge - 'The Temple of Music' by Robert Fludd (2010, Ashgate) - libgen.li.pdf",
+    "card_summary": "A modern critical edition (Ashgate, series 'Music Theory in Britain 1500-1700') of Robert Fludd's 1617-18 treatise Templum Musicae, edited and translated with commentary by Peter Hauge, presenting the Renaissance polymath's cosmological theory of music alongside period musical practice.",
+    "page_summary": "'The Temple of Music' by Robert Fludd is Peter Hauge's scholarly critical edition of Robert Fludd's Templum Musicae (published as part of Fludd's larger Utriusque Cosmi... Historia, 1617-1618), issued by Routledge/Ashgate as part of the series 'Music Theory in Britain, 1500-1700: Critical Editions,' general-edited by Jessie Ann Owens (UC Davis). The series' stated mission (per its own front-matter description, captured directly) is 'the first systematic attempt to present the entire range of theoretical writing about music by English, Scottish, Welsh and Irish writers from 1500 to 1700 in modern critical editions,' using original spelling and situating each work in its historical and musical-practice context; companion volumes in the same series (also listed in the front matter) cover Thomas Campion and Giovanni Coprario on counterpoint and composition, William Bathe's introduction to singing, and John Birchensha's writings on music. Fludd — an English physician, alchemist, and Hermetic-Rosicrucian-adjacent cosmological philosopher already well represented elsewhere in Ted's renaissance-magic collection — presents music within his characteristic macrocosm/microcosm cosmological framework: for Fludd, musical harmony is not merely an aesthetic or practical craft but a direct expression of universal cosmic proportion, continuous with his broader engagement with number, geometry, and correspondence across creation. Hauge's edition provides the original text (likely with translation, given the series' English-language readership), extensive scholarly annotation situating Fludd's musical theory against both contemporary English music theory and his own idiosyncratic Hermetic philosophy, and discussion of how (or whether) Fludd's cosmological framework maps onto period musical practice. It is written for musicologists and historians of Renaissance esotericism/science — dense critical-edition scholarship, not an accessible introduction. For SYNTHBUILDER this has no direct technical relevance — no synthesis, DSP, or sound-technology content — but as an actual period music-theory treatise (rather than criticism about music), it is the closest thing in Ted's library to primary-source Renaissance harmonic theory, and connects meaningfully to the same Hermetic/cosmological-correspondence thinking already central to ALCHEMYBLOCKSHOOTER and Ted's broader esoteric-studies corpus, should a future project want to ground synth patch design in period harmonic-cosmological theory rather than pure NES-accuracy.",
+    "relevance_to_synthbuilder": "Low technically — a primary-source Renaissance music-theory critical edition, no synthesis/DSP content — but thematically relevant to Ted's Hermetic/cosmological corpus for any future symbolically-grounded synth design.",
+    "tags": [
+      "music-theory",
+      "renaissance",
+      "esotericism",
+      "critical-edition",
+      "fludd",
+      "hermeticism"
+    ]
+  },
+  {
+    "slug": "popular-music-nostalgia-video-game-andra-ivanescu",
+    "title": "Popular Music in the Nostalgia Video Game: The Way It Never Sounded",
+    "author": "Andra Ivănescu",
+    "path": "E:\\pdf\\music\\Andra Ivănescu Popular Music in the Nostalgia Video Game_ The Way It Never Sounded Springer International Publishing_Palgrave Macmillan.pdf",
+    "card_summary": "A Palgrave 'Studies in Audio-Visual Culture' monograph examining how nostalgia-themed and retro-styled video games deploy popular music (and evoke chiptune/retro sound) to construct idealized, often historically inaccurate, memories of past eras and past games.",
+    "page_summary": "Popular Music in the Nostalgia Video Game (Palgrave Macmillan/Springer, part of the series 'Palgrave Studies in Audio-Visual Culture,' edited by K. J. Donnelly of the University of Southampton) is Andra Ivănescu's academic monograph on how video games mobilize popular music and sound to construct nostalgia — both nostalgia for real historical periods evoked by licensed or period-styled needle-drop music, and, significantly for SYNTHBUILDER's interests, nostalgia for earlier eras of gaming itself via retro/chiptune-styled sound design in games that are not actually old (the book's subtitle, 'The Way It Never Sounded,' points directly at this: nostalgic game audio often doesn't accurately reproduce how old games actually sounded, but constructs a cleaned-up, mythologized version of that sound, an idea very relevant to SYNTHBUILDER's own stated concern with genuine NES-tone-accuracy versus a more idealized 'chiptune' sound). The series' own framing (captured in the extracted front matter) describes its aim as addressing 'blind spots such as video game sound, soundscapes and sound ecology, sound psychology' within the broader audio-visual culture field, treating film and games as parallel objects of sound-and-image study. Ivănescu's book sits alongside Collins's Game Sound, Kamp's and Summers's ludomusicology titles, and the Ludomusicology essay collection as part of a coherent cluster of game-audio scholarship in Ted's library, but distinguishes itself by focusing specifically on nostalgia as a cultural and design mechanism rather than game audio history or theory generally. It is written for an academic audience in game studies, popular music studies, and media/sound studies. For SYNTHBUILDER, this book is unusually pointed for a non-technical title: its central distinction between authentic period sound and constructed/idealized 'retro' sound is directly the conceptual tension SYNTHBUILDER's own project docs flag when insisting on genuine NES-accurate synthesis (2A03 channel behavior, non-linear APU mixing, bandlimited synthesis per NSFRIPPER's 40-rule architecture) rather than a generic 'chiptune-flavored' sound — this book gives scholarly vocabulary and critical framing for that exact distinction, even though it contains no DSP or programming content itself.",
+    "relevance_to_synthbuilder": "Medium — no technical/DSP content, but its central argument (constructed 'retro' sound vs. authentic period sound) directly names the accuracy-vs-nostalgia distinction SYNTHBUILDER is built around.",
+    "tags": [
+      "video-game-music",
+      "nostalgia",
+      "ludomusicology",
+      "chiptune",
+      "academic",
+      "retro"
+    ]
+  },
+  {
+    "slug": "holes-live-through-this-anwen-crawford",
+    "title": "Hole's Live Through This (33 1/3 series)",
+    "author": "Anwen Crawford",
+    "path": "E:\\pdf\\music\\(33 1_3 (103), 3313) Anwen Crawford - Hole's Live Through This. 103-Bloomsbury Academic (2014).pdf",
+    "card_summary": "A 33 1/3 series study of Hole's 1994 album Live Through This, opening with a dedication and a Euripides epigraph on reputation, examining Courtney Love's songwriting, the album's fraught release context, and its place in 1990s alternative-rock and feminist music history.",
+    "page_summary": "Anwen Crawford's entry in the 33 1/3 series covers Hole's second album, Live Through This (1994), released days after Kurt Cobain's death and permanently shadowed by controversy, grief, and gendered skepticism about frontwoman Courtney Love's authorship — the extracted opening pages (a dedication 'for L and for E — or, more especially, for the girls they once were' followed by an epigraph from Euripides's Medea, 'My reputation, yet again! It goes before me like a curse') signal a critical approach centered on reputation, gender, and the way Love's story has overshadowed close engagement with the record itself. As with other 33 1/3 volumes, expect a blend of close listening/track analysis, band and scene history (Hole's place within Riot Grrrl-adjacent and mainstream grunge-era alternative rock), and cultural criticism addressing the persistent doubt cast on Love's songwriting credit and the album's reception in the immediate aftermath of Cobain's death. The book is written for readers invested in 1990s alternative-rock and feminist music history and criticism; it assumes no technical music background and offers no production or synthesis instruction, functioning as long-form music criticism and cultural history rather than a how-to text. For SYNTHBUILDER this book has no technical relevance whatsoever — no synthesis, DSP, recording technique, or sound design content — and its subject (raw, guitar-driven 1990s alternative rock) is stylistically unrelated to chiptune or synthesizer programming. Its place in Ted's library and on a music-showcase page is purely as evidence of broad, personally significant listening and critical interest, alongside the other 33 1/3 titles in the collection, not as a resource this project would draw on for building synths or plugins.",
+    "relevance_to_synthbuilder": "None — pure album criticism with no technical content relevant to synthesis or plugin building.",
+    "tags": [
+      "album-criticism",
+      "90s",
+      "grunge",
+      "alt-rock",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "devos-freedom-of-choice-evie-nagy",
+    "title": "Devo's Freedom of Choice (33 1/3 series)",
+    "author": "Evie Nagy",
+    "path": "E:\\pdf\\music\\(33 1_3 (104), 3313) Evie Nagy - Devo's Freedom of Choice. 104-Bloomsbury Academic (2015).pdf",
+    "card_summary": "A 33 1/3 series study of Devo's 1980 breakthrough Freedom of Choice (home of 'Whip It'), examining the band's synth-pop crossover, satirical de-evolution concept, and use of early synthesizer technology to achieve mainstream new-wave success.",
+    "page_summary": "Evie Nagy's 33 1/3 entry covers Devo's fourth album, Freedom of Choice (1980), the record that took the Akron, Ohio art-punk/new-wave band from cult status to mainstream success on the strength of the single 'Whip It.' This is one of the more technically relevant 33 1/3 entries in Ted's collection: Devo's sound on this album marked a decisive shift toward synthesizer-driven production (Roland and other synths increasingly central alongside guitars), and the book likely engages with how that shift in instrumentation served the band's long-running satirical concept of human 'de-evolution' — using the era's newly affordable synth technology to sound simultaneously futuristic, mechanical, and satirically 'devolved,' a knowing irony given the band's art-school conceptual roots (Kent State, Bob Lewis, Gerald Casale and Mark Mothersbaugh's founding concept). As with other volumes in the series, expect track-by-track or thematic critical discussion combined with band history and cultural context (the transition from underground new-wave/art-punk credibility to MTV-era mainstream visibility, and the tensions that came with it), written for readers already invested in new-wave and synth-pop history. It assumes no formal music-theory or production background and offers criticism rather than technical instruction, though — more than most other 33 1/3 titles here — its subject matter puts it in direct proximity to synthesizer history. For SYNTHBUILDER this book offers no DSP, coding, or plugin content, but it is closer to relevant than the collection's other album-criticism volumes: Devo is a canonical example of early affordable-synthesizer pop production being used for deliberate expressive and conceptual effect, directly the kind of 'why does this synth choice mean what it means' question also raised by O'Connor's Dark Waves, useful aesthetic/historical context rather than a technical resource.",
+    "relevance_to_synthbuilder": "Low — album criticism, not technical; but Devo's synth-pop crossover is a directly relevant historical case study in expressive early-synthesizer production choices.",
+    "tags": [
+      "album-criticism",
+      "new-wave",
+      "synth-pop",
+      "synthesizer",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "beastie-boys-pauls-boutique-dan-leroy",
+    "title": "Beastie Boys' Paul's Boutique (33 1/3 series)",
+    "author": "Dan LeRoy",
+    "path": "E:\\pdf\\music\\(33 1_3 30) Beastie Boys._ LeRoy, Dan - Beastie Boys' Paul's boutique-Continuum_Bloomsbury USA (2006).pdf",
+    "card_summary": "A 33 1/3 series study of the Beastie Boys' 1989 Paul's Boutique, one of hip-hop's most densely sampled records, examining the Dust Brothers' layered sampling production and the album's initial commercial failure followed by long-term critical canonization.",
+    "page_summary": "Dan LeRoy's early entry (No. 30) in the 33 1/3 series covers the Beastie Boys' second album, Paul's Boutique (1989), produced largely by the Dust Brothers (John King and Michael Simpson) and widely regarded as one of the most sonically dense and ambitious sampling records in hip-hop history — built from hundreds of layered samples in an era just before sample-clearance law made that kind of maximalist collage-production practically and legally difficult to replicate. The book is one of the more production-technically substantial entries in this collection: it likely documents the Dust Brothers' sampling process and studio approach in real detail (multi-track sampler layering, breakbeat and loop selection, the record's move away from the group's earlier, more sparse Def Jam-era sound toward this maximalist collage aesthetic), the album's initially disappointing commercial reception relative to the group's blockbuster debut Licensed to Ill, and its subsequent critical rehabilitation into a canonical, frequently cited landmark of sample-based production. As with other 33 1/3 volumes it combines criticism, production history, and cultural context, written for informed hip-hop and production-history readers; it assumes no formal synthesis or DSP background but does engage meaningfully with the mechanics of sample-based composition. For SYNTHBUILDER, this book's relevance is conceptual rather than direct: sample-based, loop-collage production is a different craft from synthesis/DSP programming, but the underlying idea — building dense, characterful sound from many small layered sources — has some resonance with layering multiple chiptune voices or noise-channel elements in a JSFX synth, and the record is a good reference point for 'maximalist' production thinking generally. It contains no code, DSP theory, or plugin-building content, and is best read as production-history/criticism rather than a technical resource.",
+    "relevance_to_synthbuilder": "Low — album criticism/production history of sample-collage hip-hop; only loosely relevant to layered-voice sound-design thinking, no DSP or synthesis content.",
+    "tags": [
+      "album-criticism",
+      "hip-hop",
+      "sampling",
+      "production",
+      "music-history",
+      "33-1-3"
+    ]
+  },
+  {
+    "slug": "tori-amos-boys-for-pele-amy-gentry",
+    "title": "Tori Amos's Boys for Pele (33 1/3 series)",
+    "author": "Amy Gentry",
+    "path": "E:\\pdf\\music\\Amy Gentry Tori Amos s Boys for Pele Bloomsbury Academic.pdf",
+    "card_summary": "A 33 1/3 series study of Tori Amos's 1996 self-produced Boys for Pele, examining the album's confrontational piano-and-harpsichord-driven sound, self-production, and mythological/feminist conceptual framing.",
+    "page_summary": "Amy Gentry's 33 1/3 entry covers Tori Amos's third solo studio album, Boys for Pele (1996), notable both for being Amos's first self-produced record (after working with outside producers on her earlier albums) and for its unusual instrumentation choices — extensive use of harpsichord and a Bösendorfer Imperial piano alongside her more familiar piano-and-voice core, recorded partly in a deconsecrated Irish church, contributing to the record's stark, intense, sometimes confrontational sound. The book likely engages with Amos's assertion of full creative and production control at a moment when few women in her commercial position had it, the album's dense mythological and religious imagery (its title referencing the Hawaiian volcano goddess Pele), and its critical reception as either a masterpiece or a difficult, alienating listen depending on the critic — consistent with the 33 1/3 format's mix of criticism, biography, and production history. It is written for readers already invested in 1990s alternative/art-pop and feminist music criticism, assumes no technical music-production background, and offers criticism rather than how-to instruction, though its attention to Amos's self-production and specific keyboard-instrument choices (harpsichord vs. piano vs. Bösendorfer) gives it slightly more instrument-specific substance than some other entries in the series. For SYNTHBUILDER this book has no direct technical relevance — no synthesis, DSP, or sound-design content — and its subject (acoustic piano/harpsichord-centered singer-songwriter production) is stylistically unrelated to chiptune or synthesizer programming. Its place in Ted's library is purely as music-criticism/personal-taste reading alongside the collection's other 33 1/3 titles, not as a resource this project would consult.",
+    "relevance_to_synthbuilder": "None — pure album criticism of acoustic piano/harpsichord-centered work; no synthesis, DSP, or production-technology content relevant to the project.",
+    "tags": [
+      "album-criticism",
+      "alt-rock",
+      "piano",
+      "music-history",
+      "33-1-3"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NESjamtools — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>NESjamtools</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    &nbsp;<code>C:\Dev\NESjamtools</code>&nbsp;&middot;&nbsp;Python (numpy/scipy render core), JSFX (live instrument), REAPER .rpp generation, MIDI
+  </div>
+  
+</div>
+<div class="page-body"><p>NESjamtools is the instrument layer of a three-project family (Archive = NSFRIPPER, Instrument = this project, Score = shared MIDI). It doesn&#x27;t try to be a byte-exact emulator; nesjam/nes_render.py is a hand-tuned NES-hardware-flavored renderer (non-linear DAC mix, bandlimited pulse synthesis, LFSR noise, triangle gate-hold, 4-pole analog lowpass and DC blocking) that turns a MIDI score into an accurate WAV bounce, while instruments/NESJam.jsfx is a single multitimbral REAPER plugin instance playing all four 2A03 voices live (channel 1-&gt;Pulse1, 2-&gt;Pulse2, 3-&gt;Triangle, 4-&gt;Noise).</p><p>build_all.py batches 50 representative NES games (Castlevania, Mega Man 2/3/4, Zelda, Metroid, SMB, Contra and more), sourcing from NSFRIPPER&#x27;s output. Four games (Contra, Battletoads, Zelda, Wizards &amp; Warriors) additionally ship as &#x27;hybrid&#x27; projects -- accurate audio stems playing by default with muted, editable NESJam MIDI tracks underneath -- and as pure 4-track all-synth variants. A second install-free-VST path via the free &#x27;Magical 8bit Plug 2&#x27; is documented as an alternative, including per-game ADSR translation tables.</p><p>HOWTO_LIVE_KEYBOARD.md walks through a dedicated _KEYBOARD_TEST REAPER project to isolate keyboard/synth problems from song-data problems. output.md (2026-06-11) is a detailed post-mortem mapping every specific complaint from an ear-test session (W&amp;W noise sustaining after stop, Zelda pops on note edges, Double Dragon II sounding like noise from a mis-picked SFX-bank track, wrong track colors, a MIDI-device slot bug) to root causes and fixes -- all logged as Fixed except one, explicitly marked &#x27;Awaiting your ears.&#x27; CLAUDE.md states the hard rule directly: don&#x27;t claim &#x27;sounds like the game&#x27; until the user ear-confirms in REAPER; the WAV renders are the verifiable artifact, the JSFX is unverified until loaded.</p><p>Assets on disk: 84 MIDI files, 23 four-track MIDI files, 50 NSF files, 50 game folders under projects/ and renders/. Git history is a single commit with no remote configured -- never pushed anywhere.</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>One open bug report (&#x27;W&amp;W Map: rhythm feels wrong&#x27;) is explicitly waiting on Ted&#x27;s ear-test in REAPER; every other logged complaint is marked Fixed. Also has no git remote -- worth pushing once confirmed.</div>
+</body></html>

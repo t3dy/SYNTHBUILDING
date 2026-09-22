@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SYNTHBUILDING — SYNTHBUILDING</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="site">
+  <h1>SYNTHBUILDING</h1>
+  <p class="tagline">Ted Hand's music-hacking &amp; music-composition projects — synths, NES chiptune extraction, Atalanta Fugiens fugues, Bach mashups, and everything in between.</p>
+  <nav class="themes"><a href="#nsfripper">NES / NSFRIPPER family</a> <a href="#atalanta">Atalanta Fugiens x NES</a> <a href="#bach">Chipped On Bach</a> <a href="#weird">Weird / experimental</a> <a href="#other">Other tools</a> <a href="#library">Library</a></nav>
+</header>
+<main>
+<h2 class="section" id="nsfripper">NES / NSFRIPPER family</h2><div class="grid"><div class="card">
+  <h3><a href="project/chipscribe.html">ChipScribe (ChipTools)</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>(deployed only, no local path)</span>
+  </div>
+  <p class="card-summary">A deployed chiptune-tooling front-end for the ReapNES/NSFRIPPER family, live at t3dy.github.io/ChipTools/. No local C:\Dev source tree exists -- it is a GitHub-only repository (github.com/t3dy/ChipTools).</p>
+  <div class="live">&#9654; <a href="https://t3dy.github.io/ChipTools/" target="_blank" rel="noopener">live site</a></div>
+</div>
+<div class="card">
+  <h3><a href="project/glitchmario.html">GlitchMario</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    <span>C:\Dev\GlitchMario</span>
+  </div>
+  <p class="card-summary">A static documentary site narrating five days of trying to extract Super Mario Bros.&#x27; overworld theme from raw NES hardware registers, told as a timeline of 100 events, 17 &#x27;blunders,&#x27; and 30 NES-history milestones -- self-deprecating and specific, down to phase-inverting drums and a JSFX operator meaning exponentiation instead of XOR. Confirmed live and complete.</p>
+  <div class="live">&#9654; <a href="https://t3dy.github.io/GlitchMario/" target="_blank" rel="noopener">live site</a></div>
+</div>
+<div class="card">
+  <h3><a href="project/nesmusicstudio.html">NESMusicStudio</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>C:\Dev\NESMusicStudio</span>
+  </div>
+  <p class="card-summary">NSF/ROM -&gt; MIDI -&gt; REAPER/WAV/MP4 -&gt; YouTube pipeline, possibly the actual current front-runner of the whole NES-music-tools cluster. Castlevania 1 complete (15/15 tracks, 0 pitch mismatches); Contra in progress (11/11 tracks, 96.6% volume match). Git-committed and actively worked, live site deployed.</p>
+  <div class="live">&#9654; <a href="https://t3dy.github.io/ReapNES/" target="_blank" rel="noopener">live site</a></div>
+</div>
+<div class="card">
+  <h3><a href="project/nesjamtools.html">NESjamtools</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    <span>C:\Dev\NESjamtools</span>
+  </div>
+  <p class="card-summary">A REAPER-based NES virtual instrument, not just an asset library: MIDI scores (or a live keyboard) become NES-accurate audio via a custom multitimbral JSFX synth plus a separate high-fidelity Python renderer. Ships 50 games as ready REAPER projects, hybrid stem+MIDI projects for 4 games. Sibling &#x27;Instrument&#x27; layer to NSFRIPPER&#x27;s &#x27;Archive&#x27;.</p>
+  
+</div>
+<div class="card">
+  <h3><a href="project/nsfripper.html">NSFRIPPER (NES Music Extraction Studio)</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>C:\Dev\NSFRIPPER</span>
+  </div>
+  <p class="card-summary">Reverse-engineers NES game music into MIDI and REAPER projects via 6502/NSF emulation, ROM-trace parsing against real hardware, and a custom JSFX synth. 321 games, 8,900+ MIDIs extracted, deployed as a browsable site. Includes a Bach-mashup side project. Active but stalled since April 2026 on an unmade listening decision.</p>
+  <div class="live">&#9654; <a href="https://t3dy.github.io/NSFRIPPER/" target="_blank" rel="noopener">live site</a></div>
+</div>
+<div class="card">
+  <h3><a href="project/reaperbeyondnes.html">REAPERBEYONDNES</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>C:\Dev\REAPERBEYONDNES</span>
+  </div>
+  <p class="card-summary">Declared successor extending NSFRIPPER&#x27;s pipeline past the NES to GBA, SMS, Saturn, Genesis, SNES, GBC, and Virtual Boy. Heavily structured (per-chip project folders, its own agent-protocol document). Real, substantial work -- and not a git repository, a genuine loss risk.</p>
+  
+</div>
+<div class="card">
+  <h3><a href="project/reapnes-studio.html">ReapNES Studio (ReapNESClod)</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#8a8a8a">ARCHIVED</span>
+    <span>C:\Dev\ReapNES-Studio</span>
+  </div>
+  <p class="card-summary">REAPER-based NES 2A03 synth (JSFX + JUCE/VST3) with a 54K-preset corpus extracted from NES-MDB, project-generator scripts, and an analog console UI. Solved its core MIDI-keyboard-routing and DC-offset bugs, then was folded into NSFRIPPER on 2026-03-31 as the canonical synth source; no independent activity since.</p>
+  
+</div>
+<div class="card">
+  <h3><a href="project/nes-music-lab.html">nes-music-lab (NESMusicLab)</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    <span>C:\Dev\NESMusicLab</span>
+  </div>
+  <p class="card-summary">Research-grade NES audio extraction and reconstruction work -- Castlevania analysis, trace conversion, MIDI export scripts. Has real, working code but is stalled and uncommitted to git.</p>
+  
+</div></div><h2 class="section" id="atalanta">Atalanta Fugiens x NES</h2><div class="grid"><div class="card">
+  <h3><a href="project/antigravemblemsin3d.html">ANTIGRAVEMBLEMSIN3D</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#c2a15e">SCRATCH</span>
+    <span>C:\Dev\ANTIGRAVEMBLEMSIN3D</span>
+  </div>
+  <p class="card-summary">A full static-file mirror of EMBLEMSIN3D (unchanged chiptune.js/gamesynths.js copies), rebuilt around Vite, used as a sandbox for unrelated visual and game-design experiments. No git history, not deployed. The chiptune files just came along for the ride -- not a music project in its own right.</p>
+  
+</div>
+<div class="card">
+  <h3><a href="project/emblemsin3d-fugues.html">Emblems in 3D -- 8-bit Fugue Engine</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>C:\Dev\EMBLEMSIN3D</span>
+  </div>
+  <p class="card-summary">Inside a three.js walkable reconstruction of Maier&#x27;s Atalanta Fugiens, a hand-built NES-APU-style Web Audio synth plays all 50 of the book&#x27;s three-voice canonic fugues as two pulse channels plus triangle bass, cycled through ten mined NES game-audio &#x27;palettes.&#x27; Live in the world; jukebox/fugue browser pages are local-only by design.</p>
+  <div class="live">&#9654; <a href="https://t3dy.github.io/emblems-in-3d/" target="_blank" rel="noopener">live site</a></div>
+</div>
+<div class="card">
+  <h3><a href="project/fuguejukebox.html">FUGUEJUKEBOX</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    <span>C:\Dev\FUGUEJUKEBOX</span>
+  </div>
+  <p class="card-summary">Michael Maier&#x27;s Atalanta Fugiens (1617) -- 50 alchemical three-voice fugues -- reimagined as 500 NES-square-wave chiptune variations (harmonic, scalar, and effects treatments). The music generation is genuinely complete and verified on disk; a companion Next.js browsing site was deployed to Vercel but is now confirmed dead (404).</p>
+  
+</div></div><h2 class="section" id="bach">Chipped On Bach</h2><div class="grid"><div class="card">
+  <h3><a href="project/bachstudies.html">Bach Studies (scholarship, not music)</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#c25e5e">STUB</span>
+    <span>C:\Dev\BachStudies</span>
+  </div>
+  <p class="card-summary">A DH-framework scaffold for Bach scholarship (SQLite to Python to static HTML), not Bach music-making. 13 books converted to a corpus, a mostly-empty auto-generated 13,815-page &#x27;dictionary&#x27; behind only 12 real entries. Never pushed to a git remote. Zero audio, MIDI, or synthesis code anywhere -- easy to confuse with Chipped On Bach by name alone.</p>
+  
+</div>
+<div class="card">
+  <h3><a href="project/chippedonbach.html">Chipped On Bach</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    <span>C:\Dev\NSFRIPPER\scripts\bach_nes_mashup.py</span>
+  </div>
+  <p class="card-summary">J.S. Bach MIDI (Goldberg Variations, Well-Tempered Clavier, Two-Part Inventions, Cello Suite No. 1) paired with NES instrument timbre presets extracted from Castlevania, Contra, Metroid, and Gradius stage palettes, rendered through NSFRIPPER&#x27;s own synth pipeline. Two finished preview videos exist; ~117 generated projects mostly never rendered to WAV.</p>
+  
+</div></div><h2 class="section" id="weird">Weird / experimental</h2><div class="grid"><div class="card">
+  <h3><a href="project/antigravfugiens.html">ANTIGRAVFUGIENS</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#c2a15e">SCRATCH</span>
+    <span>C:\Dev\EMBLEMSIN3D\ANTIGRAVFUGIENS</span>
+  </div>
+  <p class="card-summary">A small self-contained experiment reusing the same 50 Atalanta fugues and ten NES game-palettes, adding a second axis of ten weird studio effects per emblem plus six deliberately strange interactive audio toys. Not linked from the main site, not deployed -- the weirdest thing in the whole NES-music cluster.</p>
+  
+</div></div><h2 class="section" id="other">Other tools</h2><div class="grid"><div class="card">
+  <h3><a href="project/arpeggiator-composer.html">arpeggiator-composer</a></h3>
+  <div class="meta">
+    <span class="badge" style="color:#5ec2b8">STABLE</span>
+    <span>C:\Dev\arpeggiator-composer</span>
+  </div>
+  <p class="card-summary">A deterministic MIDI arpeggiator built specifically for REAPER, with a proper project structure (core/, jsfx/, reascript/, reaper_projects/, tests/). Not NES-specific -- a general composition tool. Stalled and uncommitted.</p>
+  
+</div></div>
+<h2 class="section" id="library">Music book library</h2><div class="grid"><div class="card">
+  <h3><a href="library/temple-of-music-robert-fludd-peter-hauge.html">&#x27;The Temple of Music&#x27; by Robert Fludd</a></h3>
+  <div class="meta"><span>Peter Hauge (critical edition and commentary)</span></div>
+  <p class="card-summary">A modern critical edition (Ashgate, series &#x27;Music Theory in Britain 1500-1700&#x27;) of Robert Fludd&#x27;s 1617-18 treatise Templum Musicae, edited and translated with commentary by Peter Hauge, presenting the Renaissance polymath&#x27;s cosmological theory of music alongside period musical practice.</p>
+</div>
+<div class="card">
+  <h3><a href="library/ancient-greek-music-ml-west.html">Ancient Greek Music</a></h3>
+  <div class="meta"><span>M. L. West</span></div>
+  <p class="card-summary">M. L. West&#x27;s classicist standard reference reconstructs ancient Greek musical theory, notation, instruments and surviving fragments from scattered literary, epigraphic and papyrus evidence — the foundational modern study of the subject.</p>
+</div>
+<div class="card">
+  <h3><a href="library/babes-in-toylands-fontanelle-selena-chambers.html">Babes in Toyland&#x27;s Fontanelle (33 1/3 series)</a></h3>
+  <div class="meta"><span>Selena Chambers</span></div>
+  <p class="card-summary">A 33 1/3 series study of Babes in Toyland&#x27;s 1992 major-label breakthrough Fontanelle, examining the Minneapolis trio&#x27;s abrasive riot-grrrl-adjacent sound, gender politics, and place in early-1990s alternative/grunge history.</p>
+</div>
+<div class="card">
+  <h3><a href="library/beastie-boys-pauls-boutique-dan-leroy.html">Beastie Boys&#x27; Paul&#x27;s Boutique (33 1/3 series)</a></h3>
+  <div class="meta"><span>Dan LeRoy</span></div>
+  <p class="card-summary">A 33 1/3 series study of the Beastie Boys&#x27; 1989 Paul&#x27;s Boutique, one of hip-hop&#x27;s most densely sampled records, examining the Dust Brothers&#x27; layered sampling production and the album&#x27;s initial commercial failure followed by long-term critical canonization.</p>
+</div>
+<div class="card">
+  <h3><a href="library/bjorks-homogenic-emily-mackay.html">Björk&#x27;s Homogenic (33 1/3 series)</a></h3>
+  <div class="meta"><span>Emily Mackay</span></div>
+  <p class="card-summary">A 33 1/3 series entry: Emily Mackay&#x27;s critical/biographical study of Björk&#x27;s 1997 album Homogenic, examining its blend of Icelandic strings, glitch-inflected beats and volcanic-landscape imagery as a landmark in electronic-organic pop production.</p>
+</div>
+<div class="card">
+  <h3><a href="library/companion-medieval-renaissance-music-knighton-fallows.html">Companion to Medieval and Renaissance Music</a></h3>
+  <div class="meta"><span>Tess Knighton and David Fallows (eds.)</span></div>
+  <p class="card-summary">A 1992 Schirmer Books essay collection surveying medieval and Renaissance music (c. 500-1600), opening with essays interrogating modern value judgments about early music before moving through genre-, region-, and composer-focused specialist chapters.</p>
+</div>
+<div class="card">
+  <h3><a href="library/dark-waves-neil-oconnor.html">Dark Waves: The Synthesizer and the Dystopian Sound of Britain (1977-80)</a></h3>
+  <div class="meta"><span>Neil O&#x27;Connor</span></div>
+  <p class="card-summary">A Rowman &amp; Littlefield cultural-history monograph (part of the &#x27;Popular Musics Matter&#x27; series) tracing how British synth-pop and post-punk acts of 1977-80 used the synthesizer&#x27;s alien, &#x27;inhuman&#x27; sonic character to voice Cold War and post-industrial dystopian anxiety.</p>
+</div>
+<div class="card">
+  <h3><a href="library/designing-software-synthesizer-plugins-in-c-will-pirkle.html">Designing Software Synthesizer Plug-Ins in C++: For RackAFX, VST3, and Audio Units</a></h3>
+  <div class="meta"><span>Will Pirkle</span></div>
+  <p class="card-summary">Will Pirkle&#x27;s standard textbook (Focal Press/Routledge) for building real synthesizer plugins in C++, covering oscillators, envelope generators, filters (including a full Moog ladder-filter implementation), LFOs, and complete synth-voice architecture across RackAFX, VST3 and Audio Units.</p>
+</div>
+<div class="card">
+  <h3><a href="library/devos-freedom-of-choice-evie-nagy.html">Devo&#x27;s Freedom of Choice (33 1/3 series)</a></h3>
+  <div class="meta"><span>Evie Nagy</span></div>
+  <p class="card-summary">A 33 1/3 series study of Devo&#x27;s 1980 breakthrough Freedom of Choice (home of &#x27;Whip It&#x27;), examining the band&#x27;s synth-pop crossover, satirical de-evolution concept, and use of early synthesizer technology to achieve mainstream new-wave success.</p>
+</div>
+<div class="card">
+  <h3><a href="library/four-ways-of-hearing-video-game-music-michiel-kamp.html">Four Ways of Hearing Video Game Music</a></h3>
+  <div class="meta"><span>Michiel Kamp</span></div>
+  <p class="card-summary">An Oxford University Press ludomusicology monograph proposing four distinct listening modes for engaging with video game music, building theoretical frameworks for how players actually perceive and process game scores during interactive play.</p>
+</div>
+<div class="card">
+  <h3><a href="library/game-sound-karen-collins.html">Game Sound: An Introduction to the History, Theory, and Practice of Video Game Music and Sound Design</a></h3>
+  <div class="meta"><span>Karen Collins</span></div>
+  <p class="card-summary">Karen Collins&#x27;s MIT Press textbook is the foundational academic survey of video game audio, tracing the technical history from early arcade/console sound chips (including the NES) through MIDI-era and modern interactive scoring, alongside theoretical frameworks for game-sound analysis.</p>
+</div>
+<div class="card">
+  <h3><a href="library/holes-live-through-this-anwen-crawford.html">Hole&#x27;s Live Through This (33 1/3 series)</a></h3>
+  <div class="meta"><span>Anwen Crawford</span></div>
+  <p class="card-summary">A 33 1/3 series study of Hole&#x27;s 1994 album Live Through This, opening with a dedication and a Euripides epigraph on reputation, examining Courtney Love&#x27;s songwriting, the album&#x27;s fraught release context, and its place in 1990s alternative-rock and feminist music history.</p>
+</div>
+<div class="card">
+  <h3><a href="library/how-to-make-a-noise-simon-cann.html">How To Make A Noise: A Comprehensive Guide to Synthesizer Programming</a></h3>
+  <div class="meta"><span>Simon Cann</span></div>
+  <p class="card-summary">Simon Cann&#x27;s hands-on synth-programming manual teaches subtractive, FM, wave-sequencing, and additive synthesis by building real patches (bass, pads, leads, drums) on six software synths, walking through oscillators, envelopes, filters, modulation, and FX one concept at a time.</p>
+</div>
+<div class="card">
+  <h3><a href="library/js-bach-in-tablature-jake-pincus.html">J. S. Bach in Tablature, Volume 1: Beginning to Intermediate Pieces in Standard Tab and Notation for Guitar</a></h3>
+  <div class="meta"><span>Johann Sebastian Bach / arr. Jake Pincus</span></div>
+  <p class="card-summary">A Mel Bay &#x27;Editiones Classicae&#x27; guitar-tablature songbook: beginning-to-intermediate Bach pieces arranged for classical guitar in both standard notation and tab, arranged/edited by Jake Pincus.</p>
+</div>
+<div class="card">
+  <h3><a href="library/jawbreakers-24-hour-revenge-therapy-ronen-givony.html">Jawbreaker&#x27;s 24 Hour Revenge Therapy (33 1/3 series)</a></h3>
+  <div class="meta"><span>Ronen Givony</span></div>
+  <p class="card-summary">A 33 1/3 series entry on Jawbreaker&#x27;s 1994 emo/punk landmark 24 Hour Revenge Therapy, examining the album&#x27;s role in the punk-to-emo transition and the band&#x27;s fraught major-label-adjacent position within the 1990s independent scene.</p>
+</div>
+<div class="card">
+  <h3><a href="library/art-of-fugue-ewald-demeyere.html">Johann Sebastian Bach&#x27;s Art of Fugue: Performance Practice Based on German Eighteenth-Century Theory</a></h3>
+  <div class="meta"><span>Ewald Demeyere</span></div>
+  <p class="card-summary">Demeyere reconstructs how Bach&#x27;s late, abstract keyboard-independent counterpoint cycle Die Kunst der Fuge should actually sound, grounding tempo, articulation, ornamentation and instrumentation choices in period German theoretical treatises rather than modern performance convention.</p>
+</div>
+<div class="card">
+  <h3><a href="library/bachs-st-john-passion-andreas-loewe.html">Johann Sebastian Bach&#x27;s St John Passion (BWV 245): A Theological Commentary</a></h3>
+  <div class="meta"><span>Andreas Loewe</span></div>
+  <p class="card-summary">Andreas Loewe&#x27;s Brill monograph reads Bach&#x27;s St John Passion movement by movement as Lutheran theology set to music, tracing how the libretto&#x27;s chorales, arias and turba choruses embody eighteenth-century Leipzig devotional and doctrinal concerns.</p>
+</div>
+<div class="card">
+  <h3><a href="library/kate-bushs-hounds-of-love-leah-kardos.html">Kate Bush&#x27;s Hounds of Love (33 1/3 series)</a></h3>
+  <div class="meta"><span>Leah Kardos</span></div>
+  <p class="card-summary">A 33 1/3 series study of Kate Bush&#x27;s 1985 landmark Hounds of Love, examining its Fairlight-CMI-driven production, concept-album structure (the &#x27;Ninth Wave&#x27; suite), and status as a high-water mark of art-pop studio craft.</p>
+</div>
+<div class="card">
+  <h3><a href="library/ludomusicology-kamp-summers-sweeney-fritsch.html">Ludomusicology: Approaches to Video Game Music</a></h3>
+  <div class="meta"><span>Michiel Kamp, Tim Summers, Mark Sweeney, and Melanie Fritsch (eds.)</span></div>
+  <p class="card-summary">An Equinox Publishing edited collection that helped establish &#x27;ludomusicology&#x27; as a named academic field, gathering essays applying diverse musicological, game-studies, and sound-design frameworks to video game music and audio.</p>
+</div>
+<div class="card">
+  <h3><a href="library/music-and-esotericism-laurence-wuidar.html">Music and Esotericism</a></h3>
+  <div class="meta"><span>Laurence Wuidar (ed.)</span></div>
+  <p class="card-summary">Volume 9 of Brill&#x27;s Aries Book Series (Texts and Studies in Western Esotericism), an edited scholarly collection on the historical intersections of music with occultism, magic, and esoteric philosophy, from an editorial board including Wouter Hanegraaff and Antoine Faivre.</p>
+</div>
+<div class="card">
+  <h3><a href="library/music-and-the-muses-murray-wilson.html">Music and the Muses: The Culture of Mousike in the Classical Athenian City</a></h3>
+  <div class="meta"><span>Penelope Murray and Peter Wilson (eds.)</span></div>
+  <p class="card-summary">An Oxford University Press edited volume on mousike — the combined art of music, poetry and dance central to classical Athenian civic and cultural life. NOTE: the local PDF (49 pages) is only the book&#x27;s bibliography, not the full text.</p>
+</div>
+<div class="card">
+  <h3><a href="library/piano-opera-final-fantasy-i-ii-iii-uematsu-nobuo.html">Piano Opera: Final Fantasy I II III (Sheet Music)</a></h3>
+  <div class="meta"><span>Nobuo Uematsu (composer); arr. Hiroyuki Nakayama</span></div>
+  <p class="card-summary">A Japanese piano-arrangement songbook of Nobuo Uematsu&#x27;s scores for the original NES-era Final Fantasy I-III (composed for the Famicom&#x27;s 2A03 sound chip), arranged for solo piano by Hiroyuki Nakayama, with composer/arranger staff profiles.</p>
+</div>
+<div class="card">
+  <h3><a href="library/popular-music-nostalgia-video-game-andra-ivanescu.html">Popular Music in the Nostalgia Video Game: The Way It Never Sounded</a></h3>
+  <div class="meta"><span>Andra Ivănescu</span></div>
+  <p class="card-summary">A Palgrave &#x27;Studies in Audio-Visual Culture&#x27; monograph examining how nostalgia-themed and retro-styled video games deploy popular music (and evoke chiptune/retro sound) to construct idealized, often historically inaccurate, memories of past eras and past games.</p>
+</div>
+<div class="card">
+  <h3><a href="library/synthesizer-basics-dean-friedman.html">Synthesizer Basics</a></h3>
+  <div class="meta"><span>Dean Friedman</span></div>
+  <p class="card-summary">A classic 1980s Amsco beginner&#x27;s guide (by singer-songwriter Dean Friedman) to understanding, programming and using a synthesizer, with dedicated sections on the Yamaha DX7, sampling devices, and MIDI.</p>
+</div>
+<div class="card">
+  <h3><a href="library/the-jesus-lizard-book.html">The Jesus Lizard Book</a></h3>
+  <div class="meta"><span>Various (band members, Corey Rusk, and contributors)</span></div>
+  <p class="card-summary">An oral-history/coffee-table retrospective of noise-rock band the Jesus Lizard, told through the band members&#x27; and Touch and Go Records founder Corey Rusk&#x27;s own words, moving album by album from Pure (1989) through Blue (1997).</p>
+</div>
+<div class="card">
+  <h3><a href="library/organ-preludes-of-js-bach-george-stauffer.html">The Organ Preludes of Johann Sebastian Bach</a></h3>
+  <div class="meta"><span>George B. Stauffer</span></div>
+  <p class="card-summary">Stauffer&#x27;s 1980 musicological monograph (Studies in Musicology series, UMI Research Press) traces the stylistic development, sources, and compositional structure of Bach&#x27;s free organ preludes across his career, from early North German influence to the mature Leipzig works.</p>
+</div>
+<div class="card">
+  <h3><a href="library/recording-engineers-handbook-bobby-owsinski.html">The Recording Engineer&#x27;s Handbook, Second Edition</a></h3>
+  <div class="meta"><span>Bobby Owsinski</span></div>
+  <p class="card-summary">Owsinski&#x27;s widely used practical reference covers microphones, preamps, stereo and multichannel miking technique, DAW recording fundamentals (ADCs/DACs, latency, headroom), drum-kit and instrument miking, and mixing — the standard textbook for recording-engineering craft.</p>
+</div>
+<div class="card">
+  <h3><a href="library/rock-synthesizer-manual-geary-yelton.html">The Rock Synthesizer Manual: A Revised Guide for the Electronic Musician</a></h3>
+  <div class="meta"><span>Geary Yelton</span></div>
+  <p class="card-summary">A 1984 hardware-era synthesizer manual walking rock/pop musicians through electronic sound fundamentals — voltage control, VCAs, envelope generation, filtering, modulation, keyboard controllers, sequencers, sample-and-hold, and patch-memory programming.</p>
+</div>
+<div class="card">
+  <h3><a href="library/routledge-research-companion-bach-robin-leaver.html">The Routledge Research Companion to Johann Sebastian Bach</a></h3>
+  <div class="meta"><span>Robin A. Leaver (ed.)</span></div>
+  <p class="card-summary">An edited scholarly survey aimed at graduate-level Bach researchers, with specialist essays assessing the past 30-50 years of Bach research (chronology, sources, performance practice, authorship debates) and flagging open questions for future study.</p>
+</div>
+<div class="card">
+  <h3><a href="library/the-second-sense-burnett-fend-gouk.html">The Second Sense: Studies in Hearing and Musical Judgement from Antiquity to the Seventeenth Century</a></h3>
+  <div class="meta"><span>Charles Burnett, Michael Fend, and Penelope Gouk (eds.)</span></div>
+  <p class="card-summary">A Warburg Institute Surveys and Texts volume (No. XXII) collecting essays on the history of theories of hearing and musical judgment from Aristotle through the seventeenth century, spanning philosophy of perception, music theory, and early acoustic/mechanical science.</p>
+</div>
+<div class="card">
+  <h3><a href="library/they-might-be-giants-flood-sandifer-reed.html">They Might Be Giants&#x27; Flood (33 1/3 series)</a></h3>
+  <div class="meta"><span>Philip Sandifer and S. Alexander Reed</span></div>
+  <p class="card-summary">A 33 1/3 series study of They Might Be Giants&#x27; 1990 breakthrough Flood, co-written by Philip Sandifer and S. Alexander Reed, examining the album&#x27;s genre-hopping songwriting, drum-machine-and-accordion aesthetic, and place in alternative-pop history.</p>
+</div>
+<div class="card">
+  <h3><a href="library/tools-of-the-trade-daw-usage-darko-etinger.html">Tools of the Trade: Digital Audio Workstation Usage Antecedents</a></h3>
+  <div class="meta"><span>Darko Etinger</span></div>
+  <p class="card-summary">A 13-page academic journal article (Informatologia, 2016), not a book: Etinger surveys 838 heavy metal/hard rock artists using Technology Acceptance and Task-Technology Fit models to identify what drives DAW adoption in composition, recording, mixing and mastering.</p>
+</div>
+<div class="card">
+  <h3><a href="library/tori-amos-boys-for-pele-amy-gentry.html">Tori Amos&#x27;s Boys for Pele (33 1/3 series)</a></h3>
+  <div class="meta"><span>Amy Gentry</span></div>
+  <p class="card-summary">A 33 1/3 series study of Tori Amos&#x27;s 1996 self-produced Boys for Pele, examining the album&#x27;s confrontational piano-and-harpsichord-driven sound, self-production, and mythological/feminist conceptual framing.</p>
+</div>
+<div class="card">
+  <h3><a href="library/understanding-video-game-music-tim-summers.html">Understanding Video Game Music</a></h3>
+  <div class="meta"><span>Tim Summers</span></div>
+  <p class="card-summary">A Cambridge University Press musicology textbook developing analytical methods and concepts for video game scores, using case studies like Final Fantasy VII, Monkey Island 2, SSX Tricky and Silent Hill to build a framework the author summarizes as &#x27;music for playing.&#x27;</p>
+</div>
+<div class="card">
+  <h3><a href="library/world-music-the-basics-richard-nidel.html">World Music: The Basics</a></h3>
+  <div class="meta"><span>Richard O. Nidel</span></div>
+  <p class="card-summary">A Routledge &#x27;Basics&#x27; student reference surveying global popular and traditional musics region by region — Africa, the Caribbean, Latin America, Europe, Asia and the Middle East — as an introductory map of styles, instruments and key artists rather than a technical or theory text.</p>
+</div></div>
+</main>
+<footer class="site">Generated from <code>db/synthbuilding.db</code>. Source: <a href="https://github.com/t3dy/SYNTHBUILDING">github.com/t3dy/SYNTHBUILDING</a>.</footer>
+</body></html>

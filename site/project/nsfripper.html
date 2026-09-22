@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NSFRIPPER (NES Music Extraction Studio) — SYNTHBUILDING</title>
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<a class="back" href="../index.html">&larr; all projects</a>
+<div class="page-header">
+  <h1>NSFRIPPER (NES Music Extraction Studio)</h1>
+  <div class="page-meta">
+    <span class="badge" style="color:#5ec26a">ACTIVE</span>
+    &nbsp;<code>C:\Dev\NSFRIPPER</code>&nbsp;&middot;&nbsp;Python (py65 6502 emulator, numpy, mido), REAPER JSFX, SQLite oracle DB, static site generator
+  </div>
+  <p><a href="https://t3dy.github.io/NSFRIPPER/" target="_blank" rel="noopener">&#9654; live site</a></p>
+</div>
+<div class="page-body"><p>NSFRIPPER builds a full NES-audio pipeline: NSF files run through 6502 CPU emulation (py65), capturing per-frame APU register state at 60Hz, which becomes 4-channel MIDI with CC11 (volume) and CC12 (duty-cycle) automation preserving the original driver&#x27;s envelope, then REAPER .rpp projects using a custom unified JSFX synth called ReapNES Studio. For flagship games (Castlevania 1, Contra, Wizards &amp; Warriors) it goes further, parsing the actual ROM sound-driver code and validating output frame-by-frame against Mesen-emulator hardware traces -- the project&#x27;s fidelity hierarchy (Trace &gt; SysEx &gt; NSF emulation &gt; CC automation &gt; ADSR approximation) is a load-bearing rule repeated throughout its 40-rule architecture doc.</p><p>A SQLite-backed &#x27;oracle&#x27; knowledge base (ANTIRIPPER/antiripper_v2.db) records extraction decisions, prevention patterns, and hardware facts as institutional memory across sessions -- a genuinely mature piece of infrastructure among Ted&#x27;s projects. The site is live and generated deterministically from output/.</p><p>The last commit (2026-04-20) shipped a three-variant architecture specifically so Ted could ear-test and choose: Variant A &#x27;Double Dose&#x27; (audio stems + JSFX), Variant B &#x27;Live Wire&#x27; (pure JSFX/MIDI, playable live), and Variant C &#x27;Ditto Head&#x27; (JSFX-rendered stems, deferred, never built). The README&#x27;s own roadmap says the next step is simply: listen to A and B, decide whether to keep the Python stems pipeline, go JSFX-only, or build C. That decision was never made and never logged -- no commits since.</p><p>A Bach-mashup side project (bach_nes_mashup.py and siblings) pairs J.S. Bach MIDI with NES instrument timbre presets extracted from Castlevania/Contra/Metroid/Gradius stage palettes; see CHIPPEDONBACH.md for the full account, including two finished MP4 preview videos sitting at the C:\Dev root and 117 generated-but-unrendered projects.</p><p>Open technical items at last commit: whether the Python DSP fixes (14kHz analog lowpass, DC blocker, bandlimited pulse synthesis) need porting into the live JSFX synth too; a known ~15% non-linear-mix overload from summing independently-rendered stems in REAPER&#x27;s bus; Metroid&#x27;s intro track hangs the py65 emulator; a Capcom 6C80 ROM parser (~2 weeks estimated, not started) that would add ~40 games to trusted status; and three unsolved hardware mysteries called out explicitly in its own docs (why Castlevania produces noise drums without the $4015 bit-3 enable the spec requires; why SMB&#x27;s driver writes a constant DC value to $4011 every frame; region-driver divergence between CV3&#x27;s US and JP releases).</p></div>
+<div class="stuck-box"><strong>Stuck / next</strong><br>The A/B/C ear-test verdict is the single blocking decision -- listen to the two working variants, pick one, log it. Everything else in the pipeline works.</div>
+</body></html>
