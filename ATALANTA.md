@@ -79,6 +79,29 @@ build (see `EMBLEMSIN3D/DEPLOY_STATE.md`). Run locally with
   ride. Abandoned fork; safe to ignore unless resurrecting the specific
   three.js experiments it carries.
 
+## An unbuilt research idea worth knowing about (found 2026-09-22)
+
+`RESEARCHER/MEGABASEMUSICCATALOG.md` surfaced a genuinely novel idea never
+documented anywhere else in this workspace: modeling *Atalanta Fugiens*'
+50 contrapuntal canons as **constraint-satisfaction problems** — detecting
+"trap" types (parallel-perfect motion, unresolvable dissonance, cadence
+infeasibility) and using an OR-Tools CP-SAT minimal-edit solver to prove
+whether a compositional awkwardness Maier fell into is *structurally
+forced* by the canon's own rules, or an avoidable choice he made anyway —
+cross-referenced against a MinHash/LSH theme-provenance search for lifted
+material. A real computational-humanities research question, distinct from
+every chiptune-rendering project above, and nobody has started it. Worth
+flagging to Claudiens or a future dedicated research pass rather than
+letting it sit only in the megabase catalog.
+
+Separately, the same catalog surfaced a 2025-05-22 conversation ("Alchemy
+in Music and Monteverdi") on Monteverdi's own documented interest in
+alchemy — his 1625-26 correspondence on lead-to-gold transmutation
+experiments, his posthumous nickname "Gran professor della Chimica," and
+alchemical symbolism in his work. Pure scholarship, not a build idea, but a
+genuine connection between Ted's alchemy corpus and a composer nobody in
+this workspace has otherwise touched.
+
 ## What to reuse for SYNTHBUILDER practice work
 
 Both real implementations here (`chiptune.js` and FUGUEJUKEBOX's

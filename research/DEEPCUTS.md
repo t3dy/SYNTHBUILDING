@@ -4,6 +4,28 @@ Ted asked for "a full read of any of the LLM conversations we haven't covered" t
 remote ideas" — beyond what straightforward keyword searches (`research/megabase_music_history.md`)
 and the Karpathy workbench extraction already found. This is that pass.
 
+**IMPORTANT — a more thorough, overlapping pass exists and was found only after this one was
+written.** `SYNTHBUILDER/RESEARCHER/MEGABASEMUSICCATALOG.md` (by "Scarlatti Jones," the
+workspace's RESEARCHER agent for this music/game-design work) is a full chronological catalog
+built from **71 complete, role-tagged transcripts read in full by twelve parallel sub-agents** —
+strictly deeper than this pass's partial reads of ~34 conversations. It was not named in the
+task brief (only `megabase_music_history.md` and the Karpathy extraction were), and its
+timestamp shows it was finished around the same time as this document, so the overlap could not
+have been caught earlier without a broader initial file search than the brief specified. Four of
+this document's five deep cuts below — the Harmony Sonata Adventure Guide, Dance of the
+Inquisition/Twerkemada, the Ambient Music Evolution thread, and the Noise Rock Song
+Lyrics/MusicXML attempt — **are independently documented there too**, in comparable or greater
+depth, so treat this file as a second confirming source for those four, not their sole record.
+That catalog also surfaced real material this pass did not: a John Cage chance-operation
+"Procedural Music Composer" idea (2024-09-23, filed under "occult app ideas" so a music-keyword
+search alone would miss it), a **Monteverdi-and-alchemy conversation** (2025-05-22) directly on
+Ted's "connect music to esotericism" ask, a "Mystic RC Bros: A Rosicrucian Adventure" thread, an
+OR-Tools CP-SAT plan to test whether Atalanta Fugiens' canon "awkwardness" is structurally forced
+(inside "Using Claude Code for Synths," likely SYNTHBUILDER's own genesis conversation), and
+several corrected dates. **Only deep cut #3 below (Final Fantasy VI's opera scene) does not
+appear anywhere in that catalog** — confirmed by grepping it for "Final Fantasy" and "Opera" —
+making it the one genuinely unique find in this document. Read both files, not just this one.
+
 ## Method
 
 1. **Cast the broadest reasonable net.** Ran seven FTS5 keyword-family searches over
